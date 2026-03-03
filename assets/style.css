@@ -24,7 +24,7 @@
   --crown-logo: url("crown.png");
 
   /* Nền ảnh app (có thể đổi sang ảnh local nếu muốn) */
-  --app-bg-image: url("https://i.pinimg.com/originals/e3/71/95/e371954d7029b4d3b66c95ddc7be5c2b.gif");
+  --app-bg-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAgKa8IR79LZwjr7v9_ZE3VTxoMUu7hpVCfkGth6mO9yPEM2zbohs1kkPB&s=10");
 
   /* Z-index */
   --z-login: 9000;
