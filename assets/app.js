@@ -620,13 +620,13 @@ const HomeCarousel = {
 
 /* ========= 10) Firebase ========= */
 const firebaseConfig = {
-  apiKey: "AIzaSyBbAx15pD9xXtw6H9ijMm0-hbY3Opq7mDY",
-  authDomain: "app---ob520.firebaseapp.com",
-  databaseURL: "https://app---ob520-default-rtdb.firebaseio.com/",
-  projectId: "app---ob520",
-  storageBucket: "app---ob520.firebasestorage.app",
-  messagingSenderId: "1050579000808",
-  appId: "1:1050579000808:web:d10fc84cf7c80fdbc0985d"
+  apiKey: "AIzaSyAyZlLyEbhZ8zobuV9M6Iz8a1iGE4trJig",
+  authDomain: "huanhavnedn.firebaseapp.com",
+  databaseURL: "https://huanhavnedn-default-rtdb.firebaseio.com",
+  projectId: "huanhavnedn",
+  storageBucket: "huanhavnedn.firebasestorage.app",
+  messagingSenderId: "995499839890",
+  appId: "1:995499839890:web:4e52a1bac8dccd22c1714b"
 };
 
 let db = null;
@@ -1583,3 +1583,12 @@ window.setSetting = setSetting;
 window.resetSettings = resetSettings;
 
 window.quickToggle = quickToggle;
+
+
+
+
+
+
+
+
+
