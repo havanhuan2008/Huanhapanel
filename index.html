@@ -1,793 +1,2671 @@
 <!DOCTYPE html>
-
 <html lang="vi">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>HH SUPER • Deluxe UI</title>
-<link href="assets/favicon.png" rel="icon"/>
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&amp;family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,500;1,600;1,700&amp;display=swap" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<link href="assets/style.css" rel="stylesheet"/>
-</head>
-<body data-accent="gold" data-particles="1" data-reduce-motion="0">
-<!-- FX Canvas -->
-<canvas id="fxCanvas"></canvas>
-<!-- HUD -->
-<div id="hud"></div>
-<!-- HEADER -->
-<div class="top-header">
-<div class="inner">
-<div class="header-left">
-<div class="png-logo" title="Crown PNG"></div>
-<div class="brand-text">
-<div class="brand-title">HH SUPER</div>
-<div class="brand-sub">
-<span class="spark"></span>
-<span id="authorText">Hà Văn Huấn</span>
-</div>
-</div>
-</div>
-<div class="header-right">
-<button class="hex-btn hamburger" onclick="openMenu()" title="Menu">
-<i class="fa-solid fa-bars"></i>
-</button>
-</div>
-</div>
-</div>
-<!-- MENU -->
-<div class="menu-overlay" id="menuOverlay" onclick="closeMenu()"></div>
-<aside class="drawer" id="drawer">
-<div class="drawer-head">
-<strong><i class="fa-solid fa-bars-staggered"></i> Menu</strong>
-<button class="drawer-close" onclick="closeMenu()"><i class="fa-solid fa-xmark"></i></button>
-</div>
-<div class="drawer-body">
-<div class="menu-card">
-<div style="font-weight:900; color:var(--text); margin-bottom:8px; display:flex; align-items:center; gap:8px;  letter-spacing:.2px;">
-<i class="fa-solid fa-key" style="color:var(--accent-2)"></i> Key hiện tại
-        </div>
-<div class="pill" style="max-width:100%; justify-content:flex-start;">
-<span class="dot"></span>
-<span><b id="menuKey">—</b></span>
-</div>
-<div style="height:10px"></div>
-<div style="font-weight:900; color:var(--text); margin-bottom:8px; display:flex; align-items:center; gap:8px;  letter-spacing:.2px;">
-<i class="fa-solid fa-fingerprint" style="color:var(--accent-2)"></i> Device ID
-        </div>
-<div class="pill" style="max-width:100%; justify-content:flex-start;">
-<span class="dot" style="background:var(--warn); box-shadow:0 0 0 3px rgba(245,158,11,0.14)"></span>
-<span><b id="menuDevice">—</b></span>
-</div>
-<div style="margin-top:10px; font-size:12px; color:rgba(234,240,255,0.72); line-height:1.55;">
-          Dùng menu để chuyển tab, làm mới key, copy key/device, quản lý thiết bị hoặc đăng xuất.
-        </div>
-</div>
-<div class="menu-card">
-<div style="font-weight:900; color:var(--text); margin-bottom:10px; display:flex; align-items:center; gap:8px;  letter-spacing:.2px;">
-<i class="fa-solid fa-layer-group" style="color:var(--accent-2)"></i> Điều hướng
-        </div>
-<div class="menu-row">
-<button class="menu-item" onclick="menuGo('page-home')">
-<div class="left"><i class="fa-solid fa-house"></i> Trang chủ</div>
-<small>Home</small>
-</button>
-<button class="menu-item" onclick="menuGo('page-checkkey')">
-<div class="left"><i class="fa-solid fa-shield-check"></i> Kiểm tra Key</div>
-<small>Check</small>
-</button>
-<button class="menu-item" onclick="menuGo('page-tools')">
-<div class="left"><i class="fa-solid fa-wand-magic-sparkles"></i> Tools</div>
-<small>Preset</small>
-</button>
-<button class="menu-item" onclick="menuGo('page-devices')">
-<div class="left"><i class="fa-solid fa-microchip"></i> Thiết bị</div>
-<small>Devices</small>
-</button>
-<button class="menu-item" onclick="menuGo('page-settings')">
-<div class="left"><i class="fa-solid fa-gear"></i> Cài đặt</div>
-<small>Settings</small>
-</button>
-<button class="menu-item" onclick="menuActionAbout()">
-<div class="left"><i class="fa-solid fa-circle-info"></i> Giới thiệu</div>
-<small>About</small>
-</button>
-</div>
-</div>
-<div class="menu-card">
-<div style="font-weight:900; color:var(--text); margin-bottom:10px; display:flex; align-items:center; gap:8px;  letter-spacing:.2px;">
-<i class="fa-solid fa-bolt" style="color:var(--accent-2)"></i> Chức năng nhanh
-        </div>
-<div class="menu-row">
-<button class="menu-item" onclick="menuActionRefresh()">
-<div class="left"><i class="fa-solid fa-rotate"></i> Làm mới key</div>
-<small>Refresh</small>
-</button>
-<button class="menu-item" onclick="menuActionCopyKey()">
-<div class="left"><i class="fa-solid fa-copy"></i> Copy key</div>
-<small>Clipboard</small>
-</button>
-<button class="menu-item" onclick="menuActionCopyDevice()">
-<div class="left"><i class="fa-solid fa-fingerprint"></i> Copy Device ID</div>
-<small>Clipboard</small>
-</button>
-<button class="menu-item" onclick="menuActionClearSaved()">
-<div class="left"><i class="fa-solid fa-eraser"></i> Xoá key đã lưu</div>
-<small>Local</small>
-</button>
-<button class="menu-item menu-danger" onclick="menuActionLogout()">
-<div class="left"><i class="fa-solid fa-right-from-bracket"></i> Đăng xuất</div>
-<small>Logout</small>
-</button>
-</div>
-</div>
-</div>
-</aside>
-<!-- STARTUP OVERLAY -->
-<div id="startup-overlay">
-<div class="startup-card">
-<div class="startup-head">
-<div class="startup-logo" title="HH SUPER"></div>
-<div class="startup-title">
-<b> Check Thiết Bị • Server</b>
-<small>Tự động kiểm tra khi vào app</small>
-</div>
-</div>
-<div class="startup-body">
-<div class="startup-scan"></div>
-<div class="startup-steps">
-<div class="step" id="step-device">
-<div class="left">
-<div class="ic"><i class="fa-solid fa-fingerprint"></i></div>
-<div style="min-width:0">
-<b>Thiết bị</b>
-<small>Đang tạo Device ID...</small>
-</div>
-</div>
-<div class="tag"><i class="fa-solid fa-circle-notch fa-spin"></i> ...</div>
-</div>
-<div class="step" id="step-browser">
-<div class="left">
-<div class="ic"><i class="fa-solid fa-globe"></i></div>
-<div style="min-width:0">
-<b>Trình duyệt</b>
-<small>Đang kiểm tra...</small>
-</div>
-</div>
-<div class="tag"><i class="fa-solid fa-circle-notch fa-spin"></i> ...</div>
-</div>
-<div class="step" id="step-network">
-<div class="left">
-<div class="ic"><i class="fa-solid fa-wifi"></i></div>
-<div style="min-width:0">
-<b>Mạng</b>
-<small>Đang kiểm tra...</small>
-</div>
-</div>
-<div class="tag"><i class="fa-solid fa-circle-notch fa-spin"></i> ...</div>
-</div>
-<div class="step" id="step-firebase">
-<div class="left">
-<div class="ic"><i class="fa-solid fa-database"></i></div>
-<div style="min-width:0">
-<b>Firebase</b>
-<small>Đang bắt tay...</small>
-</div>
-</div>
-<div class="tag"><i class="fa-solid fa-circle-notch fa-spin"></i> ...</div>
-</div>
-<div class="step" id="step-server">
-<div class="left">
-<div class="ic"><i class="fa-solid fa-server"></i></div>
-<div style="min-width:0">
-<b>Server</b>
-<small>Đang kiểm tra...</small>
-</div>
-</div>
-<div class="tag"><i class="fa-solid fa-circle-notch fa-spin"></i> ...</div>
-</div>
-</div>
-</div>
-<div class="startup-foot">
-<div class="progress"><span id="startupProgress"></span></div>
-<div class="startup-status">
-<div class="msg" id="startupMsg">Đang kiểm tra…</div>
-<span class="badge"><i class="fa-solid fa-bolt" style="color:var(--accent-2)"></i> Huấn Hà</span>
-</div>
-<div class="startup-actions" id="startupActions" style="display:none">
-<button onclick="startupRetry()"><i class="fa-solid fa-rotate"></i> Thử lại</button>
-<button onclick="startupClose()"><i class="fa-solid fa-eye-slash"></i> Đóng</button>
-<button class="danger" onclick="startupLogout()"><i class="fa-solid fa-right-from-bracket"></i> Đăng xuất</button>
-</div>
-</div>
-</div>
-</div>
-<!-- LOGIN -->
-<div id="login-screen">
-<div class="login-shell">
-<div class="glass-card">
-<!-- BRAND -->
-<div class="login-brand">
-<div class="logo"></div>
-<div class="txt">
-<div class="typing-glow" id="loginBrandTyping">HH SUPER</div>
-<div class="sub">Key Login Prime </div>
-</div>
-</div>
-<div class="login-title">
-<strong>Đăng nhập bằng Key</strong>
-<span>Nhập key để truy cập. Nếu đã đăng nhập trước đó, hệ thống sẽ tự động đăng nhập lại khi mở app.</span>
-</div>
-<!-- Key input + eye -->
-<div class="login-input">
-<div class="field-shell">
-<div class="field-row">
-<div class="field-ic" title="Key">
-<i class="fa-solid fa-lock"></i>
-</div>
-<input autocomplete="off" id="login-key" placeholder="Nhập key để đăng nhập" required="" type="password"/>
-<button class="eye-btn" onclick="toggleKeyVisibility()" title="Hiện/Ẩn key">
-<i class="fa-solid fa-eye" id="eyeIcon"></i>
-</button>
-</div>
-</div>
-<div class="login-icon-row">
-<button class="mini-hex" onclick="pasteFromClipboard()" title="Dán từ clipboard">
-<i class="fa-solid fa-paste"></i> Dán key
-            </button>
-<button class="mini-hex danger" onclick="clearSavedKey()" title="Xoá key đã lưu">
-<i class="fa-solid fa-eraser"></i> Xoá key
-            </button>
-</div>
-</div>
-<div class="login-actions">
-<button class="btn-ghost" id="login-btn" onclick="checkKey()">
-<span class="shine"></span>
-<span>Login</span> <i class="fa-solid fa-arrow-right"></i>
-</button>
-</div>
-<div id="error-msg">
-<i class="fa-solid fa-circle-exclamation"></i>
-<label id="error-text">Key không hợp lệ, vui lòng thử lại!</label>
-</div>
-</div>
-<!-- Info tabs -->
-<div class="login-info">
-<div class="tabs">
-<button class="tab-btn active" id="tabInfoBtn" onclick="switchLoginTab('info')">Thông tin</button>
-<button class="tab-btn" id="tabWarnBtn" onclick="switchLoginTab('warn')">Cảnh báo</button>
-<button class="tab-btn" id="tabContactBtn" onclick="switchLoginTab('contact')">Liên hệ</button>
-</div>
-<div class="tab-panel active" id="tab-info">
-<div class="info-box info-green">
-<h5><i class="fa-solid fa-circle-check"></i> Auto login</h5>
-<p>Nếu có key đã lưu, hệ thống sẽ tự đăng nhập khi mở app.</p>
-</div>
-<div class="info-box info-gold">
-<h5><i class="fa-solid fa-shield-halved"></i> Giới hạn thiết bị</h5>
-<p>Key giới hạn số thiết bị bằng transaction. Nếu vượt giới hạn, key sẽ báo đạt maxDevices.</p>
-</div>
-<div class="info-box info-gold">
-<h5><i class="fa-solid fa-screwdriver-wrench"></i> Tips</h5>
-<p>Vào <b style="color:var(--accent-2)">Cài đặt</b> để bật/tắt click sound, particles, hoặc đổi accent (Gold/Aqua).</p>
-</div>
-</div>
-<div class="tab-panel" id="tab-warn">
-<div class="info-box info-red">
-<h5><i class="fa-solid fa-triangle-exclamation"></i> Cảnh báo</h5>
-<p>Không chia sẻ key cho người khác. Nếu lộ key có thể bị dùng hết thiết bị hoặc bị khoá.</p>
-</div>
-<div class="info-box info-gold">
-<h5><i class="fa-solid fa-clock"></i> Hết hạn</h5>
-<p>Nếu key hết hạn, hệ thống sẽ chặn đăng nhập và hiển thị ngày hết hạn.</p>
-</div>
-</div>
-<div class="tab-panel" id="tab-contact">
-<div class="info-box info-gold">
-<h5><i class="fa-solid fa-headset"></i> Liên hệ</h5>
-<p>Bấm vào nút dưới để chuyển sang trang liên hệ riêng: <b style="color:var(--accent-2)">Mở trang ở đây</b></p>
-<div class="contact-actions">
-<button onclick="goContactPage()"><i class="fa-solid fa-arrow-right"></i> Mở trang liên hệ</button>
-<a href="https://www.facebook.com/share/1E3tPVcWYa/?mibextid=wwXIfr" rel="noopener" target="_blank">
-<i class="fa-brands fa-facebook-f"></i> Facebook
-              </a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- MAIN APP -->
-<div class="page-wrap" id="main-app">
-<div class="content">
-<!-- HOME -->
-<section class="page active" id="page-home">
-<div class="section-title">Trang chủ App Super Huấn Hà VN</div>
-<p class="section-sub">
-          Hỗ Trợ kéo tâm trên tất cả mọi thiết bị , và hoạt động Cả Free Fire & Free Fire Max         </p>
-<div aria-label="Ảnh nổi bật" class="carousel" id="homeCarousel">
-<div class="carousel-track">
-<div class="carousel-slide" data-idx="0">
-<img alt="Ảnh 1" decoding="async" loading="lazy" src="https://st.quantrimang.com/photos/image/2022/08/09/Mod-head-shot-FF-5.jpg"/>
-</div>
-<div class="carousel-slide" data-idx="1">
-<img alt="Ảnh 2" decoding="async" loading="lazy" src="https://static.lag.vn/upload/news/20/12/25/0_MPGB.jpg?w=800&amp;encoder=wic&amp;subsampling=444"/>
-</div>
-<div class="carousel-slide" data-idx="2">
-<img alt="Ảnh 3" decoding="async" loading="lazy" src="https://i.ytimg.com/vi/H6-UXA5Y4yM/maxresdefault.jpg"/>
-</div>
-<div class="carousel-slide" data-idx="3">
-<img alt="Ảnh 4" decoding="async" loading="lazy" src="https://i.ytimg.com/vi/fgaZPMF6Dmc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&amp;rs=AOn4CLC64GM5kLHAr7Hbfyjm90pveh4mSg"/>
-</div>
-</div>
-<button aria-label="Ảnh trước" class="carousel-nav prev" type="button">
-<i class="fa-solid fa-chevron-left"></i>
-</button>
-<button aria-label="Ảnh sau" class="carousel-nav next" type="button">
-<i class="fa-solid fa-chevron-right"></i>
-</button>
-<div aria-label="Điều hướng ảnh" class="carousel-dots">
-<button aria-label="Ảnh 1" class="carousel-dot" data-idx="0" type="button"></button><button aria-label="Ảnh 2" class="carousel-dot" data-idx="1" type="button"></button><button aria-label="Ảnh 3" class="carousel-dot" data-idx="2" type="button"></button><button aria-label="Ảnh 4" class="carousel-dot" data-idx="3" type="button"></button>
-</div>
-</div>
-<!-- Quick tiles (clickable) -->
-<div class="card">
-<div class="card-head">
-<h4><i class="fa-solid fa-bolt"></i> Tiện ích nhanh</h4>
-<span class="status-pill"><i class="fa-solid fa-microchip"></i> UI</span>
-</div>
-<p class="muted">Hỗ Trợ Boost Nhạy Máy Siêu Pro </p>
-<div class="quick-grid">
-<div class="quick-tile" data-on="1" id="qt-smooth" onclick="quickToggle('qt-smooth')">
-<div class="quick-left">
-<div class="quick-ic"><i class="fa-solid fa-gauge-high"></i></div>
-<div class="quick-txt">
-<b>Bug Gun Recoil</b>
-<small>Cải Thiện Tâm Súng Dễ Kéo Và Giản Lạc Đạn Khi Bắn </small>
-</div>
-</div>
-<span class="status-pill ok"><i class="fa-solid fa-check"></i> ON</span>
-</div>
-<div class="quick-tile" data-on="1" id="qt-stable" onclick="quickToggle('qt-stable')">
-<div class="quick-left">
-<div class="quick-ic"><i class="fa-solid fa-wifi"></i></div>
-<div class="quick-txt">
-<b>SPEED MAX</b>
-<small>Fix Toàn Bộ Lỗi Giật Lag Khi Chơi Game </small>
-</div>
-</div>
-<span class="status-pill ok"><i class="fa-solid fa-check"></i> ON</span>
-</div>
-<div class="quick-tile" data-on="1" id="qt-protect" onclick="quickToggle('qt-protect')">
-<div class="quick-left">
-<div class="quick-ic"><i class="fa-solid fa-shield"></i></div>
-<div class="quick-txt">
-<b>Antiband Safr Prime</b>
-<small>Bảo Vệ Tránh Bị Quét Và Band Id</small>
-</div>
-</div>
-<span class="status-pill ok"><i class="fa-solid fa-lock"></i> SAFE</span>
-</div>
-<div class="quick-tile" data-on="0" id="qt-boost" onclick="quickToggle('qt-boost')">
-<div class="quick-left">
-<div class="quick-ic"><i class="fa-solid fa-rocket"></i></div>
-<div class="quick-txt">
-<b>BOOST GAME PRIME</b>
-<small>Tối Ưu Mượt Mà Khi Chơi Gane </small>
-</div>
-</div>
-<span class="status-pill bad"><i class="fa-solid fa-xmark"></i> OFF</span>
-</div>
-</div>
-<div class="key-actions" style="margin-top:14px">
-  <button class="chip-btn" onclick="menuGo('page-tools')"><i class="fa-solid fa-wand-magic-sparkles"></i> Mở Tools</button>
-  <button class="chip-btn" onclick="menuGo('page-settings')"><i class="fa-solid fa-gear"></i> Cài đặt UI</button>
-</div>
-</div>
-<!-- Preset quick -->
-<div class="card">
-<div class="card-head">
-<h4><i class="fa-solid fa-sliders"></i> Preset nhanh</h4>
-<span class="status-pill warn"><i class="fa-solid fa-star"></i> HOT</span>
-</div>
-<p class="muted">Áp dụng preset sẽ thay đổi slider &amp; DPI + HUD.</p>
-<div class="grid-2">
-<button class="preset-btn" onclick="applyPreset('smooth')"><i class="fa-solid fa-feather-pointed"></i> Smooth</button>
-<button class="preset-btn" onclick="applyPreset('headshot')"><i class="fa-solid fa-crosshairs"></i> Headshot</button>
-<button class="preset-btn" onclick="applyPreset('balanced')"><i class="fa-solid fa-scale-balanced"></i> Balanced</button>
-<button class="preset-btn" onclick="applyPreset('sniper')"><i class="fa-solid fa-binoculars"></i> Sniper</button>
-</div>
-</div>
-<!-- DPI -->
-<div class="card">
-<div class="card-head">
-<h4><i class="fa-solid fa-mouse"></i> Tùy chỉnh DPI</h4>
-<span class="status-pill"><i class="fa-solid fa-circle-info"></i> UI</span>
-</div>
-<p class="muted">Nhập mức DPI để tối ưu hóa độ nhạy và độ mượt</p>
-<div class="dpi-input-group">
-<input class="input-control" id="dpi-input" placeholder="Ví dụ: 800, 1200..." type="number"/>
-<button class="dpi-btn" id="dpi-apply" onclick="applyDPI()"><i class="fa-solid fa-check-double"></i> Áp dụng</button>
-</div>
-</div>
-<!-- SENS sliders -->
-<div class="card">
-<div class="control-header">
-<h4 style="margin:0; font-size:15px; font-weight:900; display:flex; align-items:center; gap:10px; ">
-<i class="fa-solid fa-eye" style="color:var(--accent-2)"></i> Touch View
-            </h4>
-<span class="value-badge" id="sens-general-val">100%</span>
-</div>
-<p class="muted">Độ nhạy khi xoay góc nhìn.</p>
-<div class="slider-wrapper">
-<input class="custom-slider sensitivity-slider" id="sens-general" max="100" min="1" type="range" value="100"/>
-</div>
-</div>
-<div class="card">
-<div class="control-header">
-<h4 style="margin:0; font-size:15px; font-weight:900; display:flex; align-items:center; gap:10px; ">
-<i class="fa-solid fa-crosshairs" style="color:var(--accent-2)"></i> Red Dot
-            </h4>
-<span class="value-badge" id="sens-reddot-val">85%</span>
-</div>
-<p class="muted">Tùy chỉnh độ nhạy khi ngắm gần.</p>
-<div class="slider-wrapper">
-<input class="custom-slider sensitivity-slider" id="sens-reddot" max="100" min="1" type="range" value="85"/>
-</div>
-</div>
-<div class="card">
-<div class="control-header">
-<h4 style="margin:0; font-size:15px; font-weight:900; display:flex; align-items:center; gap:10px; ">
-<i class="fa-solid fa-binoculars" style="color:var(--accent-2)"></i> 2x / 4x Scope
-            </h4>
-<span class="value-badge" id="sens-scope-val">75%</span>
-</div>
-<p class="muted">Tăng độ chính xác khi dùng ống ngắm tầm trung.</p>
-<div class="slider-wrapper">
-<input class="custom-slider sensitivity-slider" id="sens-scope" max="100" min="1" type="range" value="75"/>
-</div>
-</div>
-<div class="card">
-<div class="control-header">
-<h4 style="margin:0; font-size:15px; font-weight:900; display:flex; align-items:center; gap:10px; ">
-<i class="fa-solid fa-crosshairs" style="transform: rotate(45deg); color:var(--accent-2)"></i> Sniper Scope
-            </h4>
-<span class="value-badge" id="sens-sniper-val">50%</span>
-</div>
-<p class="muted">Điều chỉnh độ nhạy khi ngắm xa.</p>
-<div class="slider-wrapper">
-<input class="custom-slider sensitivity-slider" id="sens-sniper" max="100" min="1" type="range" value="50"/>
-</div>
-</div>
-<!-- Features demo -->
-<div class="card">
-<div class="card-head">
-<h4><i class="fa-solid fa-layer-group"></i> Chức năng bổ trợ</h4>
-<span class="status-pill warn"><i class="fa-solid fa-star"></i> NEW</span>
-</div>
-<div class="feature-list">
-<div class="feature-item">
-<div class="feature-item-info">
-<h5><i class="fa-solid fa-wand-magic-sparkles"></i> Aim Assist</h5>
-<p>Khi Kéo Tâm Sẽ Tự Bắt Tâm Vào Đầu Cho Tất Cả Mọi Loại Súng </p>
-</div>
-<label class="hex-switch">
-<input checked="" type="checkbox"/>
-<span class="hex-ui"></span>
-</label>
-</div>
-<div class="feature-item">
-<div class="feature-item-info">
-<h5><i class="fa-solid fa-memory"></i> Tối ưu RAM</h5>
-<p>Dọn cache UI, làm app nhẹ hơn</p>
-</div>
-<label class="hex-switch">
-<input checked="" type="checkbox"/>
-<span class="hex-ui"></span>
-</label>
-</div>
-<div class="feature-item">
-<div class="feature-item-info">
-<h5><i class="fa-solid fa-gauge-high"></i> Chế độ ổn định</h5>
-<p>Giảm độ trễ thao tác trong Game</p>
-</div>
-<label class="hex-switch">
-<input checked="" type="checkbox"/>
-<span class="hex-ui"></span>
-</label>
-</div>
-<div class="feature-item">
-<div class="feature-item-info">
-<h5><i class="fa-solid fa-sparkles"></i> Hiệu Ứng App</h5>
-<p>Hiệu Ứng Đẹp Mắt Khi Sử Dụng App</p>
-</div>
-<label class="hex-switch">
-<input checked="" onchange="setSetting('particles', this.checked)" type="checkbox"/>
-<span class="hex-ui"></span>
-</label>
-</div>
-</div>
-</div>
-<footer class="dark-footer">
-<div class="footer-brand">HVH SUPER</div>
-<div class="footer-text">
-            Phien Bản App Hỗ Trợ Kéo Tâm Free Fire Ob52 , Kéo Là Đỏ Siêu Cấp Vip<br/>
-            ©2026 Bản quyền thuộc về Ha Van Huan Ông Trùm Dev
-          </div>
-<div class="social-links">
-<a class="social-link" href="https://www.facebook.com/share/1E3tPVcWYa/?mibextid=wwXIfr" rel="noopener" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-<a class="social-link" href="#" onclick="Swal.fire({title:'Twitter',icon:'info',text:'Bạn có thể gắn link Twitter tại đây.'}); return false;"><i class="fa-brands fa-twitter"></i></a>
-<a class="social-link" href="#" onclick="Swal.fire({title:'Website',icon:'info',text:'Bạn có thể gắn website tại đây.'}); return false;"><i class="fa-solid fa-globe"></i></a>
-</div>
-</footer>
-</section>
-<!-- TOOLS -->
-<section class="page" id="page-tools">
-<div class="section-title">Tools • Preset &amp; Quick Actions</div>
-<p class="section-sub">Các tools này chỉ thay đổi thông số hiển thị trong app và đang được cải tiến thêm</p>
-<div class="card">
-<div class="card-head">
-<h4><i class="fa-solid fa-wand-magic-sparkles"></i> Preset chuyên sâu</h4>
-<span class="status-pill ok"><i class="fa-solid fa-bolt"></i> READY</span>
-</div>
-<div class="grid-2">
-<div class="tile">
-<h5><i class="fa-solid fa-feather-pointed"></i> Smooth Pack</h5>
-<p>Preset mượt, ưu tiên kéo tâm êm và ổn định.</p>
-<div class="preset-row">
-<button class="preset-btn" onclick="applyPreset('smooth')"><i class="fa-solid fa-check"></i> Apply</button>
-<button class="preset-btn" onclick="menuGo('page-home')"><i class="fa-solid fa-arrow-left"></i> Về Home</button>
-</div>
-</div>
-<div class="tile">
-<h5><i class="fa-solid fa-crosshairs"></i> Headshot Pack</h5>
-<p>Preset headshot, nhạy hơn cho ngắm gần.</p>
-<div class="preset-row">
-<button class="preset-btn" onclick="applyPreset('headshot')"><i class="fa-solid fa-check"></i> Apply</button>
-<button class="preset-btn" onclick="menuGo('page-home')"><i class="fa-solid fa-arrow-left"></i> Về Home</button>
-</div>
-</div>
-<div class="tile">
-<h5><i class="fa-solid fa-scale-balanced"></i> Balanced Pack</h5>
-<p>Cân bằng cho đa số thiết bị.</p>
-<div class="preset-row">
-<button class="preset-btn" onclick="applyPreset('balanced')"><i class="fa-solid fa-check"></i> Apply</button>
-<button class="preset-btn" onclick="menuGo('page-home')"><i class="fa-solid fa-arrow-left"></i> Về Home</button>
-</div>
-</div>
-<div class="tile">
-<h5><i class="fa-solid fa-binoculars"></i> Sniper Pack</h5>
-<p>Giảm nhạy để ngắm xa ổn định.</p>
-<div class="preset-row">
-<button class="preset-btn" onclick="applyPreset('sniper')"><i class="fa-solid fa-check"></i> Apply</button>
-<button class="preset-btn" onclick="menuGo('page-home')"><i class="fa-solid fa-arrow-left"></i> Về Home</button>
-</div>
-</div>
-</div>
-<hr class="sep"/>
-<div class="key-actions">
-<button class="chip-btn" onclick="Swal.fire({title:'Lưu preset',icon:'info',text:'Chức Năng Đang Được Cải Tiến Và Mở Rộng Thêm! Xin Cảm Ơn Mem.'})"><i class="fa-solid fa-floppy-disk"></i> Lưu preset (demo)</button>
-<button class="chip-btn" onclick="Swal.fire({title:'Chia sẻ preset',icon:'info',text:'Chức Năng Đang Được Cải Tiến Và Mở Rộng Thêm! Xin Cảm Ơn Mem.'})"><i class="fa-solid fa-share-nodes"></i> Share preset (demo)</button>
-</div>
-</div>
-</section>
-<!-- CHECK KEY -->
-<section class="page" id="page-checkkey">
-<div class="section-title">Kiểm tra Key</div>
-<p class="section-sub">Tab này hiển thị trạng thái, hạn sử dụng, số thiết bị, last login và ghi chú của key hiện tại.</p>
-<div class="card" id="key-info-card">
-<div class="card-head">
-<h4><i class="fa-solid fa-id-card"></i> Thông tin Key đang dùng</h4>
-<span class="status-pill" id="keyStatusPill"><i class="fa-solid fa-circle-notch fa-spin"></i> Đang tải</span>
-</div>
-<p class="muted">Hiển thị trạng thái, hạn sử dụng, số thiết bị, và thông tin liên quan của key hiện tại.</p>
-<div class="key-grid">
-<div class="key-box">
-<div class="key-label">KEY</div>
-<div class="key-value mono" id="infoKey"><span class="skeleton" style="height:14px"></span></div>
-</div>
-<div class="key-box">
-<div class="key-label">DEVICE ID</div>
-<div class="key-value mono" id="infoDevice"><span class="skeleton" style="height:14px"></span></div>
-</div>
-<div class="key-box">
-<div class="key-label">HẾT HẠN</div>
-<div class="key-value" id="infoExpire"><span class="skeleton" style="height:14px"></span></div>
-</div>
-<div class="key-box">
-<div class="key-label">THIẾT BỊ (ĐÃ DÙNG / TỐI ĐA)</div>
-<div class="key-value" id="infoDevices"><span class="skeleton" style="height:14px"></span></div>
-</div>
-<div class="key-box">
-<div class="key-label">LAST LOGIN</div>
-<div class="key-value" id="infoLastLogin"><span class="skeleton" style="height:14px"></span></div>
-</div>
-<div class="key-box">
-<div class="key-label">GHI CHÚ</div>
-<div class="key-value" id="infoNote"><span class="skeleton" style="height:14px"></span></div>
-</div>
-</div>
-<div class="key-actions">
-<button class="chip-btn" onclick="refreshKeyInfo()"><i class="fa-solid fa-rotate"></i> Làm mới</button>
-<button class="chip-btn" onclick="copyCurrentKey()"><i class="fa-solid fa-copy"></i> Copy Key</button>
-<button class="chip-btn" onclick="copyDeviceId()"><i class="fa-solid fa-fingerprint"></i> Copy Device</button>
-<button class="chip-btn" onclick="menuGo('page-devices')"><i class="fa-solid fa-microchip"></i> Quản lý thiết bị</button>
-</div>
-</div>
-<div class="card">
-<div class="card-head">
-<h4><i class="fa-solid fa-microchip"></i> Thiết bị gần đây</h4>
-<span class="status-pill"><i class="fa-solid fa-circle-info"></i> Preview</span>
-</div>
-<p class="muted">Hiển thị tối đa 4 thiết bị gần nhất. Vào tab <b>Thiết bị</b> để xem đầy đủ và xoá thiết bị.</p>
-<div id="miniDevices"></div>
-</div>
-</section>
-<!-- DEVICES -->
-<section class="page" id="page-devices">
-<div class="section-title">Thiết bị</div>
-<p class="section-sub">Danh sách thiết bị đang dùng key. Bạn có thể xoá từng thiết bị hoặc reset toàn bộ</p>
-<div class="card">
-<div class="card-head">
-<h4><i class="fa-solid fa-microchip"></i> Danh sách thiết bị</h4>
-<span class="status-pill" id="devicesStatus"><i class="fa-solid fa-circle-notch fa-spin"></i> Đang tải</span>
-</div>
-<p class="muted">⭐ = thiết bị hiện tại. Xóa thiết bị hiện tại có thể khiến bạn phải đăng nhập lại.</p>
-<div class="device-list" id="devicesList"></div>
-<div class="key-actions" style="margin-top:14px">
-<button class="chip-btn" onclick="resetAllDevices()"><i class="fa-solid fa-broom"></i> Reset toàn bộ thiết bị</button>
-<button class="chip-btn" onclick="menuGo('page-checkkey')"><i class="fa-solid fa-arrow-left"></i> Về Check Key</button>
-</div>
-</div>
-</section>
-<!-- SETTINGS -->
-<section class="page" id="page-settings">
-<div class="section-title">Cài đặt UI</div>
-<p class="section-sub">Tùy chỉnh hiệu ứng click “tạch”, rung, particles, giảm chuyển động và đổi accent màu.</p>
-<div class="card">
-<div class="card-head">
-<h4><i class="fa-solid fa-gear"></i> Cài đặt</h4>
-<span class="status-pill ok"><i class="fa-solid fa-check"></i> LIVE</span>
-</div>
-<div class="grid-2">
-<div class="tile">
-<h5><i class="fa-solid fa-bullseye"></i> Thông tin nhanh</h5>
-<p>Thiết bị &amp; key hiện tại.</p>
-<div class="key-grid" style="margin-top:0">
-<div class="key-box">
-<div class="key-label">DEVICE</div>
-<div class="key-value mono" id="st-device">—</div>
-</div>
-<div class="key-box">
-<div class="key-label">KEY</div>
-<div class="key-value mono" id="st-key">—</div>
-</div>
-</div>
-</div>
-<div class="tile">
-<h5><i class="fa-solid fa-palette"></i> Accent màu</h5>
-<p>Chọn màu chủ đạo cho UI.</p>
-<select class="input-control" id="st-accent" onchange="setSetting('accent', this.value)">
-<option value="gold">Gold (vàng)</option>
-<option value="aqua">Aqua (xanh)</option>
-</select>
-<div class="key-actions" style="margin-top:12px">
-<button class="chip-btn" onclick="Swal.fire({title:'Gợi ý',icon:'info',text:'Accent chỉ đổi màu UI (không ảnh hưởng logic key).'});"><i class="fa-solid fa-lightbulb"></i> Tip</button>
-</div>
-</div>
-</div>
-<hr class="sep"/>
-<div class="setting-row">
-<div class="left">
-<b>Click Sound “tạch”</b>
-<small>Bật âm click khi nhấn nút / chức năng.</small>
-</div>
-<label class="hex-switch">
-<input id="st-clicksound" onchange="setSetting('clickSound', this.checked)" type="checkbox"/>
-<span class="hex-ui"></span>
-</label>
-</div>
-<div style="height:10px"></div>
-<div class="setting-row">
-<div class="left">
-<b>Haptic (rung nhẹ)</b>
-<small>Chỉ hoạt động nếu thiết bị hỗ trợ <code>navigator.vibrate</code>.</small>
-</div>
-<label class="hex-switch">
-<input id="st-haptic" onchange="setSetting('haptic', this.checked)" type="checkbox"/>
-<span class="hex-ui"></span>
-</label>
-</div>
-<div style="height:10px"></div>
-<div class="setting-row">
-<div class="left">
-<b>Particles nền</b>
-<small>Hiệu ứng sao/đốm sáng nền (canvas).</small>
-</div>
-<label class="hex-switch">
-<input id="st-particles" onchange="setSetting('particles', this.checked)" type="checkbox"/>
-<span class="hex-ui"></span>
-</label>
-</div>
-<div style="height:10px"></div>
-<div class="setting-row">
-<div class="left">
-<b>Reduce Motion</b>
-<small>Giảm animation nếu máy yếu hoặc dễ chóng mặt.</small>
-</div>
-<label class="hex-switch">
-<input id="st-reducemotion" onchange="setSetting('reduceMotion', this.checked)" type="checkbox"/>
-<span class="hex-ui"></span>
-</label>
-</div>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
+  <title>Overlay Bảo Trì Hệ Thống</title>
 
-<hr class="sep"/>
-<div class="tile">
-<h5><i class="fa-solid fa-wand-magic-sparkles"></i> Hiệu ứng &amp; Font</h5>
-<p>Tùy chỉnh Aura/Glow, Blur kính, cỡ chữ và độ bo góc cho UI.</p>
-<div class="range-row">
-<div class="left">
-<b>Aura / Glow</b>
-<small>Độ sáng viền &amp; glow (0–120%).</small>
-</div>
-<div class="range">
-<input id="st-glow" max="120" min="0" oninput="setSetting('glow', Number(this.value)); document.getElementById('st-glow-val').textContent=this.value+'%';" type="range" value="95"/>
-<span class="range-val" id="st-glow-val">95%</span>
-</div>
-</div>
-<div class="range-row">
-<div class="left">
-<b>Blur (độ mờ kính)</b>
-<small>Mức blur nền cho các khung (6–24px).</small>
-</div>
-<div class="range">
-<input id="st-blur" max="24" min="6" oninput="setSetting('blur', Number(this.value)); document.getElementById('st-blur-val').textContent=this.value+'px';" type="range" value="16"/>
-<span class="range-val" id="st-blur-val">16px</span>
-</div>
-</div>
-<div class="range-row">
-<div class="left">
-<b>Cỡ chữ</b>
-<small>Tăng/giảm để đọc dễ hơn (90–110%).</small>
-</div>
-<div class="range">
-<input id="st-font" max="110" min="90" oninput="setSetting('fontScale', Number(this.value)); document.getElementById('st-font-val').textContent=this.value+'%';" type="range" value="100"/>
-<span class="range-val" id="st-font-val">100%</span>
-</div>
-</div>
-<div class="range-row">
-<div class="left">
-<b>Bo góc</b>
-<small>Độ cong viền card/tile (18–34px).</small>
-</div>
-<div class="range">
-<input id="st-round" max="34" min="18" oninput="setSetting('roundness', Number(this.value)); document.getElementById('st-round-val').textContent=this.value+'px';" type="range" value="26"/>
-<span class="range-val" id="st-round-val">26px</span>
-</div>
-</div>
-<div class="key-actions" style="margin-top:12px">
-<button class="chip-btn" onclick="toastInfo('Tip: Nếu thấy nặng máy, giảm Glow xuống ~60% và tắt Particles.');">
-<i class="fa-solid fa-lightbulb"></i> Tip hiệu năng
-    </button>
-</div>
-</div>
-<div class="key-actions" style="margin-top:14px">
-<button class="chip-btn" onclick="resetSettings()"><i class="fa-solid fa-rotate-left"></i> Reset cài đặt</button>
-<button class="chip-btn" onclick="Swal.fire({title:'Lưu ý',icon:'info',text:'Một số hiệu ứng âm thanh có thể bị chặn nếu chưa tương tác lần đầu.'})"><i class="fa-solid fa-shield-halved"></i> Lưu ý</button>
-</div>
-</div>
-</section>
-</div>
-</div>
-<!-- Firebase -->
-<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
-<!-- App JS -->
-<script src="assets/app.js"></script>
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <style>
+    :root {
+      --bg-1: #030816;
+      --bg-2: #081325;
+      --bg-3: #0d1c33;
+
+      --white: #ffffff;
+      --text: #eef7ff;
+      --muted: rgba(238, 247, 255, 0.74);
+      --muted-2: rgba(238, 247, 255, 0.54);
+
+      --cyan: #39e7ff;
+      --cyan-2: #87f5ff;
+      --blue: #4487ff;
+      --violet: #9160ff;
+      --pink: #ff56d1;
+      --green: #2fe08d;
+      --gold: #ffc960;
+      --red: #ff6b86;
+
+      --glass: rgba(255, 255, 255, 0.10);
+      --glass-2: rgba(255, 255, 255, 0.06);
+      --glass-3: rgba(255, 255, 255, 0.04);
+      --glass-border: rgba(255, 255, 255, 0.14);
+
+      --shadow-main: 0 24px 60px rgba(0, 0, 0, 0.42);
+      --shadow-glow: 0 0 40px rgba(57, 231, 255, 0.10);
+
+      --drawer-collapsed: 122px;
+      --drawer-expanded: 68vh;
+
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 20px;
+      --radius-sm: 16px;
+
+      --transition-fast: 0.2s ease;
+      --transition-mid: 0.35s ease;
+      --transition-slow: 0.5s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #040b17;
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+    }
+
+    body {
+      position: relative;
+      user-select: none;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    /* =========================
+       APP BACKGROUND
+    ========================= */
+    .app-scene {
+      position: fixed;
+      inset: 0;
+      overflow: hidden;
+      z-index: 0;
+      background:
+        linear-gradient(135deg, rgba(4, 11, 22, 0.45), rgba(4, 11, 22, 0.76)),
+        radial-gradient(circle at 18% 18%, rgba(57, 231, 255, 0.10), transparent 28%),
+        radial-gradient(circle at 82% 20%, rgba(145, 96, 255, 0.14), transparent 32%),
+        radial-gradient(circle at 50% 100%, rgba(255, 86, 209, 0.12), transparent 36%);
+    }
+
+    .app-bg-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.06);
+      filter: brightness(0.86) saturate(1.16);
+      z-index: 0;
+      opacity: 0;
+      transition: opacity 0.6s ease;
+    }
+
+    .app-bg-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      background:
+        linear-gradient(180deg, rgba(3, 10, 20, 0.18), rgba(3, 10, 20, 0.52)),
+        radial-gradient(circle at 14% 14%, rgba(57, 231, 255, 0.09), transparent 24%),
+        radial-gradient(circle at 84% 18%, rgba(145, 96, 255, 0.10), transparent 28%),
+        radial-gradient(circle at 50% 100%, rgba(255, 86, 209, 0.09), transparent 32%);
+    }
+
+    .bg-fallback {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      opacity: 0;
+      transition: opacity 0.6s ease;
+      background:
+        linear-gradient(135deg, rgba(7, 17, 34, 0.94), rgba(9, 19, 39, 0.92)),
+        url("https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat;
+    }
+
+    .bg-fallback.show {
+      opacity: 1;
+    }
+
+    .ambient-light,
+    .ambient-light-2,
+    .ambient-light-3 {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(70px);
+      pointer-events: none;
+      mix-blend-mode: screen;
+      opacity: 0.24;
+      z-index: 2;
+    }
+
+    .ambient-light {
+      width: 34vw;
+      height: 34vw;
+      top: -10%;
+      left: -8%;
+      background: radial-gradient(circle, rgba(57, 231, 255, 0.95), transparent 60%);
+      animation: ambientFloat1 16s ease-in-out infinite alternate;
+    }
+
+    .ambient-light-2 {
+      width: 36vw;
+      height: 36vw;
+      right: -12%;
+      top: 6%;
+      background: radial-gradient(circle, rgba(145, 96, 255, 0.95), transparent 60%);
+      animation: ambientFloat2 18s ease-in-out infinite alternate;
+    }
+
+    .ambient-light-3 {
+      width: 38vw;
+      height: 38vw;
+      bottom: -18%;
+      left: 30%;
+      background: radial-gradient(circle, rgba(255, 86, 209, 0.92), transparent 60%);
+      animation: ambientFloat3 20s ease-in-out infinite alternate;
+    }
+
+    @keyframes ambientFloat1 {
+      from { transform: translate(0, 0) scale(1); }
+      to   { transform: translate(55px, 15px) scale(1.16); }
+    }
+
+    @keyframes ambientFloat2 {
+      from { transform: translate(0, 0) scale(1); }
+      to   { transform: translate(-42px, 30px) scale(1.14); }
+    }
+
+    @keyframes ambientFloat3 {
+      from { transform: translate(0, 0) scale(1); }
+      to   { transform: translate(20px, -38px) scale(1.14); }
+    }
+
+    /* =========================
+       LOADING SCREEN
+    ========================= */
+    .loading-screen {
+      position: fixed;
+      inset: 0;
+      z-index: 10000000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle at center, rgba(57, 231, 255, 0.10), transparent 36%),
+        linear-gradient(135deg, rgba(3, 9, 18, 0.90), rgba(5, 12, 26, 0.96));
+      transition: opacity 0.45s ease, visibility 0.45s ease;
+    }
+
+    .loading-screen.hide {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .loader-box {
+      position: relative;
+      width: 130px;
+      height: 130px;
+      display: grid;
+      place-items: center;
+    }
+
+    .loader-ring {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 3px solid rgba(255, 255, 255, 0.08);
+      border-top-color: var(--cyan);
+      border-right-color: var(--violet);
+      animation: spin 1.15s linear infinite;
+      box-shadow: 0 0 20px rgba(57, 231, 255, 0.14);
+    }
+
+    .loader-ring:nth-child(2) {
+      inset: 14px;
+      animation-duration: 1.5s;
+      animation-direction: reverse;
+      border-top-color: var(--pink);
+      border-right-color: var(--blue);
+    }
+
+    .loader-ring:nth-child(3) {
+      inset: 28px;
+      animation-duration: 2s;
+      border-top-color: var(--green);
+      border-right-color: var(--cyan);
+    }
+
+    .loader-icon {
+      position: relative;
+      z-index: 2;
+      font-size: 30px;
+      color: #d8fbff;
+      filter: drop-shadow(0 0 10px rgba(57, 231, 255, 0.28));
+      animation: iconPulse 1.8s ease-in-out infinite;
+    }
+
+    /* =========================
+       OVERLAY
+    ========================= */
+    .maintenance-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 999999;
+      overflow: hidden;
+      background:
+        linear-gradient(135deg, rgba(3, 9, 18, 0.74), rgba(5, 13, 28, 0.92)),
+        radial-gradient(circle at 18% 16%, rgba(57, 231, 255, 0.10), transparent 28%),
+        radial-gradient(circle at 84% 16%, rgba(145, 96, 255, 0.12), transparent 30%),
+        radial-gradient(circle at 50% 100%, rgba(255, 86, 209, 0.10), transparent 34%);
+      backdrop-filter: blur(18px);
+      pointer-events: auto;
+    }
+
+    .overlay-blocker {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: transparent;
+    }
+
+    .grid-lines {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+      opacity: 0.25;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      background-size: 36px 36px;
+      mask-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.85), transparent);
+      animation: gridMove 14s linear infinite;
+    }
+
+    @keyframes gridMove {
+      from { transform: translateY(0); }
+      to   { transform: translateY(36px); }
+    }
+
+    .scanline {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -180px;
+      height: 180px;
+      z-index: 2;
+      pointer-events: none;
+      opacity: 0.5;
+      mix-blend-mode: screen;
+      background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(255, 255, 255, 0.04) 45%,
+        transparent 100%
+      );
+      animation: scanMove 5.5s linear infinite;
+    }
+
+    @keyframes scanMove {
+      from { transform: translateY(-180px); }
+      to   { transform: translateY(calc(100vh + 260px)); }
+    }
+
+    .particles,
+    .streaks {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .particle {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.95), rgba(57, 231, 255, 0.55));
+      box-shadow: 0 0 16px rgba(57, 231, 255, 0.75);
+      opacity: 0;
+      animation: particleRise linear infinite;
+    }
+
+    @keyframes particleRise {
+      0% {
+        transform: translateY(110vh) scale(0.5);
+        opacity: 0;
+      }
+      12% {
+        opacity: 0.9;
+      }
+      100% {
+        transform: translateY(-20vh) scale(1.5);
+        opacity: 0;
+      }
+    }
+
+    .streak {
+      position: absolute;
+      width: 2px;
+      height: 120px;
+      transform: rotate(18deg);
+      background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.7), transparent);
+      filter: blur(0.4px);
+      opacity: 0.22;
+      animation: streakDrop linear infinite;
+    }
+
+    @keyframes streakDrop {
+      from {
+        transform: translateY(-140px) rotate(18deg);
+        opacity: 0;
+      }
+      14% {
+        opacity: 0.36;
+      }
+      to {
+        transform: translateY(calc(100vh + 150px)) rotate(18deg);
+        opacity: 0;
+      }
+    }
+
+    .overlay-shell {
+      position: absolute;
+      inset: 0;
+      z-index: 5;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 20px 16px calc(var(--drawer-collapsed) + 18px);
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    /* =========================
+       MAIN CARD
+    ========================= */
+    .main-card {
+      position: relative;
+      width: min(96vw, 620px);
+      max-height: calc(100vh - var(--drawer-collapsed) - 44px);
+      overflow: hidden;
+      border-radius: var(--radius-xl);
+      padding: 28px 22px 22px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.06));
+      border: 1px solid var(--glass-border);
+      box-shadow:
+        var(--shadow-main),
+        var(--shadow-glow),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(20px);
+      animation: cardIn 0.85s cubic-bezier(.2, .8, .2, 1);
+      pointer-events: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .main-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(130deg, rgba(255, 255, 255, 0.12), transparent 22%, transparent 78%, rgba(255, 255, 255, 0.07));
+    }
+
+    .main-card::after {
+      content: "";
+      position: absolute;
+      top: -120%;
+      left: -30%;
+      width: 70%;
+      height: 320%;
+      pointer-events: none;
+      transform: rotate(24deg);
+      background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.12), transparent);
+      animation: shineSweep 5.8s linear infinite;
+    }
+
+    @keyframes shineSweep {
+      0%   { transform: translateX(-160%) rotate(24deg); }
+      100% { transform: translateX(260%) rotate(24deg); }
+    }
+
+    @keyframes cardIn {
+      from {
+        opacity: 0;
+        transform: translateY(28px) scale(0.96);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .main-card-scroll {
+      position: relative;
+      z-index: 2;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding-right: 4px;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255,255,255,0.22) transparent;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .main-card-scroll::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .main-card-scroll::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .main-card-scroll::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.16);
+      border-radius: 999px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(57, 231, 255, 0.10);
+      border: 1px solid rgba(57, 231, 255, 0.22);
+      color: #bdf8ff;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      box-shadow: 0 0 18px rgba(57, 231, 255, 0.10);
+      margin-bottom: 16px;
+      width: max-content;
+      max-width: 100%;
+    }
+
+    .badge-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 14px var(--green);
+      animation: badgeBlink 1.2s infinite;
+    }
+
+    @keyframes badgeBlink {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50%      { transform: scale(0.72); opacity: 0.45; }
+    }
+
+    .hero-icon-wrap {
+      position: relative;
+      width: 134px;
+      height: 134px;
+      margin: 2px auto 18px;
+      display: grid;
+      place-items: center;
+    }
+
+    .ring-outer,
+    .ring-mid,
+    .ring-inner,
+    .ring-dots,
+    .icon-core {
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    .ring-outer {
+      inset: 0;
+      background: conic-gradient(
+        from 0deg,
+        var(--cyan),
+        var(--blue),
+        var(--violet),
+        var(--pink),
+        var(--cyan)
+      );
+      animation: spin 6s linear infinite;
+      filter: drop-shadow(0 0 16px rgba(57, 231, 255, 0.26));
+      padding: 3px;
+    }
+
+    .ring-outer::before {
+      content: "";
+      position: absolute;
+      inset: 3px;
+      border-radius: 50%;
+      background: rgba(8, 14, 28, 0.88);
+    }
+
+    .ring-mid {
+      inset: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.11);
+      box-shadow:
+        inset 0 0 20px rgba(255, 255, 255, 0.04),
+        0 0 18px rgba(145, 96, 255, 0.12);
+      animation: reverseSpin 9s linear infinite;
+    }
+
+    .ring-inner {
+      inset: 24px;
+      border: 1px dashed rgba(255, 255, 255, 0.14);
+      animation: spin 12s linear infinite;
+    }
+
+    .ring-dots {
+      inset: 6px;
+      animation: reverseSpin 8s linear infinite;
+    }
+
+    .ring-dots::before,
+    .ring-dots::after {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #fff, var(--cyan));
+      box-shadow: 0 0 15px rgba(57, 231, 255, 0.6);
+    }
+
+    .ring-dots::before {
+      top: 4px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .ring-dots::after {
+      bottom: 4px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: radial-gradient(circle, #fff, var(--pink));
+      box-shadow: 0 0 15px rgba(255, 86, 209, 0.5);
+    }
+
+    .icon-core {
+      inset: 30px;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at 30% 30%, rgba(255,255,255,0.18), rgba(255,255,255,0.05)),
+        linear-gradient(180deg, rgba(12,22,42,0.96), rgba(7,14,28,0.94));
+      border: 1px solid rgba(255,255,255,0.10);
+      box-shadow:
+        inset 0 0 24px rgba(255,255,255,0.05),
+        0 0 20px rgba(57,231,255,0.10);
+      z-index: 2;
+    }
+
+    .icon-core i {
+      font-size: 50px;
+      background: linear-gradient(135deg, #ffffff, #bff8ff, #dccaff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 12px rgba(57,231,255,0.24));
+      animation: iconPulse 2.4s ease-in-out infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes reverseSpin {
+      to { transform: rotate(-360deg); }
+    }
+
+    @keyframes iconPulse {
+      0%, 100% { transform: scale(1) rotate(0deg); }
+      50%      { transform: scale(1.08) rotate(4deg); }
+    }
+
+    .main-title {
+      text-align: center;
+      font-size: 33px;
+      font-weight: 900;
+      letter-spacing: -0.6px;
+      line-height: 1.16;
+      margin-bottom: 12px;
+      background: linear-gradient(90deg, #ffffff, #cff9ff, #dccaff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .main-desc {
+      text-align: center;
+      font-size: 15px;
+      line-height: 1.8;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .stat-box {
+      padding: 14px 12px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
+      text-align: center;
+    }
+
+    .stat-box i {
+      font-size: 17px;
+      margin-bottom: 8px;
+      color: #bdf9ff;
+      display: block;
+    }
+
+    .stat-title {
+      font-size: 11px;
+      color: var(--muted-2);
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      margin-bottom: 6px;
+    }
+
+    .stat-value {
+      font-size: 14px;
+      font-weight: 800;
+      color: #f3fbff;
+      word-break: break-word;
+    }
+
+    .system-panel {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 16px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+      margin-bottom: 18px;
+    }
+
+    .system-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+      flex: 1;
+    }
+
+    .system-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(57,231,255,0.16), rgba(145,96,255,0.14));
+      border: 1px solid rgba(255,255,255,0.10);
+      color: #d7fbff;
+      box-shadow: 0 10px 25px rgba(57,231,255,0.08);
+      flex: 0 0 auto;
+    }
+
+    .system-text {
+      min-width: 0;
+      flex: 1;
+    }
+
+    .system-title {
+      font-size: 14px;
+      font-weight: 800;
+      color: #eefaff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .system-sub {
+      font-size: 12px;
+      color: var(--muted-2);
+      margin-top: 4px;
+    }
+
+    .system-status {
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: rgba(47,224,141,0.10);
+      border: 1px solid rgba(47,224,141,0.18);
+      color: #abf2c9;
+      font-size: 12px;
+      font-weight: 800;
+      white-space: nowrap;
+      box-shadow: 0 0 16px rgba(47,224,141,0.08);
+      flex: 0 0 auto;
+    }
+
+    .progress-box {
+      margin-bottom: 18px;
+    }
+
+    .progress-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .progress-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: #eefaff;
+      letter-spacing: 0.3px;
+    }
+
+    .progress-percent {
+      font-size: 14px;
+      font-weight: 900;
+      color: #cafcff;
+      text-shadow: 0 0 12px rgba(57,231,255,0.18);
+    }
+
+    .progress-track {
+      position: relative;
+      height: 18px;
+      width: 100%;
+      border-radius: 999px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      border: 1px solid rgba(255,255,255,0.08);
+      overflow: hidden;
+      box-shadow:
+        inset 0 5px 16px rgba(0,0,0,0.28),
+        inset 0 -2px 4px rgba(255,255,255,0.03);
+    }
+
+    .progress-track::before {
+      content: "";
+      position: absolute;
+      inset: 2px;
+      border-radius: inherit;
+      background:
+        repeating-linear-gradient(
+          90deg,
+          rgba(255,255,255,0.035) 0 16px,
+          rgba(255,255,255,0) 16px 32px
+        );
+      pointer-events: none;
+    }
+
+    .progress-track::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(255,255,255,0.05), transparent 55%, rgba(0,0,0,0.05));
+      pointer-events: none;
+    }
+
+    .progress-bar {
+      position: relative;
+      width: 22%;
+      height: 100%;
+      border-radius: inherit;
+      background:
+        linear-gradient(90deg, var(--cyan), var(--blue), var(--violet), var(--pink));
+      background-size: 220% 100%;
+      box-shadow:
+        0 0 18px rgba(57,231,255,0.28),
+        0 0 30px rgba(145,96,255,0.18);
+      animation: progressGradient 2.6s linear infinite;
+      overflow: hidden;
+      transition: width 0.7s cubic-bezier(.22, .8, .25, 1);
+    }
+
+    .progress-bar::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(
+          120deg,
+          transparent 0%,
+          rgba(255,255,255,0.16) 18%,
+          transparent 36%,
+          rgba(255,255,255,0.12) 56%,
+          transparent 100%
+        );
+      animation: progressShine 1.9s linear infinite;
+    }
+
+    .progress-bar::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      bottom: 2px;
+      right: 6px;
+      width: 34px;
+      border-radius: 999px;
+      background: radial-gradient(circle, rgba(255,255,255,0.95), rgba(255,255,255,0.10));
+      filter: blur(4px);
+      opacity: 0.9;
+    }
+
+    @keyframes progressGradient {
+      from { background-position: 0% 50%; }
+      to   { background-position: 220% 50%; }
+    }
+
+    @keyframes progressShine {
+      from { transform: translateX(-130%); }
+      to   { transform: translateX(160%); }
+    }
+
+    .progress-note {
+      min-height: 20px;
+      margin-top: 12px;
+      font-size: 13px;
+      color: var(--muted);
+      transition: opacity 0.25s ease;
+    }
+
+    .step-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .step-item {
+      padding: 13px 10px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.07);
+      text-align: center;
+      transition: var(--transition-mid);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);
+    }
+
+    .step-item i {
+      display: block;
+      font-size: 17px;
+      margin-bottom: 8px;
+      color: #bdf9ff;
+    }
+
+    .step-label {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 700;
+      line-height: 1.45;
+    }
+
+    .step-item.active {
+      background: linear-gradient(135deg, rgba(57,231,255,0.12), rgba(145,96,255,0.12));
+      border-color: rgba(57,231,255,0.20);
+      box-shadow:
+        0 0 22px rgba(57,231,255,0.08),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+      transform: translateY(-2px);
+    }
+
+    .step-item.active .step-label {
+      color: #effdff;
+    }
+
+    .step-item.done {
+      background: linear-gradient(135deg, rgba(47,224,141,0.12), rgba(57,231,255,0.10));
+      border-color: rgba(47,224,141,0.18);
+    }
+
+    .step-item.done i {
+      color: #baf6d5;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .feature-card {
+      position: relative;
+      padding: 14px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.07);
+      overflow: hidden;
+    }
+
+    .feature-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.05), transparent 60%);
+      pointer-events: none;
+    }
+
+    .feature-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 10px;
+      background: linear-gradient(135deg, rgba(57,231,255,0.14), rgba(145,96,255,0.14));
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #cbfbff;
+      box-shadow: 0 10px 20px rgba(57,231,255,0.06);
+    }
+
+    .feature-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: #f0fbff;
+      margin-bottom: 6px;
+    }
+
+    .feature-desc {
+      font-size: 12px;
+      line-height: 1.6;
+      color: var(--muted-2);
+    }
+
+    .action-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .action-btn {
+      position: relative;
+      border: 0;
+      outline: 0;
+      cursor: pointer;
+      padding: 12px 16px;
+      border-radius: 16px;
+      font-size: 13px;
+      font-weight: 800;
+      color: #f8fdff;
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast), opacity var(--transition-fast);
+      pointer-events: auto;
+    }
+
+    .action-btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .action-btn:active {
+      transform: translateY(0);
+    }
+
+    .action-btn.primary {
+      background: linear-gradient(135deg, rgba(57,231,255,0.18), rgba(68,135,255,0.18), rgba(145,96,255,0.18));
+      border: 1px solid rgba(57,231,255,0.18);
+      box-shadow: 0 12px 24px rgba(57,231,255,0.10);
+    }
+
+    .action-btn.secondary {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .inline-tip {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.07);
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+
+    .inline-tip i {
+      color: #c4fbff;
+      flex: 0 0 auto;
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 4px;
+      color: var(--muted-2);
+      font-size: 12px;
+    }
+
+    .footer-chip {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.06);
+      white-space: nowrap;
+    }
+
+    /* =========================
+       DRAWER / BOTTOM SHEET
+    ========================= */
+    .drawer {
+      position: fixed;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      z-index: 20;
+      height: var(--drawer-expanded);
+      transform: translateY(calc(var(--drawer-expanded) - var(--drawer-collapsed)));
+      transition: transform 0.38s cubic-bezier(.22, .8, .25, 1);
+      pointer-events: auto;
+      touch-action: none;
+    }
+
+    .drawer.open {
+      transform: translateY(0);
+    }
+
+    .drawer-shell {
+      position: relative;
+      width: min(100%, 760px);
+      height: 100%;
+      margin: 0 auto;
+      border-radius: 28px 28px 22px 22px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.13), rgba(255,255,255,0.06));
+      border: 1px solid rgba(255,255,255,0.13);
+      box-shadow:
+        0 20px 50px rgba(0,0,0,0.38),
+        0 0 35px rgba(57,231,255,0.08),
+        inset 0 1px 0 rgba(255,255,255,0.08);
+      backdrop-filter: blur(20px);
+      overflow: hidden;
+    }
+
+    .drawer-shell::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(130deg, rgba(255,255,255,0.09), transparent 22%, transparent 80%, rgba(255,255,255,0.05));
+    }
+
+    .drawer-handle-zone {
+      position: relative;
+      z-index: 2;
+      padding: 10px 16px 12px;
+      cursor: grab;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .drawer-handle-zone:active {
+      cursor: grabbing;
+    }
+
+    .drawer-handle {
+      width: 76px;
+      height: 6px;
+      border-radius: 999px;
+      margin: 0 auto;
+      background: linear-gradient(90deg, rgba(255,255,255,0.18), rgba(255,255,255,0.45), rgba(255,255,255,0.18));
+      box-shadow: 0 0 14px rgba(255,255,255,0.12);
+    }
+
+    .drawer-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .drawer-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .drawer-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(57,231,255,0.14), rgba(145,96,255,0.14));
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #d6fbff;
+      flex: 0 0 auto;
+    }
+
+    .drawer-title-text {
+      min-width: 0;
+    }
+
+    .drawer-title {
+      font-size: 15px;
+      font-weight: 900;
+      color: #f6fcff;
+      margin-bottom: 3px;
+    }
+
+    .drawer-subtitle {
+      font-size: 12px;
+      color: var(--muted-2);
+      line-height: 1.5;
+    }
+
+    .drawer-toggle {
+      border: 0;
+      outline: 0;
+      cursor: pointer;
+      padding: 11px 14px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #effaff;
+      font-size: 13px;
+      font-weight: 800;
+      white-space: nowrap;
+      transition: var(--transition-fast);
+    }
+
+    .drawer-toggle:hover {
+      transform: translateY(-1px);
+    }
+
+    .drawer-content {
+      position: relative;
+      z-index: 2;
+      height: calc(100% - 86px);
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 14px 14px 22px;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255,255,255,0.20) transparent;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .drawer-content::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .drawer-content::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.16);
+      border-radius: 999px;
+    }
+
+    .drawer-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 12px;
+    }
+
+    .panel {
+      position: relative;
+      border-radius: 20px;
+      padding: 16px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.07);
+      overflow: hidden;
+    }
+
+    .panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.05), transparent 60%);
+      pointer-events: none;
+    }
+
+    .panel-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 900;
+      color: #f5fcff;
+      margin-bottom: 12px;
+    }
+
+    .panel-title i {
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(57,231,255,0.16), rgba(145,96,255,0.14));
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #d2fcff;
+      flex: 0 0 auto;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 12px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 20px 1fr;
+      gap: 12px;
+      align-items: start;
+    }
+
+    .timeline-line {
+      position: relative;
+      width: 20px;
+      min-height: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .timeline-line::before {
+      content: "";
+      position: absolute;
+      top: 14px;
+      bottom: -16px;
+      width: 2px;
+      background: linear-gradient(to bottom, rgba(57,231,255,0.30), rgba(255,255,255,0.05));
+    }
+
+    .timeline-item:last-child .timeline-line::before {
+      display: none;
+    }
+
+    .timeline-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-top: 6px;
+      background: radial-gradient(circle, #ffffff, var(--cyan));
+      box-shadow: 0 0 12px rgba(57,231,255,0.46);
+      position: relative;
+      z-index: 2;
+    }
+
+    .timeline-dot.done {
+      background: radial-gradient(circle, #ffffff, var(--green));
+      box-shadow: 0 0 12px rgba(47,224,141,0.40);
+    }
+
+    .timeline-dot.pending {
+      background: radial-gradient(circle, #ffffff, var(--violet));
+      box-shadow: 0 0 12px rgba(145,96,255,0.36);
+    }
+
+    .timeline-content {
+      padding-bottom: 4px;
+    }
+
+    .timeline-name {
+      font-size: 13px;
+      font-weight: 800;
+      color: #effaff;
+      margin-bottom: 5px;
+    }
+
+    .timeline-text {
+      font-size: 12px;
+      line-height: 1.6;
+      color: var(--muted-2);
+    }
+
+    .status-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .status-item {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 12px 13px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .status-left {
+      display: flex;
+      gap: 10px;
+      min-width: 0;
+      flex: 1;
+    }
+
+    .status-mini-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(57,231,255,0.14), rgba(145,96,255,0.12));
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #d7fbff;
+      flex: 0 0 auto;
+    }
+
+    .status-info {
+      min-width: 0;
+      flex: 1;
+    }
+
+    .status-name {
+      font-size: 13px;
+      font-weight: 800;
+      color: #effbff;
+      margin-bottom: 4px;
+    }
+
+    .status-desc {
+      font-size: 12px;
+      color: var(--muted-2);
+      line-height: 1.5;
+    }
+
+    .status-badge {
+      padding: 8px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 900;
+      white-space: nowrap;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.06);
+      color: #e9fbff;
+    }
+
+    .status-badge.ok {
+      color: #bff4d7;
+      background: rgba(47,224,141,0.10);
+      border-color: rgba(47,224,141,0.16);
+    }
+
+    .status-badge.run {
+      color: #c7fbff;
+      background: rgba(57,231,255,0.10);
+      border-color: rgba(57,231,255,0.16);
+    }
+
+    .status-badge.wait {
+      color: #ddd2ff;
+      background: rgba(145,96,255,0.10);
+      border-color: rgba(145,96,255,0.14);
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .faq-item {
+      border-radius: 16px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.06);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      border: 0;
+      outline: 0;
+      text-align: left;
+      cursor: pointer;
+      padding: 14px 14px;
+      background: transparent;
+      color: #f3fbff;
+      font-size: 13px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+      color: var(--muted-2);
+      font-size: 12px;
+      line-height: 1.7;
+      padding: 0 14px;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 240px;
+      padding: 0 14px 14px;
+    }
+
+    .faq-item.open .faq-question i {
+      transform: rotate(180deg);
+    }
+
+    .faq-question i {
+      transition: transform 0.25s ease;
+      color: #ccfbff;
+      flex: 0 0 auto;
+    }
+
+    .contact-box {
+      display: grid;
+      gap: 10px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 13px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.06);
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .contact-item i {
+      width: 36px;
+      height: 36px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(57,231,255,0.14), rgba(145,96,255,0.12));
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #d8fbff;
+      flex: 0 0 auto;
+    }
+
+    .small-note {
+      margin-top: 12px;
+      font-size: 12px;
+      color: var(--muted-2);
+      line-height: 1.7;
+    }
+
+    .mini-progress-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .mini-progress-item {
+      display: grid;
+      gap: 6px;
+      padding: 12px 13px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .mini-progress-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .mini-progress-name {
+      font-size: 12px;
+      font-weight: 800;
+      color: #effbff;
+    }
+
+    .mini-progress-value {
+      font-size: 11px;
+      font-weight: 900;
+      color: #c7fbff;
+    }
+
+    .mini-progress-track {
+      width: 100%;
+      height: 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.06);
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .mini-progress-fill {
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--cyan), var(--blue), var(--violet));
+      box-shadow: 0 0 12px rgba(57,231,255,0.18);
+      background-size: 180% 100%;
+      animation: progressGradient 2.5s linear infinite;
+    }
+
+    .drawer-footer-space {
+      height: 10px;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+    @media (max-width: 820px) {
+      .drawer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      :root {
+        --drawer-collapsed: 118px;
+        --drawer-expanded: 72vh;
+      }
+
+      .overlay-shell {
+        padding: 14px 12px calc(var(--drawer-collapsed) + 16px);
+      }
+
+      .main-card {
+        width: 100%;
+        max-height: calc(100vh - var(--drawer-collapsed) - 34px);
+        border-radius: 28px;
+        padding: 24px 16px 18px;
+      }
+
+      .main-title {
+        font-size: 27px;
+      }
+
+      .main-desc {
+        font-size: 14px;
+      }
+
+      .hero-icon-wrap {
+        width: 112px;
+        height: 112px;
+      }
+
+      .icon-core i {
+        font-size: 42px;
+      }
+
+      .stats-row,
+      .step-list,
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .system-panel {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .system-title {
+        white-space: normal;
+        overflow: visible;
+        text-overflow: unset;
+      }
+
+      .drawer {
+        left: 8px;
+        right: 8px;
+        bottom: 8px;
+      }
+
+      .drawer-shell {
+        border-radius: 24px 24px 20px 20px;
+      }
+
+      .drawer-head {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .drawer-toggle {
+        width: 100%;
+      }
+
+      .action-row {
+        flex-direction: column;
+      }
+
+      .action-btn {
+        width: 100%;
+      }
+
+      .footer-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- NỀN ỨNG DỤNG -->
+  <div class="app-scene">
+    <img
+      id="appBackground"
+      class="app-bg-img"
+      alt="Background"
+      referrerpolicy="no-referrer"
+    />
+    <div id="bgFallback" class="bg-fallback"></div>
+    <div class="app-bg-overlay"></div>
+    <div class="ambient-light"></div>
+    <div class="ambient-light-2"></div>
+    <div class="ambient-light-3"></div>
+  </div>
+
+  <!-- LOADING -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loader-box">
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+      <div class="loader-icon">
+        <i class="fa-solid fa-gears"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- OVERLAY -->
+  <div class="maintenance-overlay" id="maintenanceOverlay">
+    <div class="overlay-blocker" id="overlayBlocker"></div>
+    <div class="grid-lines"></div>
+    <div class="scanline"></div>
+    <div class="particles" id="particles"></div>
+    <div class="streaks" id="streaks"></div>
+
+    <div class="overlay-shell">
+      <div class="main-card" id="mainCard">
+        <div class="main-card-scroll" id="mainCardScroll">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            <span>HỆ THỐNG ĐANG BẢO TRÌ</span>
+          </div>
+
+          <div class="hero-icon-wrap">
+            <div class="ring-outer"></div>
+            <div class="ring-mid"></div>
+            <div class="ring-inner"></div>
+            <div class="ring-dots"></div>
+            <div class="icon-core">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+          </div>
+
+          <div class="main-title">Ứng dụng đang được nâng cấp</div>
+
+          <div class="main-desc">
+            Hệ thống đang thực hiện nâng cấp giao diện, đồng bộ dữ liệu, tối ưu hiệu năng
+            và cải thiện tính ổn định. Toàn bộ thao tác phía dưới đã được khóa trong thời gian bảo trì.
+          </div>
+
+          <div class="stats-row">
+            <div class="stat-box">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div class="stat-title">Bảo mật</div>
+              <div class="stat-value">Đang bảo vệ</div>
+            </div>
+            <div class="stat-box">
+              <i class="fa-solid fa-server"></i>
+              <div class="stat-title">Máy chủ</div>
+              <div class="stat-value" id="serverStatus">Đồng bộ</div>
+            </div>
+            <div class="stat-box">
+              <i class="fa-solid fa-clock"></i>
+              <div class="stat-title">Thời gian</div>
+              <div class="stat-value" id="timeNow">00:00:00</div>
+            </div>
+          </div>
+
+          <div class="system-panel">
+            <div class="system-left">
+              <div class="system-icon">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+              <div class="system-text">
+                <div class="system-title" id="systemTitle">
+                  Đang khởi chạy quy trình bảo trì hệ thống
+                </div>
+                <div class="system-sub">
+                  bảo trì chặn toàn bộ chức năng app phía dưới, nhưng vẫn cho phép xem thông tin bảo trì
+                </div>
+              </div>
+            </div>
+            <div class="system-status" id="systemStatus">ĐANG XỬ LÝ</div>
+          </div>
+
+          <div class="progress-box">
+            <div class="progress-head">
+              <div class="progress-title">Tiến trình nâng cấp hệ thống</div>
+              <div class="progress-percent" id="progressPercent">18%</div>
+            </div>
+
+            <div class="progress-track">
+              <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <div class="progress-note" id="progressText">
+              Đang chuẩn bị môi trường bảo trì...
+            </div>
+          </div>
+
+          <div class="step-list" id="stepList">
+            <div class="step-item active">
+              <i class="fa-solid fa-database"></i>
+              <div class="step-label">Tối ưu dữ liệu</div>
+            </div>
+            <div class="step-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div class="step-label">Nâng cấp bảo mật</div>
+            </div>
+            <div class="step-item">
+              <i class="fa-solid fa-rocket"></i>
+              <div class="step-label">Triển khai hoàn tất</div>
+            </div>
+          </div>
+
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <div class="feature-title">Tăng tốc hệ thống</div>
+              <div class="feature-desc">
+                Tối ưu tốc độ phản hồi và làm mượt trải nghiệm hiển thị trên ứng dụng.
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+              <div class="feature-title">Cập nhật giao diện</div>
+              <div class="feature-desc">
+                Làm mới bố cục, hiệu ứng và tối ưu vùng hiển thị cho nhiều thiết bị.
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <div class="feature-title">Khóa tương tác nền</div>
+              <div class="feature-desc">
+                Người dùng không thể thao tác với app nền trong khi bảo trì đang hiển thị.
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+              </div>
+              <div class="feature-title">Đồng bộ dữ liệu</div>
+              <div class="feature-desc">
+                Kiểm tra và đồng bộ dữ liệu giữa máy chủ, bộ nhớ đệm và giao diện hiển thị.
+              </div>
+            </div>
+          </div>
+
+          <div class="action-row">
+            <button class="action-btn primary" id="openDrawerBtn">
+              <i class="fa-solid fa-up-down"></i> Kéo lên để xem thêm chi tiết
+            </button>
+
+            <button class="action-btn secondary" id="toggleThemeGlowBtn">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> Tăng hiệu ứng giao diện
+            </button>
+          </div>
+
+          <div class="inline-tip">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>
+              Bạn có thể cuộn nội dung trong khung này và kéo panel phía dưới lên để xem thêm thông tin, nhưng vẫn không thể thao tác với app nền.
+            </span>
+          </div>
+
+          <div class="footer-row">
+            <div class="footer-chip">
+              <i class="fa-solid fa-lock"></i> bảo trì đang khóa toàn bộ thao tác
+            </div>
+            <div class="footer-chip" id="versionChip">
+              <i class="fa-solid fa-microchip"></i> Maintenance UI v3.0
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DRAWER -->
+    <div class="drawer" id="drawer">
+      <div class="drawer-shell">
+        <div class="drawer-handle-zone" id="drawerHandleZone">
+          <div class="drawer-handle"></div>
+
+          <div class="drawer-head">
+            <div class="drawer-title-wrap">
+              <div class="drawer-icon">
+                <i class="fa-solid fa-bars-progress"></i>
+              </div>
+
+              <div class="drawer-title-text">
+                <div class="drawer-title">Chi tiết bảo trì và trạng thái hệ thống</div>
+                <div class="drawer-subtitle">
+                  Kéo lên / kéo xuống để xem thêm thông tin, tiến trình, FAQ và trạng thái các mô-đun
+                </div>
+              </div>
+            </div>
+
+            <button class="drawer-toggle" id="drawerToggleBtn">
+              <i class="fa-solid fa-chevron-up"></i> Mở rộng
+            </button>
+          </div>
+        </div>
+
+        <div class="drawer-content" id="drawerContent">
+          <div class="drawer-grid">
+            <div class="panel">
+              <div class="panel-title">
+                <i class="fa-solid fa-timeline"></i>
+                <span>Tiến trình bảo trì</span>
+              </div>
+
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-line">
+                    <div class="timeline-dot done"></div>
+                  </div>
+                  <div class="timeline-content">
+                    <div class="timeline-name">Khởi tạo môi trường bảo trì</div>
+                    <div class="timeline-text">
+                      Thiết lập lớp khóa bảo trì, kiểm tra nền ứng dụng và khởi chạy hiệu ứng giao diện.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-line">
+                    <div class="timeline-dot done"></div>
+                  </div>
+                  <div class="timeline-content">
+                    <div class="timeline-name">Sao lưu dữ liệu tạm thời</div>
+                    <div class="timeline-text">
+                      Hệ thống đang bảo toàn dữ liệu trạng thái, đồng bộ cache và kiểm tra tính toàn vẹn.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-line">
+                    <div class="timeline-dot"></div>
+                  </div>
+                  <div class="timeline-content">
+                    <div class="timeline-name">Nâng cấp mô-đun bảo mật</div>
+                    <div class="timeline-text">
+                      Tăng cường kiểm tra truy cập, tối ưu lớp xác thực và rà soát vùng hiển thị.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-line">
+                    <div class="timeline-dot pending"></div>
+                  </div>
+                  <div class="timeline-content">
+                    <div class="timeline-name">Hoàn tất và mở lại ứng dụng</div>
+                    <div class="timeline-text">
+                      Kiểm tra lần cuối, xác nhận ổn định và hoàn tất quy trình nâng cấp hệ thống.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="small-note">
+                Tiến trình giao diện hiển thị cho chế độ bảo trì.
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-title">
+                <i class="fa-solid fa-sliders"></i>
+                <span>Trạng thái mô-đun</span>
+              </div>
+
+              <div class="status-list">
+                <div class="status-item">
+                  <div class="status-left">
+                    <div class="status-mini-icon">
+                      <i class="fa-solid fa-database"></i>
+                    </div>
+                    <div class="status-info">
+                      <div class="status-name">Dữ liệu ứng dụng</div>
+                      <div class="status-desc">Sao lưu, dọn dẹp cache và tối ưu truy xuất.</div>
+                    </div>
+                  </div>
+                  <div class="status-badge ok">ỔN ĐỊNH</div>
+                </div>
+
+                <div class="status-item">
+                  <div class="status-left">
+                    <div class="status-mini-icon">
+                      <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="status-info">
+                      <div class="status-name">Bảo mật</div>
+                      <div class="status-desc">Đang cập nhật tường lửa và quy tắc xác thực.</div>
+                    </div>
+                  </div>
+                  <div class="status-badge run">ĐANG CHẠY</div>
+                </div>
+
+                <div class="status-item">
+                  <div class="status-left">
+                    <div class="status-mini-icon">
+                      <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+                    <div class="status-info">
+                      <div class="status-name">Giao diện</div>
+                      <div class="status-desc">Đang tối ưu bố cục, hiệu ứng và lớp phủ.</div>
+                    </div>
+                  </div>
+                  <div class="status-badge run">ĐANG CẬP NHẬT</div>
+                </div>
+
+                <div class="status-item">
+                  <div class="status-left">
+                    <div class="status-mini-icon">
+                      <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    <div class="status-info">
+                      <div class="status-name">Máy chủ</div>
+                      <div class="status-desc">Đồng bộ trạng thái và kiểm tra độ ổn định.</div>
+                    </div>
+                  </div>
+                  <div class="status-badge wait">CHỜ HOÀN TẤT</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-title">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Tiến độ từng hạng mục</span>
+              </div>
+
+              <div class="mini-progress-list">
+                <div class="mini-progress-item">
+                  <div class="mini-progress-head">
+                    <div class="mini-progress-name">Tối ưu dữ liệu</div>
+                    <div class="mini-progress-value">84%</div>
+                  </div>
+                  <div class="mini-progress-track">
+                    <div class="mini-progress-fill" style="width:84%"></div>
+                  </div>
+                </div>
+
+                <div class="mini-progress-item">
+                  <div class="mini-progress-head">
+                    <div class="mini-progress-name">Cập nhật bảo mật</div>
+                    <div class="mini-progress-value">67%</div>
+                  </div>
+                  <div class="mini-progress-track">
+                    <div class="mini-progress-fill" style="width:67%"></div>
+                  </div>
+                </div>
+
+                <div class="mini-progress-item">
+                  <div class="mini-progress-head">
+                    <div class="mini-progress-name">Tăng tốc hiển thị</div>
+                    <div class="mini-progress-value">76%</div>
+                  </div>
+                  <div class="mini-progress-track">
+                    <div class="mini-progress-fill" style="width:76%"></div>
+                  </div>
+                </div>
+
+                <div class="mini-progress-item">
+                  <div class="mini-progress-head">
+                    <div class="mini-progress-name">Kiểm tra cuối</div>
+                    <div class="mini-progress-value">42%</div>
+                  </div>
+                  <div class="mini-progress-track">
+                    <div class="mini-progress-fill" style="width:42%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-title">
+                <i class="fa-solid fa-circle-question"></i>
+                <span>Câu hỏi thường gặp</span>
+              </div>
+
+              <div class="faq-list">
+                <div class="faq-item">
+                  <button class="faq-question">
+                    <span>Tại sao không thể bấm vào app phía dưới?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <div class="faq-answer">
+                    bảo trì đang được thiết kế để chặn hoàn toàn mọi thao tác xuống ứng dụng nền, tránh lỗi trong thời gian nâng cấp.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-question">
+                    <span>Tại sao giờ có thể kéo lên xem thêm?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <div class="faq-answer">
+                    Bản này đã tách rõ vùng chặn nền và vùng nội dung cuộn được. Bạn có thể cuộn trong bảo trì, nhưng không thể tương tác với app phía dưới.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-question">
+                    <span>App Cập Nhật làm gì</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <div class="faq-answer">
+                    App cập nhật để cải tiến thêm nhiều chức năng và giao diện và hệ thống hesot game free fire !
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-title">
+                <i class="fa-solid fa-headset"></i>
+                <span>Thông tin hỗ trợ</span>
+              </div>
+
+              <div class="contact-box">
+                <div class="contact-item">
+                  <i class="fa-solid fa-envelope"></i>
+                  <div>
+                    Kênh hỗ trợ bảo trì nội bộ : <br />
+                    lehahuan1@gmail.com
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  <div>
+                    Zalo Hỗ Trợ<br />
+                    0379435045
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <i class="fa-solid fa-bell"></i>
+                  <div>
+                    Trạng thái sẽ tự động cập nhật trong giao diện bảo trì mà không cần tải lại trang.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-title">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <span>Hiệu ứng giao diện</span>
+              </div>
+
+              <div class="small-note" style="margin-top:0">
+                Giao diện hiện tại đã có aurora glow, particles, scanline, animated rings, glassmorphism, progress shimmer và drawer kéo thả.
+              </div>
+
+              <div class="action-row" style="margin-top:12px; margin-bottom:0;">
+                <button class="action-btn primary" id="boostFxBtn">
+                  <i class="fa-solid fa-stars"></i> Bật hiệu ứng mạnh hơn
+                </button>
+                <button class="action-btn secondary" id="collapseDrawerBtn">
+                  <i class="fa-solid fa-down-left-and-up-right-to-center"></i> Thu gọn panel
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="drawer-footer-space"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* =========================
+       CẤU HÌNH ẢNH NỀN
+       Thay link ảnh trực tiếp ở đây
+    ========================= */
+    const APP_BACKGROUND_URL =
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAgKa8IR79LZwjr7v9_ZE3VTxoMUu7hpVCfkGth6mO9yPEM2zbohs1kkPB&s=10";
+
+    const FALLBACK_BACKGROUND_URL =
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAgKa8IR79LZwjr7v9_ZE3VTxoMUu7hpVCfkGth6mO9yPEM2zbohs1kkPB&s=10";
+
+    const appBackground = document.getElementById("appBackground");
+    const bgFallback = document.getElementById("bgFallback");
+    const loadingScreen = document.getElementById("loadingScreen");
+
+    function preloadImage(url) {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.onload = () => resolve(url);
+        img.onerror = () => reject(new Error("Image load failed"));
+        img.referrerPolicy = "no-referrer";
+        img.src = url;
+      });
+    }
+
+    async function setupBackground() {
+      try {
+        await preloadImage(APP_BACKGROUND_URL);
+        appBackground.src = APP_BACKGROUND_URL;
+        appBackground.style.opacity = "1";
+        bgFallback.classList.remove("show");
+      } catch (error) {
+        try {
+          await preloadImage(FALLBACK_BACKGROUND_URL);
+          appBackground.src = FALLBACK_BACKGROUND_URL;
+          appBackground.style.opacity = "1";
+          bgFallback.classList.remove("show");
+        } catch (error2) {
+          bgFallback.classList.add("show");
+        }
+      } finally {
+        setTimeout(() => {
+          loadingScreen.classList.add("hide");
+        }, 500);
+      }
+    }
+
+    setupBackground();
+
+    /* =========================
+       PARTICLES / STREAKS
+    ========================= */
+    const particles = document.getElementById("particles");
+    const streaks = document.getElementById("streaks");
+
+    function createParticles() {
+      for (let i = 0; i < 38; i++) {
+        const p = document.createElement("span");
+        p.className = "particle";
+
+        const size = Math.random() * 7 + 3;
+        p.style.width = size + "px";
+        p.style.height = size + "px";
+        p.style.left = Math.random() * 100 + "vw";
+        p.style.animationDuration = (Math.random() * 7 + 7) + "s";
+        p.style.animationDelay = (Math.random() * 6) + "s";
+        p.style.opacity = Math.random() * 0.5 + 0.15;
+
+        particles.appendChild(p);
+      }
+    }
+
+    function createStreaks() {
+      for (let i = 0; i < 16; i++) {
+        const s = document.createElement("span");
+        s.className = "streak";
+        s.style.left = Math.random() * 100 + "vw";
+        s.style.animationDuration = (Math.random() * 2 + 3.8) + "s";
+        s.style.animationDelay = (Math.random() * 5) + "s";
+        s.style.opacity = Math.random() * 0.18 + 0.08;
+        streaks.appendChild(s);
+      }
+    }
+
+    createParticles();
+    createStreaks();
+
+    /* =========================
+       CLOCK
+    ========================= */
+    const timeNow = document.getElementById("timeNow");
+
+    function updateClock() {
+      const now = new Date();
+      const h = String(now.getHours()).padStart(2, "0");
+      const m = String(now.getMinutes()).padStart(2, "0");
+      const s = String(now.getSeconds()).padStart(2, "0");
+      timeNow.textContent = h + ":" + m + ":" + s;
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+
+    /* =========================
+       PROGRESS UI
+    ========================= */
+    const progressBar = document.getElementById("progressBar");
+    const progressPercent = document.getElementById("progressPercent");
+    const progressText = document.getElementById("progressText");
+    const systemTitle = document.getElementById("systemTitle");
+    const systemStatus = document.getElementById("systemStatus");
+    const serverStatus = document.getElementById("serverStatus");
+    const stepItems = document.querySelectorAll(".step-item");
+
+    const progressStates = [
+      {
+        percent: 18,
+        width: "18%",
+        text: "Đang chuẩn bị môi trường bảo trì...",
+        title: "Đang khởi chạy quy trình bảo trì hệ thống",
+        status: "ĐANG XỬ LÝ",
+        server: "Khởi tạo",
+        activeStep: 0,
+        doneSteps: []
+      },
+      {
+        percent: 34,
+        width: "34%",
+        text: "Đang sao lưu dữ liệu và tối ưu vùng nhớ tạm...",
+        title: "Đồng bộ cơ sở dữ liệu và dữ liệu ứng dụng",
+        status: "ĐANG XỬ LÝ",
+        server: "Sao lưu",
+        activeStep: 0,
+        doneSteps: []
+      },
+      {
+        percent: 56,
+        width: "56%",
+        text: "Đang cập nhật lớp bảo mật và kiểm tra máy chủ...",
+        title: "Tinh chỉnh bảo mật và tăng tính ổn định",
+        status: "ĐỒNG BỘ",
+        server: "Ổn định",
+        activeStep: 1,
+        doneSteps: [0]
+      },
+      {
+        percent: 74,
+        width: "74%",
+        text: "Đang cập nhật giao diện, chuyển cảnh và tối ưu hiệu ứng...",
+        title: "Hoàn thiện mô-đun hiển thị và làm mượt giao diện",
+        status: "ĐANG TRIỂN KHAI",
+        server: "Nâng cấp",
+        activeStep: 1,
+        doneSteps: [0]
+      },
+      {
+        percent: 91,
+        width: "91%",
+        text: "Đang triển khai bản cập nhật cuối cùng...",
+        title: "Triển khai phiên bản bảo trì mới",
+        status: "SẮP HOÀN TẤT",
+        server: "Triển khai",
+        activeStep: 2,
+        doneSteps: [0, 1]
+      },
+      {
+        percent: 99,
+        width: "99%",
+        text: "Sắp hoàn tất quá trình bảo trì, vui lòng chờ...",
+        title: "Kiểm tra lần cuối trước khi mở lại hệ thống",
+        status: "KIỂM TRA",
+        server: "Xác minh",
+        activeStep: 2,
+        doneSteps: [0, 1]
+      }
+    ];
+
+    let progressIndex = 0;
+
+    function updateProgressUI() {
+      const item = progressStates[progressIndex];
+
+      progressText.style.opacity = "0";
+      progressPercent.style.opacity = "0";
+      systemTitle.style.opacity = "0";
+      serverStatus.style.opacity = "0";
+
+      setTimeout(() => {
+        progressBar.style.width = item.width;
+        progressPercent.textContent = item.percent + "%";
+        progressText.textContent = item.text;
+        systemTitle.textContent = item.title;
+        systemStatus.textContent = item.status;
+        serverStatus.textContent = item.server;
+
+        progressText.style.opacity = "1";
+        progressPercent.style.opacity = "1";
+        systemTitle.style.opacity = "1";
+        serverStatus.style.opacity = "1";
+      }, 180);
+
+      stepItems.forEach((el, index) => {
+        el.classList.remove("active", "done");
+        if (item.doneSteps.includes(index)) {
+          el.classList.add("done");
+        }
+        if (index === item.activeStep) {
+          el.classList.add("active");
+        }
+      });
+
+      progressIndex = (progressIndex + 1) % progressStates.length;
+    }
+
+    updateProgressUI();
+    setInterval(updateProgressUI, 2400);
+
+    /* =========================
+       FAQ
+    ========================= */
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach((item) => {
+      const btn = item.querySelector(".faq-question");
+      btn.addEventListener("click", () => {
+        item.classList.toggle("open");
+      });
+    });
+
+    /* =========================
+       DRAWER CONTROL
+    ========================= */
+    const drawer = document.getElementById("drawer");
+    const drawerHandleZone = document.getElementById("drawerHandleZone");
+    const drawerContent = document.getElementById("drawerContent");
+    const drawerToggleBtn = document.getElementById("drawerToggleBtn");
+    const openDrawerBtn = document.getElementById("openDrawerBtn");
+    const collapseDrawerBtn = document.getElementById("collapseDrawerBtn");
+
+    let drawerOpen = false;
+    let isDraggingDrawer = false;
+    let dragStartY = 0;
+    let drawerStartTranslate = 0;
+    let currentTranslate = 0;
+
+    function getCollapsedTranslate() {
+      const rootStyle = getComputedStyle(document.documentElement);
+      const expanded = parseFloat(rootStyle.getPropertyValue("--drawer-expanded"));
+      const collapsed = parseFloat(rootStyle.getPropertyValue("--drawer-collapsed"));
+      const unitExpanded = rootStyle.getPropertyValue("--drawer-expanded").includes("vh")
+        ? window.innerHeight * (expanded / 100)
+        : expanded;
+      const unitCollapsed = rootStyle.getPropertyValue("--drawer-collapsed").includes("vh")
+        ? window.innerHeight * (collapsed / 100)
+        : collapsed;
+      return unitExpanded - unitCollapsed;
+    }
+
+    function applyDrawerState(open) {
+      drawerOpen = open;
+      drawer.classList.toggle("open", open);
+      drawerToggleBtn.innerHTML = open
+        ? '<i class="fa-solid fa-chevron-down"></i> Thu gọn'
+        : '<i class="fa-solid fa-chevron-up"></i> Mở rộng';
+    }
+
+    function openDrawer() {
+      applyDrawerState(true);
+    }
+
+    function closeDrawer() {
+      applyDrawerState(false);
+    }
+
+    function toggleDrawer() {
+      applyDrawerState(!drawerOpen);
+    }
+
+    drawerToggleBtn.addEventListener("click", toggleDrawer);
+    openDrawerBtn.addEventListener("click", openDrawer);
+    collapseDrawerBtn.addEventListener("click", closeDrawer);
+
+    function startDrawerDrag(clientY) {
+      isDraggingDrawer = true;
+      drawer.style.transition = "none";
+      dragStartY = clientY;
+      currentTranslate = drawerOpen ? 0 : getCollapsedTranslate();
+      drawerStartTranslate = currentTranslate;
+    }
+
+    function moveDrawerDrag(clientY) {
+      if (!isDraggingDrawer) return;
+
+      const deltaY = clientY - dragStartY;
+      const collapsedTranslate = getCollapsedTranslate();
+      let next = drawerStartTranslate + deltaY;
+
+      if (next < 0) next = 0;
+      if (next > collapsedTranslate) next = collapsedTranslate;
+
+      currentTranslate = next;
+      drawer.style.transform = "translateY(" + next + "px)";
+    }
+
+    function endDrawerDrag() {
+      if (!isDraggingDrawer) return;
+
+      isDraggingDrawer = false;
+      drawer.style.transition = "";
+
+      const collapsedTranslate = getCollapsedTranslate();
+      const threshold = collapsedTranslate / 2;
+
+      if (currentTranslate < threshold) {
+        openDrawer();
+      } else {
+        closeDrawer();
+      }
+    }
+
+    drawerHandleZone.addEventListener("mousedown", (e) => {
+      startDrawerDrag(e.clientY);
+    });
+
+    window.addEventListener("mousemove", (e) => {
+      moveDrawerDrag(e.clientY);
+    });
+
+    window.addEventListener("mouseup", () => {
+      endDrawerDrag();
+    });
+
+    drawerHandleZone.addEventListener("touchstart", (e) => {
+      if (!e.touches.length) return;
+      startDrawerDrag(e.touches[0].clientY);
+    }, { passive: true });
+
+    window.addEventListener("touchmove", (e) => {
+      if (!isDraggingDrawer || !e.touches.length) return;
+      moveDrawerDrag(e.touches[0].clientY);
+    }, { passive: true });
+
+    window.addEventListener("touchend", () => {
+      endDrawerDrag();
+    });
+
+    /* =========================
+       FX BOOST
+    ========================= */
+    const toggleThemeGlowBtn = document.getElementById("toggleThemeGlowBtn");
+    const boostFxBtn = document.getElementById("boostFxBtn");
+    const versionChip = document.getElementById("versionChip");
+
+    let boostedFx = false;
+
+    function setBoostEffects(enabled) {
+      boostedFx = enabled;
+
+      if (enabled) {
+        document.documentElement.style.setProperty("--shadow-glow", "0 0 55px rgba(57, 231, 255, 0.16)");
+        document.documentElement.style.setProperty("--drawer-expanded", "74vh");
+        versionChip.innerHTML = '<i class="fa-solid fa-sparkles"></i> Maintenance UI v3.0 FX+';
+        toggleThemeGlowBtn.innerHTML = '<i class="fa-solid fa-circle-half-stroke"></i> Giảm hiệu ứng giao diện';
+        boostFxBtn.innerHTML = '<i class="fa-solid fa-check"></i> Đang bật hiệu ứng mạnh';
+      } else {
+        document.documentElement.style.setProperty("--shadow-glow", "0 0 40px rgba(57, 231, 255, 0.10)");
+        document.documentElement.style.setProperty("--drawer-expanded", "68vh");
+        versionChip.innerHTML = '<i class="fa-solid fa-microchip"></i> Maintenance UI v3.0';
+        toggleThemeGlowBtn.innerHTML = '<i class="fa-solid fa-wand-magic-sparkles"></i> Tăng hiệu ứng giao diện';
+        boostFxBtn.innerHTML = '<i class="fa-solid fa-stars"></i> Bật hiệu ứng mạnh hơn';
+      }
+
+      if (!drawerOpen) {
+        drawer.style.transform = "";
+      }
+    }
+
+    toggleThemeGlowBtn.addEventListener("click", () => {
+      setBoostEffects(!boostedFx);
+    });
+
+    boostFxBtn.addEventListener("click", () => {
+      setBoostEffects(true);
+    });
+
+    /* =========================
+       CHẶN TƯƠNG TÁC APP NỀN
+       nhưng KHÔNG chặn cuộn trong main card
+       và drawer content
+    ========================= */
+    const maintenanceOverlay = document.getElementById("maintenanceOverlay");
+    const overlayBlocker = document.getElementById("overlayBlocker");
+    const mainCard = document.getElementById("mainCard");
+    const mainCardScroll = document.getElementById("mainCardScroll");
+
+    function stopEvent(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    }
+
+    [
+      "click",
+      "dblclick",
+      "contextmenu",
+      "mousedown",
+      "mouseup",
+      "pointerdown",
+      "pointerup",
+      "touchstart",
+      "touchend"
+    ].forEach((eventName) => {
+      overlayBlocker.addEventListener(eventName, stopEvent, { passive: false });
+    });
+
+    /* Chặn cuộn body nền */
+    function preventBodyScroll(e) {
+      const target = e.target;
+
+      const allowScroll =
+        mainCard.contains(target) ||
+        drawer.contains(target);
+
+      if (!allowScroll) {
+        e.preventDefault();
+      }
+    }
+
+    document.addEventListener("wheel", preventBodyScroll, { passive: false, capture: true });
+    document.addEventListener("touchmove", preventBodyScroll, { passive: false, capture: true });
+
+    /* Chặn phím điều khiển app nền */
+    window.addEventListener("keydown", (e) => {
+      const blockedKeys = [
+        "ArrowUp",
+        "ArrowDown",
+        "ArrowLeft",
+        "ArrowRight",
+        "PageUp",
+        "PageDown",
+        "Home",
+        "End",
+        " ",
+        "Enter"
+      ];
+
+      if (blockedKeys.includes(e.key)) {
+        const active = document.activeElement;
+        const allowInsideOverlay =
+          maintenanceOverlay.contains(active) ||
+          mainCard.contains(e.target) ||
+          drawer.contains(e.target);
+
+        if (!allowInsideOverlay) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+      }
+    }, true);
+
+    document.addEventListener("selectstart", (e) => {
+      if (!mainCard.contains(e.target) && !drawer.contains(e.target)) {
+        e.preventDefault();
+      }
+    });
+
+    document.addEventListener("dragstart", (e) => {
+      if (!mainCard.contains(e.target) && !drawer.contains(e.target)) {
+        e.preventDefault();
+      }
+    });
+
+    /* =========================
+       CHO PHÉP SCROLL MƯỢT TRONG CARD/DRAWER
+    ========================= */
+    function absorbEdgeScroll(container) {
+      let startY = 0;
+
+      container.addEventListener("touchstart", (e) => {
+        if (e.touches.length) {
+          startY = e.touches[0].clientY;
+        }
+      }, { passive: true });
+
+      container.addEventListener("touchmove", (e) => {
+        if (!e.touches.length) return;
+
+        const currentY = e.touches[0].clientY;
+        const deltaY = currentY - startY;
+
+        const atTop = container.scrollTop <= 0;
+        const atBottom =
+          Math.ceil(container.scrollTop + container.clientHeight) >= container.scrollHeight;
+
+        if ((atTop && deltaY > 0) || (atBottom && deltaY < 0)) {
+          e.preventDefault();
+        }
+      }, { passive: false });
+    }
+
+    absorbEdgeScroll(mainCardScroll);
+    absorbEdgeScroll(drawerContent);
+
+    /* =========================
+       MỞ DRAWER SAU MỘT LÚC NHẸ
+    ========================= */
+    setTimeout(() => {
+      openDrawer();
+    }, 1200);
+
+    setTimeout(() => {
+      closeDrawer();
+    }, 3200);
+  </script>
 </body>
 </html>
