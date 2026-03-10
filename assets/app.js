@@ -620,13 +620,13 @@ const HomeCarousel = {
 
 /* ========= 10) Firebase ========= */
 const firebaseConfig = {
-  apiKey: "AIzaSyAyZlLyEbhZ8zobuV9M6Iz8a1iGE4trJig",
-  authDomain: "huanhavnedn.firebaseapp.com",
-  databaseURL: "https://huanhavnedn-default-rtdb.firebaseio.com",
-  projectId: "huanhavnedn",
-  storageBucket: "huanhavnedn.firebasestorage.app",
-  messagingSenderId: "995499839890",
-  appId: "1:995499839890:web:4e52a1bac8dccd22c1714b"
+  apiKey: "AIzaSyBighk8uEKa3_CspVQoadvcmcROg4heLZQ",
+  authDomain: "huanhavn.firebaseapp.com",
+  databaseURL: "https://huanhavn-default-rtdb.firebaseio.com",
+  projectId: "huanhavn",
+  storageBucket: "huanhavn.firebasestorage.app",
+  messagingSenderId: "485987828879",
+  appId: "1:485987828879:web:ad44d75859cbd2fdd05cfa"
 };
 
 let db = null;
