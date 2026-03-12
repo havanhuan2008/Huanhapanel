@@ -17,7 +17,38 @@
 
 
 
-
+<!-- ===== Modal Key Popup ===== -->
+<div id="keyModal" class="key-modal-overlay">
+  <div class="key-modal-box">
+    <button class="key-modal-close" id="closeKeyModal">&times;</button>
+    
+    <div class="key-modal-badge">
+      <i class="fa-solid fa-key"></i> THÔNG BÁO
+    </div>
+    
+    <h2>Kéo Xuống Cuối Cùng Để Lấy Key Miễn Phí</h2>
+    <p class="key-modal-desc">
+      Key Sử Dụng 24h <b>Update Mỗi Ngày </b> hoặc chọn
+      <b>Hoặc Mua Key Vip Để Sử Dụng</b> Lâu Dài Hơn Và Bảo Hành An Toàn !
+    </p>
+    
+    <div class="key-modal-actions">
+      <button id="goKeyFree" class="btn-key-free">
+        <i class="fa-solid fa-arrow-down"></i>
+        Vuốt xuống cuối lấy Key Free
+      </button>
+      
+      <a href="https://your-vip-link.com" class="btn-key-vip">
+        <i class="fa-solid fa-crown"></i>
+        Zalo : 0379435045
+      </a>
+    </div>
+    
+    <div class="key-modal-note">
+      Free cập nhật mỗi ngày • VIP ưu tiên tốc độ và ổn định hơn
+    </div>
+  </div>
+</div>
 
 
 
@@ -232,7 +263,8 @@
 </div>
 <div class="login-title">
 <strong>Đăng nhập bằng Key</strong>
-<span>Nhập key để truy cập. Nếu đã đăng nhập trước đó, hệ thống sẽ tự động đăng nhập lại khi mở app.</span>
+<span>Nhập key để truy cập. Nếu đã đăng nhập trước đó, hệ thống sẽ tự động đăng nhập</span>
+
 </div>
 <!-- Key input + eye -->
 <div class="login-input">
@@ -250,10 +282,18 @@
 <div class="login-icon-row">
 <button class="mini-hex" onclick="pasteFromClipboard()" title="Dán từ clipboard">
 <i class="fa-solid fa-paste"></i> Dán key
+
             </button>
 <button class="mini-hex danger" onclick="clearSavedKey()" title="Xoá key đã lưu">
 <i class="fa-solid fa-eraser"></i> Xoá key
             </button>
+            
+            
+</button>
+
+
+
+
 </div>
 </div>
 <div class="login-actions">
@@ -287,6 +327,33 @@
 <h5><i class="fa-solid fa-screwdriver-wrench"></i> Tips</h5>
 <p>Vào <b style="color:var(--accent-2)">Cài đặt</b> để bật/tắt click sound, particles, hoặc đổi accent (Gold/Aqua).</p>
 </div>
+
+
+<div class="info-box info-gold keyfree-box">
+  <h5><i class="fa-solid fa-screwdriver-wrench"></i> Key Free</h5>
+  <p>
+    Miễn Phí <b class="highlight">Update</b> Mỗi Ngày Bạn Hãy Vượt Link 1 Lần Mỗi Ngày Để Lấy Key Sử Dụng 
+  </p>
+
+  <div class="link-copy-box">
+    <i class="fa-solid fa-link link-icon"></i>
+    <input 
+      type="text" 
+      id="keyFreeLink" 
+      value="https://link4m.com/0FQhuhUe"
+      readonly
+    >
+    <button class="copy-btn" onclick="copyKeyLink()">
+      <i class="fa-regular fa-copy"></i> Copy
+    </button>
+  </div>
+
+  <small id="copyStatus" class="copy-status"></small>
+</div>
+
+
+
+
 </div>
 <div class="tab-panel" id="tab-warn">
 <div class="info-box info-red">
