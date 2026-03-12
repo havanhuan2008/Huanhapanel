@@ -1545,6 +1545,108 @@ window.addEventListener('load', async function() {
   window.addEventListener('offline', () => toastWarn('Mất kết nối mạng.'));
 });
 
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const modal = document.getElementById("keyModal");
+  const closeBtn = document.getElementById("closeKeyModal");
+  const goKeyFree = document.getElementById("goKeyFree");
+  
+  // ID phần chứa key free ở dưới trang
+  const freeSection = document.getElementById("key-free-section");
+  
+  // Chỉ hiện 1 lần mỗi phiên mở app
+  const hasShown = sessionStorage.getItem("key_modal_shown");
+  
+  if (!hasShown) {
+    setTimeout(() => {
+      modal.classList.add("show");
+      sessionStorage.setItem("key_modal_shown", "true");
+    }, 500);
+  }
+  
+  closeBtn.addEventListener("click", function() {
+    modal.classList.remove("show");
+  });
+  
+  modal.addEventListener("click", function(e) {
+    if (e.target === modal) {
+      modal.classList.remove("show");
+    }
+  });
+  
+  goKeyFree.addEventListener("click", function() {
+    modal.classList.remove("show");
+    
+    if (freeSection) {
+      setTimeout(() => {
+        freeSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }, 200);
+    } else {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+      });
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function copyKeyLink() {
+  const input = document.getElementById("keyFreeLink");
+  const status = document.getElementById("copyStatus");
+  
+  input.select();
+  input.setSelectionRange(0, 99999);
+  
+  navigator.clipboard.writeText(input.value).then(() => {
+    status.textContent = "Đã copy link thành công!";
+  }).catch(() => {
+    document.execCommand("copy");
+    status.textContent = "Đã copy link thành công!";
+  });
+  
+  setTimeout(() => {
+    status.textContent = "";
+  }, 2000);
+}
+
+
+
+
+
+
+
+
 /* ========= 21) Expose functions to window (HTML onclick) ========= */
 window.openMenu = openMenu;
 window.closeMenu = closeMenu;
