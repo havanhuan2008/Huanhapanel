@@ -1,1 +1,1696 @@
-var _0xec97875d_arr=["menuKey","Có lỗi","load","main-app","tag warn","Đang kiểm tra thiết bị&server...","Đang tạo Device ID...","is-active","Giới thiệu","devices","Device ID:","--blurAmt","--radiusCard","Đã reset thiết bị.","step-firebase","devicesStatus","pointerdown","key_modal_shown","fa-ban","Không copy được(trình duyệt chặn).","password","Không tải được thông tin key.","Reset","<i class="fa-solid fa-check"></i>OK","Đã tắt.","square","Kết nối Firebase OK","closeKeyModal","aria-disabled","HH SUPER","2-digit","Sau đó bạn cần đăng nhập lại trên các thiết bị.<br>","infoLastLogin","device-actions","startupActions","Đã bật.","hhsuper_last_key","fa-solid fa-trash",".status-pill","color:var(--accent-2)","Đang kiểm tra mạng...","Đã ẩn key.","div","bad","Đã áp dụng DPI:","fa-check","<i class="fa-solid fa-spinner fa-spin"></i>Đang áp dụng","--radiusBtn","st-blur-val","hud","sens-reddot","Có lỗi xảy ra,vui lòng thử lại!","pointerleave","menuOverlay","--radiusTile","rgba(255,255,255,0.06)","page-checkkey","startup-overlay",".carousel-nav.next","keyStatusPill","aqua","Đã copy.","KẾT NỐI THẤT BẠI ✕(Bạn có thể thử lại)","pointerup","tag ok","hhsuper_device_id","keypress","Không đọc được thông tin trình duyệt.","active","/devices/","Đã xóa thiết bị.","Không xác định(browser hạn chế)","https:","Chưa có","<div style="text-align:left;line-height:1.6;font-size:13px;color:#0f172a">","huanhavn.firebasestorage.app","smooth","<span class="skeleton" style="height:14px"></span>","loginBrandTyping","copyStatus","keys/","tag bad","warning","hud-toast ","sens-scope","Key đã hết hạn ngày ","step-device","<span class="shine"></span><i class="fa-solid fa-spinner fa-spin"></i>Đang kiểm tra...","0.92","input","Không xóa được(rules chặn hoặc không đủ quyền).","Đang hiển thị key.","flex","Hết hạn","tabContactBtn","Chưa có key.","Không tìm thấy dữ liệu key.","huanhavn","hidden","miniDevices","fa-circle-check","copyText('${id}')","AIzaSyBighk8uEKa3_CspVQoadvcmcROg4heLZQ","Không kết nối được Firebase.","offset ","Đã áp dụng preset:","text-align:left;line-height:1.6;font-size:13px;color:#0f172a","Đã dán key từ clipboard.","login-screen","highpass","Enter","fxCanvas","eyeIcon","(prefers-reduced-motion:reduce)","step-server","menuDevice","DOMContentLoaded","Đã làm mới thông tin key."," • ping:blocked","Hành động này sẽ xóa<b>tất cả</b>thiết bị đã ghi nhận trong key.<br>","• Hiệu ứng click “tạch”+ripple+HUD gaming.<br>","Đang bắt tay Firebase...","tabInfoBtn","Xóa","page-settings","<div class="muted">Chưa có thiết bị nào.</div>","<div class="muted">+${ids.length-4}thiết bị khác(xem tab<b>Thiết bị</b>).</div>","vi-VN","fa-solid fa-copy","loading","click","</div>","Không kiểm tra ping(rules chặn).","<i class="fa-solid fa-xmark"></i>OFF","object","block","rgba(234,240,255,0.86)","show","infoExpire","#bfffe4","<div class="muted">Không tải được danh sách thiết bị.</div>","Đã đăng xuất key.","st-round-val","<span class="shine"></span><i class="fa-solid fa-check"></i>Thành công","<i class="fa-solid fa-circle-notch fa-spin"></i>...","Offline(không có mạng)","<span style="color:#ef4444"><b>Lưu ý:</b>Đây là thiết bị hiện tại. Xóa xong có thể phải đăng nhập lại!</span>","Không tạo được Device ID.","DB chưa sẵn sàng.","translateX(-${this.index*100}%)","startupProgress","fa-solid fa-eye",".carousel-track",".page","gold","--fontScale","Online","visible","linear-gradient(to right,rgba(239,68,68,0.98)${p}%,rgba(255,255,255,0.10)${p}%)","copy","Đã copy link thành công!","Firebase chưa khởi tạo.","Mất kết nối mạng.","error-msg","step-network","st-clicksound","st-key","st-haptic","st-device","<i class="fa-solid fa-circle-notch fa-spin"></i>Đang tải","infoKey","status-pill ","login-btn","tick","Đang kiểm tra trình duyệt...","homeCarousel","st-glow","fa-circle-exclamation"," • ",".tag","KẾT NỐI THÀNH CÔNG ✓"," thiết bị!","Server OK • ",".sensitivity-slider","<i class="fa-solid fa-check"></i>ON","Vui lòng nhập key!","• Overlay check thiết bị+server khi vào app.<br>","<i class="fa-solid ${st.icon}"></i>${st.text}","text","Vui lòng nhập một mức DPI hợp lệ!","tạch","tabWarnBtn","Nhập key để đăng nhập.","st-reducemotion","Khoá"," • ping:n/a","removeDevice('${id}')","infoNote","sens-general","key-free-section","1:485987828879:web:ad44d75859cbd2fdd05cfa","devicesList","shake 0.5s","goKeyFree","tab-info","infoDevice","rgb(${r},${g},${b})",".carousel-nav.prev","st-particles","Đã reset cài đặt."," • ping:","#ffd0d0","server/ping","Đăng nhập thành công!","button,a,.menu-item,.chip-btn,.tab-btn,.quick-tile,.hex-btn,.mini-hex,.dpi-btn,.drawer-close,.eye-btn,.preset-btn,.social-link,.carousel-nav,.carousel-dot,label.hex-switch","danger","dev-","Key không tồn tại,vui lòng thử lại!","margin-bottom:10px","value","huanhavn.firebaseapp.com","err","Xóa thiết bị?","Sever check:FAIL","tag","st-round","page-devices","offline","Đã xoá key đã lưu.","Đang tự đăng nhập...","<b>HH SUPER</b>-Ứng dụng đăng nhập bằng key(UI Deluxe).<br>","Firebase init error","pointerenter","Hà Văn Huấn",".carousel-dot","suspended","rgba(16,185,129,0.18)","warn","<i class="fa-solid fa-circle-exclamation"></i>Lỗi","fa-triangle-exclamation","error-text","dpi-input","/devices","static","resize","Không","status-pill","true","https://huanhavn-default-rtdb.firebaseio.com","--radiusInput","small","Lỗi tải thiết bị.","st-glow-val","startupMsg","• Auto login khi có key đã lưu.<br>","dpi-apply","Không reset được(rules chặn hoặc không đủ quyền).","numeric","tab-warn","Not secure","visibilitychange",".info/serverTimeOffset","fa-clock","/","Lỗi Firebase.","Đã cập nhật cài đặt.","rgba(255,255,255,${alpha})","online","Key đã bị khoá!","fa-circle-info","step-browser","Key chứa ký tự không hợp lệ!","• Giới hạn thiết bị bằng transaction.<br>","Secure","Thành công","Clipboard trống.","no-anim","<i class="fa-solid fa-microchip"></i>${ids.length}thiết bị","drawer","device-item","ripple","sens-sniper","Thông tin","hhsuper_settings_v2","keyFreeLink","st-accent","Đang kiểm tra server...","--thumbColor","relative","<i class="fa-solid ${icon}"></i><span>${msg||'Thông báo'}</span>","Unknown","page-home","Chưa có key đang dùng.","st-blur","status-pill bad","particles","mono","keyModal","Sever check:OK","Sắp hết","<i class="fa-solid fa-triangle-exclamation"></i>WARN","-val","start","Mạng đã kết nối.","localhost","lienhe.html","Không đọc được clipboard(trình duyệt chặn).","Key đã đạt giới hạn ","Cảnh báo","info","login-key","status-pill ok","rgba(234,240,255,0.92)","fa-solid fa-eye-slash",".info/connected","st-font","485987828879","#ffe8b3","<i class="fa-solid fa-xmark"></i>FAIL","undefined",".carousel-slide","min-width:0","authorText","infoDevices","<i class="fa-solid fa-check"></i>Xong","Đóng","st-font-val","button,a,.menu-item,.chip-btn,.tab-btn,.quick-tile,.hex-btn,.mini-hex,.dpi-btn,.drawer-close,.eye-btn,.preset-btn,.social-link,.carousel-nav,.carousel-dot","tab-contact","Hủy","Reset toàn bộ thiết bị?","<div class="muted">Chưa có dữ liệu.</div>","span","--glowPower","none"];var _0x78fda792=function(i){return _0xec97875d_arr[i];};var _0xec97875d=_0x78fda792;/*===========================_0x3e160e _0xf235b5 _0xce411d _0x6f74c9(_0xe15611 _0xa3d5c9)-_0x6a14e6 _0xce411d _0xcf04e6(_0xcffd9c _0xec97875d(0),_0x05b71a,_0xbf0b7a)-_0xec8dfc _0xdc80e3 _0x52d9f0 _0x0d7f19+_0x82b796-_0x1cfd04 _0xd26005:_0xa3bcb8,_0x41c931,_0x9e2eed-_0xf8103e _0x45d5ad _0xd8391b/_0x3cee7e _0x8ea7eb _0xd3b192 _0x6cb001 _0x1c9bc5===========================*//*=========0)_0x99eafa=========*/const $$=(_0x4b13b1,_0xacee9f=document)=>Array.from(_0xacee9f._0x087d25(_0x4b13b1));const $=(_0x4b13b1,_0xacee9f=document)=>_0xacee9f._0x465500(_0x4b13b1);const _0xf95bf9=(_0xebf4e3)=>new Promise(_0xea14da=>_0xe9761f(_0xea14da,_0xebf4e3));/*=========1)_0xce411d _0x9e2eed(_0x7a7a98)=========*/const _0xb50214=_0xec97875d(1);const _0xd9c5e7={_0x9cf0bf:_0xec97875d(2),//_0xec97875d(2)|_0xec97875d(3)_0x9905d9:true,//_0x507642 _0xec97875d(0)_0x34153a:false,//_0xbf8b4f if _0x7ea840_0x9a1b6b:true,//_0x044778 _0x04c10c_0x4c3d81:false,//_0xe71a4b _0x80fafc _0x0603f4//_0x96687a:_0xc6eabe _0xce411d _0x908431_0x5c50c7:95,//0..120(%)_0x174bc8:16,//6..24(_0xf6b73c)_0x8298cc:100,//90..110(%)_0x835f5f:26//18..34(_0xf6b73c)};const _0xb6c3c2={_0x541692:{..._0xd9c5e7},_0xaea15b(){try{const _0x268587=_0xbed4f5._0x69c00d(_0xb50214);if(!_0x268587)return;const _0x308f41=JSON._0x492ba5(_0x268587);if(_0x308f41&&typeof _0x308f41===_0xec97875d(4)){this._0x541692={..._0xd9c5e7,..._0x308f41};}}catch(_0xd7bbbc){}},_0xeba67d(){try{_0xbed4f5._0xb8fce4(_0xb50214,JSON._0x8f7e20(this._0x541692));}catch(_0xd7bbbc){}},_0xa81f51(){const _0x212912=this._0x541692;//_0xbbdade _0xb8047adocument._0x1ea15d._0xfb8ec8._0x9cf0bf=(_0x212912._0x9cf0bf===_0xec97875d(3))?_0xec97875d(3):_0xec97875d(2);document._0x1ea15d._0xfb8ec8._0x9a1b6b=_0x212912._0x9a1b6b?'1':'0';document._0x1ea15d._0xfb8ec8._0x4c3d81=_0x212912._0x4c3d81?'1':'0';//_0x02cda2 _0x0c7602(_0x96687a _0x462515 _0x908431)const _0xacee9f=document._0x83ba92;const _0x174bc8=Math._0x01fa32(6,Math._0x6d7463(24,Number(_0x212912._0x174bc8||16)));const _0x5c50c7=Math._0x01fa32(0,Math._0x6d7463(120,Number(_0x212912._0x5c50c7??95)));const _0x8298cc=Math._0x01fa32(90,Math._0x6d7463(110,Number(_0x212912._0x8298cc??100)));const _0x835f5f=Math._0x01fa32(18,Math._0x6d7463(34,Number(_0x212912._0x835f5f??26)));_0xacee9f._0x2cd412._0xe36c93(_0xec97875d(5),_0x174bc8+'_0xf6b73c');_0xacee9f._0x2cd412._0xe36c93(_0xec97875d(6),String(_0x5c50c7/100));_0xacee9f._0x2cd412._0xe36c93(_0xec97875d(7),String(_0x8298cc/100));//_0x835f5f _0x83e6d1_0xacee9f._0x2cd412._0xe36c93(_0xec97875d(8),_0x835f5f+'_0xf6b73c');_0xacee9f._0x2cd412._0xe36c93(_0xec97875d(9),Math._0x01fa32(18,_0x835f5f-4)+'_0xf6b73c');_0xacee9f._0x2cd412._0xe36c93(_0xec97875d(10),Math._0x01fa32(14,_0x835f5f-10)+'_0xf6b73c');_0xacee9f._0x2cd412._0xe36c93(_0xec97875d(11),Math._0x01fa32(16,_0x835f5f-8)+'_0xf6b73c');}};/*=========2)_0xbf0b7a _0x5418cc=========*/function _0x23f47f(_0x031aa1,_0x213f55){const _0xd3df5b=document._0xc1ab00(_0xec97875d(12));if(!_0xd3df5b)return;const _0x25984f=document._0x58b027(_0xec97875d(13));_0x25984f._0x709110=_0xec97875d(14)+(_0x031aa1||_0xec97875d(15));let _0x34e10d=_0xec97875d(16);if(_0x031aa1==='_0x95d5d9')_0x34e10d=_0xec97875d(17);if(_0x031aa1===_0xec97875d(18))_0x34e10d=_0xec97875d(19);if(_0x031aa1===_0xec97875d(20))_0x34e10d=_0xec97875d(21);_0x25984f._0x98365f=_0xec97875d(22);_0xd3df5b._0x22dcad(_0x25984f);_0x8adc4c(()=>_0x25984f._0x5e8c2d._0x7ab6aa(_0xec97875d(23)));const _0x42dfcb=2300;_0xe9761f(()=>{_0x25984f._0x5e8c2d._0xb8c59a(_0xec97875d(23));_0xe9761f(()=>_0x25984f._0xb8c59a(),280);},_0x42dfcb);}function _0xb7306a(_0x213f55){_0x23f47f('_0x95d5d9',_0x213f55||_0xec97875d(24));}function _0x787e2a(_0x213f55){_0x23f47f(_0xec97875d(18),_0x213f55||_0xec97875d(25));}function _0xcda2e5(_0x213f55){_0x23f47f(_0xec97875d(15),_0x213f55||_0xec97875d(26));}function _0x603545(_0x213f55){_0x23f47f(_0xec97875d(20),_0x213f55||_0xec97875d(27));}/*=========3)_0x336a45 _0xec97875d(0)+_0xb6140d+_0x11d7c8=========*/const _0x22401c={_0xfbc74a:null,_0x6bce81:true,_0x979ecf:null,_0x6820cf(){if(this._0xfbc74a)return this._0xfbc74a;const _0xa8812e=window._0xc0733c||window._0x29705a;if(!_0xa8812e)return null;this._0xfbc74a=new _0xa8812e();return this._0xfbc74a;},_0x7ebee9(_0xfbc74a){//30ms _0x30ede2 _0x0b6527const _0x201253=0.03;const _0x3aae07=_0xfbc74a._0x3aae07;const _0x0b6527=_0xfbc74a._0xf610e9(1,Math._0xced281(_0x3aae07*_0x201253),_0x3aae07);const _0x9b8103=_0x0b6527._0x9fd450(0);for(let _0x6eab41=0;_0x6eab41<_0x9b8103._0xc46706;_0x6eab41++){_0x9b8103[_0x6eab41]=(Math._0x07336d()*2-1)*0.75;}this._0x979ecf=_0x0b6527;},_0x3d55b1(){if(!_0xb6c3c2._0x541692._0x9905d9)return;const _0xfbc74a=this._0x6820cf();if(!_0xfbc74a)return;//_0xdbdedf _0xf1c827 _0x4de2a7 _0x7e6698 _0x6de8a6if(_0xfbc74a._0x624be6===_0xec97875d(28)){_0xfbc74a._0x4de2a7().catch(()=>{});}if(!this._0x979ecf)this._0x7ebee9(_0xfbc74a);const _0x573a87=_0xfbc74a._0x6463aa;//_0x507642 _0xec97875d(29):_0x61599c _0x27859d _0x052889const _0x7c5fc0=_0xfbc74a._0x5842bd();const _0xa5b97e=_0xfbc74a._0x4af6c8();_0x7c5fc0._0x031aa1=_0xec97875d(30);_0x7c5fc0._0xd0b331._0xa04e1c(1900,_0x573a87);_0xa5b97e._0xa5b97e._0xa04e1c(0.0001,_0x573a87);_0xa5b97e._0xa5b97e._0xd892dd(0.24,_0x573a87+0.003);_0xa5b97e._0xa5b97e._0xd892dd(0.0001,_0x573a87+0.045);_0x7c5fc0._0xe1d136(_0xa5b97e);_0xa5b97e._0xe1d136(_0xfbc74a._0xded996);_0x7c5fc0._0x1a884d(_0x573a87);_0x7c5fc0._0xd21bde(_0x573a87+0.05);//_0x85516f _0x30ede2 _0x9adf84 _0x2e13df _0x0619f2 _0xf76d38 _0xec97875d(0)const _0x30ede2=_0xfbc74a._0x7a939d();_0x30ede2._0x0b6527=this._0x979ecf;const _0xf17790=_0xfbc74a._0x4af6c8();const _0x7f583a=_0xfbc74a._0xfe82c1();_0x7f583a._0x031aa1=_0xec97875d(31);_0x7f583a._0xd0b331._0xa04e1c(1200,_0x573a87);_0xf17790._0xa5b97e._0xa04e1c(0.0001,_0x573a87);_0xf17790._0xa5b97e._0xd892dd(0.16,_0x573a87+0.002);_0xf17790._0xa5b97e._0xd892dd(0.0001,_0x573a87+0.03);_0x30ede2._0xe1d136(_0x7f583a);_0x7f583a._0xe1d136(_0xf17790);_0xf17790._0xe1d136(_0xfbc74a._0xded996);_0x30ede2._0x1a884d(_0x573a87);_0x30ede2._0xd21bde(_0x573a87+0.035);//_0x2c2287 _0x34153aif(_0xb6c3c2._0x541692._0x34153a&&_0xff4c56._0xbf8b4f){try{_0xff4c56._0xbf8b4f(8);}catch(_0xd7bbbc){}}},_0x05b71a(_0xd7bbbc,_0x553cfe){if(!_0x553cfe)return;const _0xec4e4d=_0x553cfe._0xa1c6eb();const _0x63af2f=Math._0x01fa32(_0xec4e4d._0x6f479b,_0xec4e4d._0xde023d);const _0xc252d3=(_0xd7bbbc._0xe94fe1-_0xec4e4d._0x10ebc4)-_0x63af2f/2;const _0x67c5f9=(_0xd7bbbc._0x67f36b-_0xec4e4d._0x03265d)-_0x63af2f/2;const _0x09cbd6=document._0x58b027(_0xec97875d(32));_0x09cbd6._0x709110=_0xec97875d(33);_0x09cbd6._0x2cd412._0x6f479b=_0x09cbd6._0x2cd412._0xde023d=_0x63af2f+'_0xf6b73c';_0x09cbd6._0x2cd412._0x10ebc4=_0xc252d3+'_0xf6b73c';_0x09cbd6._0x2cd412._0x03265d=_0x67c5f9+'_0xf6b73c';//_0x7ad147 _0x553cfe _0x044442 _0x5b6c9aconst _0xe706d1=_0x4b4061(_0x553cfe);if(_0xe706d1._0x76f21d===_0xec97875d(34)){_0x553cfe._0x2cd412._0x76f21d=_0xec97875d(35);}_0x553cfe._0x22dcad(_0x09cbd6);_0xe9761f(()=>_0x09cbd6._0xb8c59a(),700);}};//_0x5f313d _0x507642 _0xd7aa61function _0xe4ccc2(_0x25984f){if(!_0x25984f)return false;const _0xb8a8e1=_0x25984f._0x9de9b9(_0xec97875d(36));if(!_0xb8a8e1)return false;if(_0xb8a8e1._0x39dcc0)return false;if(_0xb8a8e1._0x3e15c4&&_0xb8a8e1._0x3e15c4(_0xec97875d(37))===_0xec97875d(38))return false;return true;}document._0x4fbed1(_0xec97875d(39),(_0xd7bbbc)=>{const _0x553cfe=_0xd7bbbc._0x553cfe&&_0xd7bbbc._0x553cfe._0x9de9b9?_0xd7bbbc._0x553cfe._0x9de9b9(_0xec97875d(40)):null;if(_0xe4ccc2(_0xd7bbbc._0x553cfe)){_0x22401c._0x3d55b1();}if(_0x553cfe){_0x22401c._0x05b71a(_0xd7bbbc,_0x553cfe);}},{_0x628898:true});/*=========4)_0xfd80ba _0xe4646e(_0xcf226c _0xef720b)=========*/const _0xfca97f={_0xd3712f:null,_0xfbc74a:null,_0x04c10c:[],_0x1c3b8b:false,_0x1cf4f9:0,_0xa5f5c6(){this._0xd3712f=document._0xc1ab00(_0xec97875d(41));if(!this._0xd3712f)return;this._0xfbc74a=this._0xd3712f._0xeab52c('2d',{_0xf4caab:true});this._0xb738f2();window._0x4fbed1(_0xec97875d(42),()=>this._0xb738f2());},_0xb738f2(){if(!this._0xd3712f)return;const _0xbf859c=Math._0x6d7463(2,window._0xe6ca21||1);this._0xd3712f._0x6f479b=Math._0xced281(window._0xfbe9e3*_0xbf859c);this._0xd3712f._0xde023d=Math._0xced281(window._0x6bb6b5*_0xbf859c);this._0xd3712f._0x2cd412._0x6f479b=window._0xfbe9e3+'_0xf6b73c';this._0xd3712f._0x2cd412._0xde023d=window._0x6bb6b5+'_0xf6b73c';this._0xbf859c=_0xbf859c;this._0x2ca88f();},_0x2ca88f(){if(!this._0xfbc74a)return;const _0x61ada5=this._0xd3712f._0x6f479b;const _0x21e7a1=this._0xd3712f._0xde023d;const _0xa469af=Math._0x01fa32(40,Math._0xced281((_0x61ada5*_0x21e7a1)/65000));this._0x04c10c=[];for(let _0x6eab41=0;_0x6eab41<_0xa469af;_0x6eab41++){this._0x04c10c._0x87b3c2({_0xc252d3:Math._0x07336d()*_0x61ada5,_0x67c5f9:Math._0x07336d()*_0x21e7a1,_0xd8a998:(Math._0x07336d()*1.2+0.4)*this._0xbf859c,_0xea00ba:Math._0x07336d()*0.55+0.18,_0x312e7f:(Math._0x07336d()*0.22+0.05)*this._0xbf859c,_0x9a868b:(Math._0x07336d()*0.14+0.02)*this._0xbf859c,_0x7cee04:Math._0x07336d()*0.9+0.2});}},_0x1a884d(){if(!this._0xfbc74a)this._0xa5f5c6();if(!this._0xfbc74a)return;if(this._0x1c3b8b)return;this._0x1c3b8b=true;this._0x1cf4f9=_0x890328._0x29eb1e();_0x8adc4c((_0xb8a8e1)=>this._0xd30be3(_0xb8a8e1));},_0xd21bde(){this._0x1c3b8b=false;if(this._0xfbc74a){this._0xfbc74a._0xa23432(0,0,this._0xd3712f._0x6f479b,this._0xd3712f._0xde023d);}},_0xd30be3(_0xb8a8e1){if(!this._0x1c3b8b)return;const _0x427072=Math._0x6d7463(32,_0xb8a8e1-this._0x1cf4f9);this._0x1cf4f9=_0xb8a8e1;const _0xfbc74a=this._0xfbc74a;const _0x61ada5=this._0xd3712f._0x6f479b;const _0x21e7a1=this._0xd3712f._0xde023d;_0xfbc74a._0xa23432(0,0,_0x61ada5,_0x21e7a1);//_0x46a2cd _0x7d4268for(const _0x35be3f _0x4497df this._0x04c10c){_0x35be3f._0xc252d3+=_0x35be3f._0x312e7f*(_0x427072/16);_0x35be3f._0x67c5f9+=_0x35be3f._0x9a868b*(_0x427072/16);if(_0x35be3f._0xc252d3>_0x61ada5+20)_0x35be3f._0xc252d3=-20;if(_0x35be3f._0x67c5f9>_0x21e7a1+20)_0x35be3f._0x67c5f9=-20;const _0x7cee04=(Math._0xce716e((_0xb8a8e1/1000)*_0x35be3f._0x7cee04+_0x35be3f._0xc252d3*0.002)+1)*0.5;//0..1const _0xf4caab=_0x35be3f._0xea00ba*(0.55+0.45*_0x7cee04);_0xfbc74a._0xea91c6();_0xfbc74a._0x65d9cf(_0x35be3f._0xc252d3,_0x35be3f._0x67c5f9,_0x35be3f._0xd8a998,0,Math._0xc8a3f6*2);_0xfbc74a._0x308097=_0xec97875d(43);_0xfbc74a._0x5db532();}_0x8adc4c((_0x519580)=>this._0xd30be3(_0x519580));}};/*=========5)_0xc7d469 _0x38557b=========*/let _0x0a11c8=null;/*=========6)_0xa6fb51 _0xa39bb3=========*/function _0x8625fd(){document._0xc1ab00(_0xec97875d(44))._0x5e8c2d._0x7ab6aa(_0xec97875d(23));document._0xc1ab00(_0xec97875d(45))._0x5e8c2d._0x7ab6aa(_0xec97875d(23));}function _0xe73312(){document._0xc1ab00(_0xec97875d(44))._0x5e8c2d._0xb8c59a(_0xec97875d(23));document._0xc1ab00(_0xec97875d(45))._0x5e8c2d._0xb8c59a(_0xec97875d(23));}function _0xa59bb9(_0xc5a85f){$$(_0xec97875d(46))._0x7126bb(_0x4e6afe=>_0x4e6afe._0x5e8c2d._0xb8c59a(_0xec97875d(47)));const _0x25984f=document._0xc1ab00(_0xc5a85f);if(_0x25984f)_0x25984f._0x5e8c2d._0x7ab6aa(_0xec97875d(47));//_0xce8e8c _0x3b35f2 _0xf5cc1ctry{if(typeof _0x59a8a9!==_0xec97875d(48)&&_0x59a8a9._0xf1a57a){_0x59a8a9._0xf1a57a(_0xc5a85f);}}catch(_0xd7bbbc){}}function _0x6f17e2(_0xd83ed0){_0xe73312();_0xa59bb9(_0xd83ed0);//_0xe5eeb4 _0x5b70b6if(_0xd83ed0===_0xec97875d(49)&&_0x0a11c8)_0x07c48b(_0x0a11c8);if(_0xd83ed0===_0xec97875d(50)&&_0x0a11c8)_0x88b292(_0x0a11c8);if(_0xd83ed0===_0xec97875d(51))_0xf5b02e();}function _0x6aac5f(){_0xe73312();_0x8d14eb._0x3b0e4d({_0xfac25b:_0xec97875d(52),_0x34e10d:_0xec97875d(15),_0x224864:_0xec97875d(53)+_0xec97875d(54)+_0xec97875d(55)+_0xec97875d(56)+_0xec97875d(57)+_0xec97875d(58)+_0xec97875d(59),_0xa870b0:_0xec97875d(60)});}function _0xeb3b34(){_0xe73312();_0x79b28e();}function _0x2bd5d7(){_0xe73312();_0x4b751a();}function _0x9658f9(){_0xe73312();_0x40b469();}function _0xb783fc(){_0xe73312();_0x642b3a();}function _0x1c8d83(){_0xe73312();_0x7be23a();}/*=========7)_0x82743a _0x900818=========*/function _0x5a80a3(_0x081064){const _0x111c03={_0x03253f:_0xec97875d(61),_0xa6934b:_0xec97875d(62),_0x3154e0:_0xec97875d(63)};const _0xb476b9={_0x03253f:_0xec97875d(64),_0xa6934b:_0xec97875d(65),_0x3154e0:_0xec97875d(66)};Object._0x136bfb(_0x111c03)._0x7126bb(_0xc5a85f=>document._0xc1ab00(_0xc5a85f)._0x5e8c2d._0xb8c59a(_0xec97875d(47)));Object._0x136bfb(_0xb476b9)._0x7126bb(_0xc5a85f=>document._0xc1ab00(_0xc5a85f)._0x5e8c2d._0xb8c59a(_0xec97875d(47)));document._0xc1ab00(_0x111c03[_0x081064])._0x5e8c2d._0x7ab6aa(_0xec97875d(47));document._0xc1ab00(_0xb476b9[_0x081064])._0x5e8c2d._0x7ab6aa(_0xec97875d(47));}function _0x732eb9(){window._0x01681e._0x266e9b=_0xec97875d(67);}/*=========8)_0xdb0b66 _0xaebfa6 _0x08f608=========*/function _0x124ce4(){let _0xc5a85f=_0xbed4f5._0x69c00d(_0xec97875d(68));if(!_0xc5a85f){_0xc5a85f=(window._0x6146b3&&_0x6146b3._0x06c711)?_0x6146b3._0x06c711():(_0xec97875d(69)+Math._0x07336d()._0x3e7fc5(36)._0xd7bfc6(2)+Date._0x29eb1e()._0x3e7fc5(36));_0xbed4f5._0xb8fce4(_0xec97875d(68),_0xc5a85f);}return _0xc5a85f;}function _0x32a178(_0xc45dbb){try{return _0xc45dbb._0x62677d(_0xec97875d(70),{_0x44c21d:_0xec97875d(71),_0xb87502:_0xec97875d(72),_0x7e75b8:_0xec97875d(72)});}catch(_0xd7bbbc){return _0xc45dbb._0x3e7fc5();}}function _0xcc7923(_0xd5a7eb){if(!_0xd5a7eb)return _0xec97875d(73);try{return new Date(_0xd5a7eb)._0xc5f00f(_0xec97875d(70));}catch(_0xd7bbbc){return String(_0xd5a7eb);}}function _0xff392c(_0x213f55){const _0x47a2da=document._0xc1ab00(_0xec97875d(74));const _0x68d273=document._0xc1ab00(_0xec97875d(75));if(_0x68d273)_0x68d273._0x660d85=_0x213f55;_0x47a2da._0x5e8c2d._0x7ab6aa(_0xec97875d(23));}function _0xb37cf9(){const _0x25984f=document._0xc1ab00(_0xec97875d(74));if(_0x25984f)_0x25984f._0x5e8c2d._0xb8c59a(_0xec97875d(23));}function _0x8bc16c(_0x29eb1e){return{_0xd788a2:_0x29eb1e,_0xc1bc83:_0x29eb1e,_0x2387d8:_0xff4c56._0x2387d8||'',_0x3e0d52:_0xff4c56._0x3e0d52||'',_0xb7bf81:_0xff4c56._0xb7bf81||'',_0x95623c:(window._0x95623c?(_0x95623c._0x6f479b+'_0xc252d3'+_0x95623c._0xde023d):'')};}function _0x89c255(_0x268587){const _0xa6c315=(_0x268587||'')._0x174148()._0x00d49a();if(!_0xa6c315)return{_0x95d5d9:false,_0x3cee7e:'',_0x1d8fd7:_0xec97875d(76)};if(/[.#$\[\]\/]/._0x3639ba(_0xa6c315))return{_0x95d5d9:false,_0x3cee7e:'',_0x1d8fd7:_0xec97875d(77)};return{_0x95d5d9:true,_0x3cee7e:_0xa6c315};}/*=========9)_0x53f29a _0xf0d6d5=========*/function _0x6d0974(){const _0x403dde=document._0xc1ab00(_0xec97875d(78));const _0x4bf149=document._0xc1ab00(_0xec97875d(79));_0x403dde._0x2cd412._0x369efc='0';_0x403dde._0x2cd412._0x2c7f0e=_0xec97875d(80);_0xe9761f(()=>{_0x403dde._0x2cd412._0x310691=_0xec97875d(81);_0x4bf149._0x2cd412._0x310691=_0xec97875d(82);_0xa59bb9(_0xec97875d(83));//_0xec8dfc _0xdc80e3 _0x52d9f0_0x46e7fc().catch(()=>{});},600);}function _0x680736(){const _0x403dde=document._0xc1ab00(_0xec97875d(78));const _0x4bf149=document._0xc1ab00(_0xec97875d(79));_0x4bf149._0x2cd412._0x310691=_0xec97875d(81);_0x403dde._0x2cd412._0x310691=_0xec97875d(84);_0x403dde._0x2cd412._0x2c7f0e=_0xec97875d(85);_0x403dde._0x2cd412._0x369efc='1';_0xb37cf9();}function _0x8fa924(_0x3cee7e){const _0x1e632b=document._0xc1ab00(_0xec97875d(86));if(_0x1e632b)_0x1e632b._0x660d85=_0x3cee7e?_0x3cee7e:'—';}function _0x1f2a9c(){const _0xee5a76=document._0xc1ab00(_0xec97875d(87));if(_0xee5a76)_0xee5a76._0x660d85=_0x124ce4();}/*=========9.1)_0xce8e8c _0xddf815(_0xbf6214)=========*/const _0x59a8a9={_0x25984f:null,_0xceba96:null,_0x49783a:[],_0xc8692a:[],_0x1b1bca:0,_0x9e692b:null,_0xa5f5c6(){this._0x25984f=document._0xc1ab00(_0xec97875d(88));if(!this._0x25984f)return;this._0xceba96=this._0x25984f._0x465500(_0xec97875d(89));this._0x49783a=Array.from(this._0x25984f._0x087d25(_0xec97875d(90)));this._0xc8692a=Array.from(this._0x25984f._0x087d25(_0xec97875d(91)));const _0x426ffd=this._0x25984f._0x465500(_0xec97875d(92));const _0xb5322d=this._0x25984f._0x465500(_0xec97875d(93));if(_0x426ffd)_0x426ffd._0x4fbed1(_0xec97875d(94),()=>{this._0x2c72f0();this._0x07d264();});if(_0xb5322d)_0xb5322d._0x4fbed1(_0xec97875d(94),()=>{this._0xfa8932();this._0x07d264();});this._0xc8692a._0x7126bb(_0xc45dbb=>{_0xc45dbb._0x4fbed1(_0xec97875d(94),()=>{const _0x6eab41=Number(_0xc45dbb._0xfb8ec8._0xbf9106||0);this._0x9b4b07(_0x6eab41);this._0x07d264();});});//_0x1ffac1 _0x7e6698 _0x329423this._0x25984f._0x4fbed1(_0xec97875d(95),()=>this._0xd21bde());this._0x25984f._0x4fbed1(_0xec97875d(96),()=>this._0x1a884d());//_0x7433d6(_0xb3d494)let _0x67595e=false;let _0xe9306f=0;this._0x25984f._0x4fbed1(_0xec97875d(39),(_0xd7bbbc)=>{_0x67595e=true;_0xe9306f=_0xd7bbbc._0xe94fe1||0;},{_0x628898:true});window._0x4fbed1(_0xec97875d(97),(_0xd7bbbc)=>{if(!_0x67595e)return;_0x67595e=false;const _0xf2c0e8=_0xd7bbbc._0xe94fe1||0;const _0x414607=_0xf2c0e8-_0xe9306f;if(Math._0xae0f76(_0x414607)>45){if(_0x414607>0)this._0x2c72f0();else this._0xfa8932();this._0x07d264();}},{_0x628898:true});//_0x38b829 _0x624be6this._0x9b4b07(0,false);//_0xd18d41 _0xa4006ddocument._0x4fbed1(_0xec97875d(98),()=>{if(document._0xad4952)this._0xd21bde();else this._0x1a884d();});//_0x520f5f if _0xce8e8c _0x044442 _0xb473d4this._0x1a884d();},_0x01f999(){const _0x97323a=document._0xc1ab00(_0xec97875d(79));if(!_0x97323a)return false;try{return _0x4b4061(_0x97323a)._0x310691!==_0xec97875d(81)&&_0x97323a._0x966852!==null;}catch(_0xd7bbbc){return true;}},_0xcaec25(){const _0x172986=document._0xc1ab00(_0xec97875d(83));return!!(_0x172986&&_0x172986._0x5e8c2d._0x2c88e6(_0xec97875d(47)));},_0x9b4b07(_0x6eab41,_0xe4a07b=true){if(!this._0xceba96||!this._0x49783a._0xc46706)return;const _0x471b01=this._0x49783a._0xc46706;this._0x1b1bca=(_0x6eab41 % _0x471b01+_0x471b01)% _0x471b01;if(!_0xe4a07b)this._0xceba96._0x5e8c2d._0x7ab6aa(_0xec97875d(99));else this._0xceba96._0x5e8c2d._0xb8c59a(_0xec97875d(99));this._0xceba96._0x2cd412._0xee3265=_0xec97875d(100);this._0x49783a._0x7126bb((_0x35be3f,_0xbf9106)=>_0x35be3f._0x5e8c2d._0xd7ef0a(_0xec97875d(101),_0xbf9106===this._0x1b1bca));this._0xc8692a._0x7126bb((_0xc45dbb,_0xbf9106)=>_0xc45dbb._0x5e8c2d._0xd7ef0a(_0xec97875d(47),_0xbf9106===this._0x1b1bca));if(!_0xe4a07b)_0x8adc4c(()=>this._0xceba96&&this._0xceba96._0x5e8c2d._0xb8c59a(_0xec97875d(99)));},_0xfa8932(){this._0x9b4b07(this._0x1b1bca+1);},_0x2c72f0(){this._0x9b4b07(this._0x1b1bca-1);},_0x1a884d(){if(!this._0x25984f)return;if(!this._0x01f999())return;if(!this._0xcaec25())return;if(this._0x9e692b)return;const _0xb2e3be=(_0xb6c3c2._0x541692&&_0xb6c3c2._0x541692._0x4c3d81)?5200:3800;this._0x9e692b=_0x084c3d(()=>this._0xfa8932(),_0xb2e3be);},_0xd21bde(){if(this._0x9e692b){_0x78ea5b(this._0x9e692b);this._0x9e692b=null;}},_0x07d264(){this._0xd21bde();this._0x1a884d();},_0xf1a57a(_0xd83ed0){if(_0xd83ed0===_0xec97875d(83))this._0x1a884d();else this._0xd21bde();}};/*=========10)_0x6cb001=========*/const _0xfc62d2={_0x3afc13:_0xec97875d(102),_0xb9d19d:_0xec97875d(103),_0x18a40c:_0xec97875d(104),_0x11090e:_0xec97875d(105),_0x11d88c:_0xec97875d(106),_0x60b15b:_0xec97875d(107),_0xf824c7:_0xec97875d(108)};let _0xe4e128=null;function _0x93cb40(){try{if(!_0x960d5f._0x7f32a3||!_0x960d5f._0x7f32a3._0xc46706){_0x960d5f._0xd093e9(_0xfc62d2);}_0xe4e128=_0x960d5f._0x222754();}catch(_0xd7bbbc){console._0xba63f9(_0xec97875d(109),_0xd7bbbc);}//_0x713ed5 _0x6f8cfetry{_0x960d5f._0x6f8cfe()._0x54d4b2((_0xbd62bd)=>{if(!_0xbd62bd)_0x960d5f._0x6f8cfe()._0xe3d2fa().catch(()=>{});});}catch(_0xd7bbbc){}}/*=========11)_0xec8dfc _0xdc80e3(_0x0d7f19+_0x82b796 _0x52d9f0)=========*/function _0x721c55(){const _0xd7a0a7=document._0xc1ab00(_0xec97875d(110));if(!_0xd7a0a7)return;_0xd7a0a7._0x5e8c2d._0x7ab6aa(_0xec97875d(23));}function _0x78c870(){const _0xd7a0a7=document._0xc1ab00(_0xec97875d(110));if(!_0xd7a0a7)return;_0xd7a0a7._0x5e8c2d._0xb8c59a(_0xec97875d(23));}function _0xe0c2dc(_0x904dfa,_0x6abad6,_0xfd0e56){const _0x25984f=document._0xc1ab00(_0x904dfa);if(!_0x25984f)return;const _0xe45284=_0x25984f._0x465500(_0xec97875d(111));if(!_0xe45284)return;if(_0x6abad6==='_0x95d5d9'){_0xe45284._0x709110=_0xec97875d(112);_0xe45284._0x98365f=_0xec97875d(113);}else if(_0x6abad6===_0xec97875d(114)){_0xe45284._0x709110=_0xec97875d(115);_0xe45284._0x98365f=_0xec97875d(116);}else if(_0x6abad6===_0xec97875d(20)){_0xe45284._0x709110=_0xec97875d(117);_0xe45284._0x98365f=_0xec97875d(118);}else{_0xe45284._0x709110=_0xec97875d(119);_0xe45284._0x98365f=_0xec97875d(120);}const _0xe7bf5d=_0x25984f._0x465500(_0xec97875d(121));if(_0xe7bf5d&&_0xfd0e56)_0xe7bf5d._0x660d85=_0xfd0e56;}function _0xa46057(_0x5a9649){const _0xdb6374=document._0xc1ab00(_0xec97875d(122));if(_0xdb6374)_0xdb6374._0x2cd412._0x6f479b=Math._0x01fa32(0,Math._0x6d7463(100,_0x5a9649))+'%';}function _0x49ee45(_0x213f55,_0x031aa1){const _0x25984f=document._0xc1ab00(_0xec97875d(123));if(!_0x25984f)return;_0x25984f._0x660d85=_0x213f55||'';if(_0x031aa1==='_0x95d5d9')_0x25984f._0x2cd412._0x6155cb=_0xec97875d(124);else if(_0x031aa1===_0xec97875d(114))_0x25984f._0x2cd412._0x6155cb=_0xec97875d(125);else if(_0x031aa1===_0xec97875d(20))_0x25984f._0x2cd412._0x6155cb=_0xec97875d(126);else _0x25984f._0x2cd412._0x6155cb=_0xec97875d(127);}async function _0x4d9156(_0xf66b3b=4500){if(!_0xe4e128)return false;//._0x03253f/_0xbc890f _0x044442 _0xab4369const _0x60a0d7=_0xe4e128._0x60a0d7(_0xec97875d(128));return await new Promise((_0x406491)=>{let _0xf69901=false;const _0x9e692b=_0xe9761f(()=>{if(_0xf69901)return;_0xf69901=true;_0x60a0d7._0xa758f3(_0xec97875d(129));_0x406491(false);},_0xf66b3b);_0x60a0d7._0x7e6698(_0xec97875d(129),(_0x598eb0)=>{const _0x95d5d9=!!_0x598eb0._0x075c3a();if(_0x95d5d9&&!_0xf69901){_0xf69901=true;_0x838f9f(_0x9e692b);_0x60a0d7._0xa758f3(_0xec97875d(129));_0x406491(true);}},()=>{if(!_0xf69901){_0xf69901=true;_0x838f9f(_0x9e692b);_0x60a0d7._0xa758f3(_0xec97875d(129));_0x406491(false);}});});}async function _0x46e7fc(){const _0xd7a0a7=document._0xc1ab00(_0xec97875d(110));if(!_0xd7a0a7)return;//_0x02cbac _0x527e8a _0x39dcc0 _0x0603f4,_0x47251b _0xdc80e3 _0x3247c6 _0x3fffa4 _0xd55a7c _0x27f719?(_0x02cda2 _0xcb049e)_0x721c55();//_0x1a0623 _0xce411d_0xe0c2dc(_0xec97875d(130),_0xec97875d(131),_0xec97875d(132));_0xe0c2dc(_0xec97875d(133),_0xec97875d(131),_0xec97875d(134));_0xe0c2dc(_0xec97875d(135),_0xec97875d(131),_0xec97875d(136));_0xe0c2dc(_0xec97875d(137),_0xec97875d(131),_0xec97875d(138));_0xe0c2dc(_0xec97875d(139),_0xec97875d(131),_0xec97875d(140));_0xa46057(4);_0x49ee45(_0xec97875d(141),null);//_0xe83d84 _0x381d66 _0x67d0c1 defaultconst _0x381d66=document._0xc1ab00(_0xec97875d(142));if(_0x381d66)_0x381d66._0x2cd412._0x310691=_0xec97875d(81);let _0xfc3821=true;//_0xa67a7a 1:_0xd325a1try{const _0xc5a85f=_0x124ce4();_0x1f2a9c();_0xe0c2dc(_0xec97875d(130),'_0x95d5d9',_0xec97875d(143)+_0xc5a85f._0xd7bfc6(0,8)+'…');}catch(_0xd7bbbc){_0xfc3821=false;_0xe0c2dc(_0xec97875d(130),_0xec97875d(114),_0xec97875d(144));}_0xa46057(20);await _0xf95bf9(160);//_0xa67a7a 2:_0x699718try{const _0x30f4b3=(_0xff4c56._0x2387d8||_0xec97875d(145))._0xd7bfc6(0,45);const _0x1eb2fa=(_0x01681e._0x36eafa===_0xec97875d(146)||_0x01681e._0xa3459c===_0xec97875d(147))?_0xec97875d(148):_0xec97875d(149);_0xe0c2dc(_0xec97875d(133),'_0x95d5d9',_0x1eb2fa+_0xec97875d(150)+_0x30f4b3+'…');}catch(_0xd7bbbc){_0xfc3821=false;_0xe0c2dc(_0xec97875d(133),_0xec97875d(114),_0xec97875d(151));}_0xa46057(36);await _0xf95bf9(160);//_0xa67a7a 3:_0x8df650try{const _0x547bae=(_0xff4c56._0xc815c1!==false);if(_0x547bae){_0xe0c2dc(_0xec97875d(135),'_0x95d5d9',_0xec97875d(152));}else{_0xfc3821=false;_0xe0c2dc(_0xec97875d(135),_0xec97875d(114),_0xec97875d(153));}}catch(_0xd7bbbc){_0xe0c2dc(_0xec97875d(135),_0xec97875d(20),_0xec97875d(154));}_0xa46057(52);await _0xf95bf9(160);//_0xa67a7a 4:_0x960d5ftry{if(!_0x960d5f||!_0xe4e128){_0xfc3821=false;_0xe0c2dc(_0xec97875d(137),_0xec97875d(114),_0xec97875d(155));}else{//_0x2a78d8 _0x6f8cfetry{if(!_0x960d5f._0x6f8cfe()._0x3ab87f){await _0x960d5f._0x6f8cfe()._0xe3d2fa();}}catch(_0xd7bbbc){}const _0xbc890f=await _0x4d9156(4500);if(_0xbc890f){_0xe0c2dc(_0xec97875d(137),'_0x95d5d9',_0xec97875d(156));}else{_0xfc3821=false;_0xe0c2dc(_0xec97875d(137),_0xec97875d(114),_0xec97875d(157));}}}catch(_0xd7bbbc){_0xfc3821=false;_0xe0c2dc(_0xec97875d(137),_0xec97875d(114),_0xec97875d(158));}_0xa46057(74);await _0xf95bf9(160);//_0xa67a7a 5:_0x99ea59 _0x52d9f0(_0x93722b _0x1d4633+_0xe7bf5d _0x93722b)try{if(!_0xe4e128){_0xfc3821=false;_0xe0c2dc(_0xec97875d(139),_0xec97875d(114),_0xec97875d(159));}else{//_0x82b796 _0xce8216 _0xaa2894const _0xf73334=await _0xe4e128._0x60a0d7(_0xec97875d(160))._0xebeb16(_0xec97875d(129));const _0xa758f3=Number(_0xf73334._0x075c3a()||0);const _0x6aa512=(Math._0xae0f76(_0xa758f3)<120000)?(_0xec97875d(161)+Math._0x983f68(_0xa758f3/1000)+'_0x35be3f'):(_0xec97875d(161)+Math._0x983f68(_0xa758f3/60000)+'_0x2dd31c');//_0x2e134c _0xea00ba _0x3ca758 _0x93722b(_0x2c2287 _0x2a8b9a)let _0xb68793='';try{const _0x663fe2=await _0xe4e128._0x60a0d7(_0xec97875d(162))._0xebeb16(_0xec97875d(129));if(_0x663fe2._0x94762c()){_0xb68793=_0xec97875d(163)+String(_0x663fe2._0x075c3a())._0xd7bfc6(0,18);}else{_0xb68793=_0xec97875d(164);}}catch(_0x707665){_0xb68793=_0xec97875d(165);}_0xe0c2dc(_0xec97875d(139),'_0x95d5d9',_0xec97875d(166)+_0x6aa512+_0xb68793);}}catch(_0xd7bbbc){//_0x1da918 _0xca497a,_0x27f60c _0xa6934b_0xe0c2dc(_0xec97875d(139),_0xec97875d(20),_0xec97875d(167));}_0xa46057(92);await _0xf95bf9(180);if(_0xfc3821){_0xa46057(100);_0x49ee45(_0xec97875d(168),'_0x95d5d9');_0xb7306a(_0xec97875d(169));await _0xf95bf9(850);_0x78c870();}else{_0xa46057(100);_0x49ee45(_0xec97875d(170),_0xec97875d(114));_0x787e2a(_0xec97875d(171));if(_0x381d66)_0x381d66._0x2cd412._0x310691=_0xec97875d(84);}}//_0xec8dfc _0xdc80e3 _0x65ccb1async function _0xe0aeba(){await _0x46e7fc();}function _0x5df9c2(){_0x78c870();}function _0x4bc7f9(){_0x78c870();_0x7be23a();}/*=========12)_0xdb0b66 _0x03253f _0xe5eeb4=========*/function _0xc908a3(){const _0x0e4ae3=document._0xc1ab00(_0xec97875d(172));if(_0x0e4ae3){_0x0e4ae3._0x709110=_0xec97875d(173);_0x0e4ae3._0x98365f=_0xec97875d(174);}const _0xbbfb99=(_0xc5a85f)=>{const _0x25984f=document._0xc1ab00(_0xc5a85f);if(_0x25984f)_0x25984f._0x98365f=_0xec97875d(175);};_0xbbfb99(_0xec97875d(176));_0xbbfb99(_0xec97875d(177));_0xbbfb99(_0xec97875d(178));_0xbbfb99(_0xec97875d(179));_0xbbfb99(_0xec97875d(180));_0xbbfb99(_0xec97875d(181));}function _0x5d4072(_0x9b8103){const _0x29eb1e=Date._0x29eb1e();const _0xb473d4=_0x9b8103&&_0x9b8103._0xb473d4!==false;const _0xfc2fc0=Number((_0x9b8103&&_0x9b8103._0x88ff33)||0);if(!_0xb473d4)return{_0x031aa1:_0xec97875d(114),_0xfd0e56:_0xec97875d(182),_0x34e10d:_0xec97875d(183)};if(_0xfc2fc0&&_0x29eb1e>_0xfc2fc0)return{_0x031aa1:_0xec97875d(114),_0xfd0e56:_0xec97875d(184),_0x34e10d:_0xec97875d(185)};if(_0xfc2fc0&&(_0xfc2fc0-_0x29eb1e)<(3*24*60*60*1000))return{_0x031aa1:_0xec97875d(20),_0xfd0e56:_0xec97875d(186),_0x34e10d:_0xec97875d(21)};return{_0x031aa1:'_0x95d5d9',_0xfd0e56:'_0xd4d8b2',_0x34e10d:_0xec97875d(187)};}async function _0x07c48b(_0x3cee7e){if(!_0x3cee7e||!_0xe4e128)return;_0xc908a3();const _0x9bcaa1=_0x124ce4();const _0x1228da=_0xe4e128._0x60a0d7(_0xec97875d(188)+_0x3cee7e);try{const _0x598eb0=await _0x1228da._0xebeb16(_0xec97875d(129));if(!_0x598eb0._0x94762c()){throw new Error(_0xec97875d(189));}const _0x9b8103=_0x598eb0._0x075c3a()||{};const _0x08ac54=_0x5d4072(_0x9b8103);const _0x0e4ae3=document._0xc1ab00(_0xec97875d(172));if(_0x0e4ae3){_0x0e4ae3._0x709110=_0xec97875d(190)+_0x08ac54._0x031aa1;_0x0e4ae3._0x98365f=_0xec97875d(191);}const _0x88ff33=Number(_0x9b8103._0x88ff33||0);const _0x1487dd=Math._0x01fa32(1,Number(_0x9b8103._0x1487dd||1));const _0x968f4d=_0x9b8103._0x968f4d||{};const _0xe05af5=Object._0xa44fa4(_0x968f4d)._0xc46706;const _0x3e9eda=(_0xc5a85f,_0xdd6c32,_0xf1689d)=>{const _0x25984f=document._0xc1ab00(_0xc5a85f);if(!_0x25984f)return;_0x25984f._0x660d85=_0xdd6c32;if(_0xf1689d)_0x25984f._0x5e8c2d._0x7ab6aa(_0xec97875d(192));};_0x3e9eda(_0xec97875d(176),_0x3cee7e,true);_0x3e9eda(_0xec97875d(177),_0x9bcaa1,true);_0x3e9eda(_0xec97875d(178),_0x88ff33?(_0x32a178(new Date(_0x88ff33))+'('+_0xcc7923(_0x88ff33)+')'):_0xec97875d(73));_0x3e9eda(_0xec97875d(179),_0xe05af5+_0xec97875d(193)+_0x1487dd);_0x3e9eda(_0xec97875d(180),_0x9b8103._0x4c866f?_0xcc7923(_0x9b8103._0x4c866f):_0xec97875d(194));_0x3e9eda(_0xec97875d(181),(_0x9b8103._0x587a69||'—'));//_0x4887eb _0xae15ed _0x968f4d _0xa5b8eb _0x9e699e _0x929142 _0xe5eeb4_0xe49d2f(_0x968f4d,_0x9bcaa1);}catch(_0xd7bbbc){const _0x0e4ae3=document._0xc1ab00(_0xec97875d(172));if(_0x0e4ae3){_0x0e4ae3._0x709110=_0xec97875d(195);_0x0e4ae3._0x98365f=_0xec97875d(196);}_0x787e2a(_0xd7bbbc&&_0xd7bbbc._0xa2dd7e?_0xd7bbbc._0xa2dd7e:_0xec97875d(197));}}function _0xe49d2f(_0x2f43f0,_0xbd7c49){const _0xd7a0a7=document._0xc1ab00(_0xec97875d(198));if(!_0xd7a0a7)return;const _0x968f4d=_0x2f43f0||{};const _0x4adf48=Object._0xa44fa4(_0x968f4d);if(!_0x4adf48._0xc46706){_0xd7a0a7._0x98365f=_0xec97875d(199);return;}_0x4adf48._0xb927ee((_0xea00ba,_0xc8be88)=>(_0x968f4d[_0xc8be88]?._0xc1bc83||0)-(_0x968f4d[_0xea00ba]?._0xc1bc83||0));const _0x03265d=_0x4adf48._0xd7bfc6(0,4);_0xd7a0a7._0x98365f=_0x03265d._0x111c03((_0xc5a85f)=>{const _0xc45dbb=_0x968f4d[_0xc5a85f]||{};const _0x66aa21=(_0xc5a85f===_0xbd7c49);const _0x67bcea=_0xc45dbb._0xc1bc83?_0xcc7923(_0xc45dbb._0xc1bc83):_0xec97875d(73);return `<_0xa8e633 class=_0xec97875d(200)_0x2cd412=_0xec97875d(201)><_0xa8e633><_0xc8be88>${_0x66aa21?'⭐ ':''}${_0xc5a85f}</_0xc8be88><_0xe7bf5d>_0xac2268 _0x67bcea:${_0x67bcea}<_0xfd58c4>_0xb4a306:${(_0xc45dbb._0x3e0d52||'—')}• _0xfa0769:${(_0xc45dbb._0xb7bf81||'—')}</_0xe7bf5d></_0xa8e633><_0xa8e633 class=_0xec97875d(202)><_0x71bdac _0x4aa0b2=_0xec97875d(203)><_0x6eab41 class=_0xec97875d(204)></_0x6eab41>_0x12cac5</_0x71bdac></_0xa8e633></_0xa8e633>`;})._0x0ca40d('')+(_0x4adf48._0xc46706>4?_0xec97875d(205):'');}async function _0x79b28e(){if(!_0x0a11c8)return _0x603545(_0xec97875d(206));await _0x07c48b(_0x0a11c8);_0xb7306a(_0xec97875d(207));}async function _0x5f30df(_0xb8a8e1){try{await _0xff4c56._0x6b14a8._0x20270a(String(_0xb8a8e1));_0xb7306a(_0xec97875d(208));}catch(_0xd7bbbc){_0x787e2a(_0xec97875d(209));}}async function _0x4b751a(){if(!_0x0a11c8)return _0x603545(_0xec97875d(210));await _0x5f30df(_0x0a11c8);}async function _0x40b469(){try{const _0xc5a85f=_0x124ce4();await _0x5f30df(_0xc5a85f);}catch(_0xd7bbbc){_0x787e2a(_0xec97875d(209));}}function _0x642b3a(){_0xbed4f5._0x58936e(_0xec97875d(211));_0xcda2e5(_0xec97875d(212));try{document._0xc1ab00(_0xec97875d(213))._0x541692='';}catch(_0xd7bbbc){}}function _0x7be23a(){_0xbed4f5._0x58936e(_0xec97875d(211));_0x0a11c8=null;_0x8fa924('—');_0xcda2e5(_0xec97875d(214));_0x680736();}/*=========13)_0x41c931 _0xe5eeb4(_0x45d5ad _0x468de2+_0xb8c59a)=========*/async function _0x88b292(_0x3cee7e){const _0xd7a0a7=document._0xc1ab00(_0xec97875d(215));const _0x6abad6=document._0xc1ab00(_0xec97875d(216));if(!_0xd7a0a7)return;_0xd7a0a7._0x98365f=_0xec97875d(175);if(_0x6abad6)_0x6abad6._0x98365f=_0xec97875d(174);if(!_0xe4e128||!_0x3cee7e){_0xd7a0a7._0x98365f=_0xec97875d(217);if(_0x6abad6)_0x6abad6._0x98365f=_0xec97875d(196);return;}try{const _0x598eb0=await _0xe4e128._0x60a0d7(_0xec97875d(188)+_0x3cee7e+_0xec97875d(218))._0xebeb16(_0xec97875d(129));const _0x968f4d=_0x598eb0._0x075c3a()||{};const _0x4adf48=Object._0xa44fa4(_0x968f4d);if(_0x6abad6){_0x6abad6._0x709110=_0xec97875d(190)+(_0x4adf48._0xc46706?'_0x95d5d9':'');_0x6abad6._0x98365f=_0xec97875d(219);}if(!_0x4adf48._0xc46706){_0xd7a0a7._0x98365f=_0xec97875d(199);return;}const _0xbc0834=_0x124ce4();_0x4adf48._0xb927ee((_0xea00ba,_0xc8be88)=>(_0x968f4d[_0xc8be88]?._0xc1bc83||0)-(_0x968f4d[_0xea00ba]?._0xc1bc83||0));_0xd7a0a7._0x98365f=_0x4adf48._0x111c03((_0xc5a85f)=>{const _0xc45dbb=_0x968f4d[_0xc5a85f]||{};const _0x67bcea=_0xc45dbb._0xc1bc83?_0xcc7923(_0xc45dbb._0xc1bc83):_0xec97875d(73);const _0x66aa21=(_0xc5a85f===_0xbc0834);return `<_0xa8e633 class=_0xec97875d(200)><_0xa8e633 _0x2cd412=_0xec97875d(220)><_0xc8be88 class=_0xec97875d(192)_0x2cd412=_0xec97875d(221)>${_0x66aa21?'⭐ ':''}${_0xc5a85f}</_0xc8be88><_0xe7bf5d>_0xac2268 _0x67bcea:${_0x67bcea}<_0xfd58c4>_0xb4a306:${(_0xc45dbb._0x3e0d52||'—')}• _0x53f29a:${(_0xc45dbb._0x95623c||'—')}<_0xfd58c4>_0x72fa2a:${(_0xc45dbb._0x2387d8||'—')._0xd7bfc6(0,80)}${(_0xc45dbb._0x2387d8||'')._0xc46706>80?'…':''}</_0xe7bf5d></_0xa8e633><_0xa8e633 class=_0xec97875d(202)><_0x71bdac _0x4aa0b2=_0xec97875d(203)><_0x6eab41 class=_0xec97875d(204)></_0x6eab41>_0x12cac5</_0x71bdac><_0x71bdac class=_0xec97875d(222)_0x4aa0b2=_0xec97875d(223)><_0x6eab41 class=_0xec97875d(224)></_0x6eab41>_0x9ee814ó_0xea00ba</_0x71bdac></_0xa8e633></_0xa8e633>`;})._0x0ca40d('');}catch(_0xd7bbbc){_0xd7a0a7._0x98365f=_0xec97875d(225);if(_0x6abad6){_0x6abad6._0x709110=_0xec97875d(195);_0x6abad6._0x98365f=_0xec97875d(196);}_0x787e2a(_0xd7bbbc&&_0xd7bbbc._0xa2dd7e?_0xd7bbbc._0xa2dd7e:_0xec97875d(226));}}async function _0x9d3b9e(_0x9bcaa1){if(!_0x0a11c8)return _0x603545(_0xec97875d(210));const _0xbc0834=_0x124ce4();const _0x2cd8d3=await _0x8d14eb._0x3b0e4d({_0xfac25b:_0xec97875d(227),_0x34e10d:_0xec97875d(228),_0x224864:`<_0xa8e633 _0x2cd412=_0xec97875d(229)>_0xace109ế_0xb8a8e1 _0xc8be88ị:<_0xc8be88>${_0x9bcaa1}</_0xc8be88><_0xfd58c4>${_0x9bcaa1===_0xbc0834?_0xec97875d(230):''}</_0xa8e633>`,_0x96f79d:true,_0xa870b0:_0xec97875d(231),_0x5a1b0b:_0xec97875d(232)});if(!_0x2cd8d3._0xa83d19)return;try{await _0xe4e128._0x60a0d7(_0xec97875d(188)+_0x0a11c8+_0xec97875d(233)+_0x9bcaa1)._0xb8c59a();_0xb7306a(_0xec97875d(234));await _0x88b292(_0x0a11c8);await _0x07c48b(_0x0a11c8);}catch(_0xd7bbbc){_0x787e2a(_0xec97875d(235));}}async function _0x03150a(){if(!_0x0a11c8)return _0x603545(_0xec97875d(210));const _0x2cd8d3=await _0x8d14eb._0x3b0e4d({_0xfac25b:_0xec97875d(236),_0x34e10d:_0xec97875d(228),_0x224864:_0xec97875d(53)+_0xec97875d(237)+_0xec97875d(238)+_0xec97875d(59),_0x96f79d:true,_0xa870b0:_0xec97875d(239),_0x5a1b0b:_0xec97875d(232)});if(!_0x2cd8d3._0xa83d19)return;try{await _0xe4e128._0x60a0d7(_0xec97875d(188)+_0x0a11c8+_0xec97875d(218))._0xb8c59a();_0xb7306a(_0xec97875d(240));await _0x88b292(_0x0a11c8);await _0x07c48b(_0x0a11c8);}catch(_0xd7bbbc){_0x787e2a(_0xec97875d(241));}}/*=========14)_0x82743a _0x8ea7eb(_0xdb0b66 _0x52d9f0+_0x1c9bc5)=========*/let _0xe515f9=0;async function _0x03730d(){try{const _0xb8a8e1=await _0xff4c56._0x6b14a8._0xb2b7f3();if(_0xb8a8e1){document._0xc1ab00(_0xec97875d(213))._0x541692=_0xb8a8e1._0x174148();_0xb7306a(_0xec97875d(242));}else{_0x603545(_0xec97875d(243));}}catch(_0xd7bbbc){_0x787e2a(_0xec97875d(244));}}/*_0x0ce4f5 _0x27f60c/_0xe83d84 _0x3cee7e*/function _0x7aa51a(){const _0x581c7b=document._0xc1ab00(_0xec97875d(213));const _0x7843c1=document._0xc1ab00(_0xec97875d(245));if(!_0x581c7b)return;if(_0x581c7b._0x031aa1===_0xec97875d(246)){_0x581c7b._0x031aa1=_0xec97875d(247);if(_0x7843c1)_0x7843c1._0x709110=_0xec97875d(248);_0xcda2e5(_0xec97875d(249));}else{_0x581c7b._0x031aa1=_0xec97875d(246);if(_0x7843c1)_0x7843c1._0x709110=_0xec97875d(250);_0xcda2e5(_0xec97875d(251));}}async function _0xfb5438(){const _0x8c0d92=document._0xc1ab00(_0xec97875d(213));const _0x068f20=document._0xc1ab00(_0xec97875d(252));const _0xc8ce00=Date._0x29eb1e();if(_0xc8ce00-_0xe515f9<500)return;_0xe515f9=_0xc8ce00;const _0x8d8683=_0x89c255(_0x8c0d92._0x541692);if(!_0x8d8683._0x95d5d9){_0xff392c(_0x8d8683._0x1d8fd7);_0x603545(_0x8d8683._0x1d8fd7);return;}const _0x3cee7e=_0x8d8683._0x3cee7e;const _0x87f541=_0x068f20._0x98365f;_0x068f20._0x98365f=_0xec97875d(253);_0x068f20._0x2cd412._0x369efc=_0xec97875d(254);_0x068f20._0x39dcc0=true;try{if(!_0x960d5f._0x6f8cfe()._0x3ab87f){await _0x960d5f._0x6f8cfe()._0xe3d2fa();}const _0x9bcaa1=_0x124ce4();const _0x1228da=_0xe4e128._0x60a0d7(_0xec97875d(188)+_0x3cee7e);const _0x598eb0=await _0x1228da._0xebeb16(_0xec97875d(129));if(!_0x598eb0._0x94762c()){throw new Error(_0xec97875d(255));}const _0x9b8103=_0x598eb0._0x075c3a()||{};if(_0x9b8103._0xb473d4===false){throw new Error(_0xec97875d(256));}const _0x29eb1e=Date._0x29eb1e();const _0x88ff33=Number(_0x9b8103._0x88ff33||0);if(_0x88ff33&&_0x29eb1e>_0x88ff33){throw new Error(_0xec97875d(257)+_0x32a178(new Date(_0x88ff33))+'!');}const _0x1487dd=Math._0x01fa32(1,Number(_0x9b8103._0x1487dd||1));const _0x1d568b=_0x1228da._0x58a733(_0xec97875d(258));const _0x03253f=_0x8bc16c(_0x29eb1e);//_0x95afc9:_0xb694f6 _0xd325a1 _0x76151aconst _0x9dba65=await _0x1d568b._0x1c9bc5((_0x968f4d)=>{_0x968f4d=_0x968f4d||{};if(_0x968f4d[_0x9bcaa1]){_0x968f4d[_0x9bcaa1]._0xc1bc83=_0x29eb1e;_0x968f4d[_0x9bcaa1]._0x2387d8=_0x03253f._0x2387d8;_0x968f4d[_0x9bcaa1]._0x3e0d52=_0x03253f._0x3e0d52;_0x968f4d[_0x9bcaa1]._0xb7bf81=_0x03253f._0xb7bf81;_0x968f4d[_0x9bcaa1]._0x95623c=_0x03253f._0x95623c;return _0x968f4d;}const _0xa469af=Object._0xa44fa4(_0x968f4d)._0xc46706;if(_0xa469af>=_0x1487dd){return;}_0x968f4d[_0x9bcaa1]=_0x03253f;return _0x968f4d;});if(!_0x9dba65._0x51713a){throw new Error(_0xec97875d(259)+_0x1487dd+_0xec97875d(260));}await _0x1228da._0xe4c152({_0x4c866f:_0x29eb1e});_0xb37cf9();_0x068f20._0x98365f=_0xec97875d(261);_0x068f20._0x2cd412._0x6155cb=_0xec97875d(124);_0xbed4f5._0xb8fce4(_0xec97875d(211),_0x3cee7e);_0x0a11c8=_0x3cee7e;_0x8fa924(_0x3cee7e);_0x1f2a9c();_0xb7306a(_0xec97875d(262));//_0x31ceab _0x97323a_0xe9761f(()=>{_0x6d0974();_0x07c48b(_0x3cee7e);_0x88b292(_0x3cee7e);},450);}catch(_0xd7bbbc){_0x068f20._0x98365f=_0x87f541;_0x068f20._0x2cd412._0x369efc='1';_0x068f20._0x39dcc0=false;const _0x213f55=(_0xd7bbbc&&_0xd7bbbc._0xa2dd7e)?_0xd7bbbc._0xa2dd7e:_0xec97875d(263);_0xff392c(_0x213f55);_0x787e2a(_0x213f55);_0x8c0d92._0x2cd412._0x9275f5=_0xec97875d(264);_0xe9761f(()=>_0x8c0d92._0x2cd412._0x9275f5='',500);}}document._0x4fbed1(_0xec97875d(265),()=>{const _0x0b2085=document._0xc1ab00(_0xec97875d(213));if(_0x0b2085){_0x0b2085._0x4fbed1(_0xec97875d(266),function(_0xd7bbbc){if(_0xd7bbbc._0x3cee7e===_0xec97875d(267))_0xfb5438();});_0x0b2085._0x4fbed1(_0xec97875d(268),function(){_0xb37cf9();});}});/*=========15)_0x11fec4+_0xaed5c4=========*/function _0x45b2aa(_0x5962b3){const _0x6d7463=Number(_0x5962b3._0x6d7463||0);const _0x01fa32=Number(_0x5962b3._0x01fa32||100);const _0x075c3a=Number(_0x5962b3._0x541692||0);const _0x4e6afe=((_0x075c3a-_0x6d7463)/(_0x01fa32-_0x6d7463))*100;_0x5962b3._0x2cd412._0x044778=_0xec97875d(269);const _0xd8a998=239;const _0xa68736=Math._0x01fa32(68,Math._0x983f68(96-(_0x4e6afe*0.45)));const _0xc8be88=Math._0x01fa32(68,Math._0x983f68(68-(_0x4e6afe*0.10)));_0x5962b3._0x2cd412._0xe36c93(_0xec97875d(270),_0xec97875d(271));const _0xea4827=_0x5962b3._0xc5a85f+_0xec97875d(272);const _0xa1b925=document._0xc1ab00(_0xea4827);if(_0xa1b925)_0xa1b925._0x660d85=_0x075c3a+'%';}function _0xf92cdf(){$$(_0xec97875d(273))._0x7126bb(_0x5962b3=>{_0x45b2aa(_0x5962b3);_0x5962b3._0x4fbed1(_0xec97875d(268),()=>_0x45b2aa(_0x5962b3));});}function _0x4bb9c9(){const _0x0e3f9f=document._0xc1ab00(_0xec97875d(274))._0x541692;const _0x03626a=document._0xc1ab00(_0xec97875d(275));if(!_0x0e3f9f||_0x0e3f9f<=0){_0x603545(_0xec97875d(276));return;}const _0x87f541=_0x03626a._0x98365f;_0x03626a._0x98365f=_0xec97875d(277);_0x03626a._0x39dcc0=true;_0xe9761f(()=>{_0x03626a._0x98365f=_0xec97875d(278);_0x03626a._0x2cd412._0x044778=_0xec97875d(279);_0x03626a._0x2cd412._0x6155cb=_0xec97875d(124);_0xb7306a(_0xec97875d(280)+_0x0e3f9f);_0xe9761f(()=>{_0x03626a._0x98365f=_0x87f541;_0x03626a._0x2cd412._0x044778=_0xec97875d(281);_0x03626a._0x2cd412._0x6155cb=_0xec97875d(282);_0x03626a._0x39dcc0=false;},1600);},800);}/*=========16)_0xa3bcb8:_0xdb0161+_0x4f8553 _0x381d66=========*/function _0xd30729(_0xc5a85f,_0x541692){const _0x25984f=document._0xc1ab00(_0xc5a85f);if(!_0x25984f)return;_0x25984f._0x541692=_0x541692;_0x45b2aa(_0x25984f);}function _0x1b3600(_0x9d96c7){//_0xdb0161 _0x7b67ac _0xce411d-_0x405fd9(_0x901141 _0x335352 _0x3359a6). _0x65d4e4 _0x7b67ac _0x8e9b15 _0xa319ea.const _0x2284dc={_0xb1612c:{_0xf0cac3:98,_0x4fe64e:90,_0x4a827a:82,_0x024c81:62,_0xdfc582:950},_0xc9d4b3:{_0xf0cac3:100,_0x4fe64e:92,_0x4a827a:78,_0x024c81:55,_0xdfc582:850},_0x024c81:{_0xf0cac3:86,_0x4fe64e:75,_0x4a827a:70,_0x024c81:42,_0xdfc582:700},_0x7ad1c8:{_0xf0cac3:95,_0x4fe64e:85,_0x4a827a:75,_0x024c81:50,_0xdfc582:800}};const _0x4e6afe=_0x2284dc[_0x9d96c7];if(!_0x4e6afe)return;_0xd30729(_0xec97875d(283),_0x4e6afe._0xf0cac3);_0xd30729(_0xec97875d(284),_0x4e6afe._0x4fe64e);_0xd30729(_0xec97875d(285),_0x4e6afe._0x4a827a);_0xd30729(_0xec97875d(286),_0x4e6afe._0x024c81);const _0x0e3f9f=document._0xc1ab00(_0xec97875d(274));if(_0x0e3f9f)_0x0e3f9f._0x541692=_0x4e6afe._0xdfc582;_0xb7306a(_0xec97875d(287)+_0x9d96c7._0x94d516());}/*=========17)_0x9e2eed _0xe5eeb4=========*/function _0xf5b02e(){//_0x3cf1ff+_0x021778const _0x35be3f=_0xb6c3c2._0x541692;const _0x309565=document._0xc1ab00(_0xec97875d(288));const _0x608f3c=document._0xc1ab00(_0xec97875d(289));const _0xc0cb05=document._0xc1ab00(_0xec97875d(290));const _0x696b3a=document._0xc1ab00(_0xec97875d(291));const _0x5cbacd=document._0xc1ab00(_0xec97875d(292));if(_0x309565)_0x309565._0x4b088a=!!_0x35be3f._0x9905d9;if(_0x608f3c)_0x608f3c._0x4b088a=!!_0x35be3f._0x34153a;if(_0xc0cb05)_0xc0cb05._0x4b088a=!!_0x35be3f._0x9a1b6b;if(_0x696b3a)_0x696b3a._0x4b088a=!!_0x35be3f._0x4c3d81;if(_0x5cbacd)_0x5cbacd._0x541692=_0x35be3f._0x9cf0bf;const _0xfadd38=(_0x6705e2,_0x075c3a,_0x677686,_0xea1b5d)=>{if(!_0x6705e2)return;_0x6705e2._0x541692=String(_0x075c3a);const _0xb4dd9a=document._0xc1ab00(_0x677686);if(_0xb4dd9a)_0xb4dd9a._0x660d85=_0xea1b5d(_0x075c3a);};_0xfadd38(document._0xc1ab00(_0xec97875d(293)),(_0x35be3f._0x5c50c7??95),_0xec97875d(294),_0x212912=>_0x212912+'%');_0xfadd38(document._0xc1ab00(_0xec97875d(295)),(_0x35be3f._0x174bc8??16),_0xec97875d(296),_0x212912=>_0x212912+'_0xf6b73c');_0xfadd38(document._0xc1ab00(_0xec97875d(297)),(_0x35be3f._0x8298cc??100),_0xec97875d(298),_0x212912=>_0x212912+'%');_0xfadd38(document._0xc1ab00(_0xec97875d(299)),(_0x35be3f._0x835f5f??26),_0xec97875d(300),_0x212912=>_0x212912+'_0xf6b73c');//_0xb761d5 _0x8a57edconst _0x326910=document._0xc1ab00(_0xec97875d(301));const _0x0f65c6=document._0xc1ab00(_0xec97875d(302));if(_0x326910)_0x326910._0x660d85=_0x124ce4();if(_0x0f65c6)_0x0f65c6._0x660d85=_0x0a11c8||'—';}function _0x1db91a(_0x3cee7e,_0x541692){_0xb6c3c2._0x541692[_0x3cee7e]=_0x541692;_0xb6c3c2._0xeba67d();_0xb6c3c2._0xa81f51();//_0x9a1b6b _0x1a884d/_0xd21bdeif(_0x3cee7e===_0xec97875d(303)){if(_0x541692)_0xfca97f._0x1a884d();else _0xfca97f._0xd21bde();}_0xcda2e5(_0xec97875d(304));}function _0x134a16(){_0xb6c3c2._0x541692={..._0xd9c5e7};_0xb6c3c2._0xeba67d();_0xb6c3c2._0xa81f51();if(_0xb6c3c2._0x541692._0x9a1b6b)_0xfca97f._0x1a884d();else _0xfca97f._0xd21bde();_0xf5b02e();_0xb7306a(_0xec97875d(305));}/*=========18)_0x47853e _0xce411d _0x381d66(_0xce8e8c _0x1372fd)=========*/function _0xcd2f06(_0xc5a85f){const _0x25984f=document._0xc1ab00(_0xc5a85f);if(!_0x25984f)return;const _0x7e6698=_0x25984f._0xfb8ec8._0x7e6698!=='1';_0x25984f._0xfb8ec8._0x7e6698=_0x7e6698?'1':'0';const _0x0e4ae3=_0x25984f._0x465500(_0xec97875d(306));if(_0x0e4ae3){if(_0x7e6698){_0x0e4ae3._0x709110=_0xec97875d(307);_0x0e4ae3._0x98365f=_0xec97875d(308);}else{_0x0e4ae3._0x709110=_0xec97875d(195);_0x0e4ae3._0x98365f=_0xec97875d(309);}}_0xcda2e5(_0x7e6698?_0xec97875d(310):_0xec97875d(311));}/*=========19)_0x66da65=========*/function _0x528ab4(_0x25984f,_0xfd0e56,_0x5ab9cf){if(!_0x25984f)return;_0x25984f._0x660d85="";let _0x6eab41=0;const _0xcd9707=()=>{_0x25984f._0x660d85=_0xfd0e56._0xd7bfc6(0,_0x6eab41);_0x6eab41++;if(_0x6eab41<=_0xfd0e56._0xc46706)_0xe9761f(_0xcd9707,_0x5ab9cf);};_0xcd9707();}/*=========20)_0xdc8353=========*/window._0x4fbed1(_0xec97875d(312),async function(){//_0x9e2eed_0xb6c3c2._0xaea15b();//_0x02cbac _0x527e8a _0xdc7fba _0x38223a _0x0603f4,_0x59c0e3 default _0x4c3d81 _0x61e340 _0x527e8a _0x31ceb4 _0x59c0e3 _0xf76d38.try{const _0x23aaf7=window._0x5cc09c&&window._0x5cc09c(_0xec97875d(313))._0x4d8b0a;if(_0x23aaf7&&!_0xbed4f5._0x69c00d(_0xb50214)){_0xb6c3c2._0x541692._0x4c3d81=true;_0xb6c3c2._0x541692._0x9a1b6b=false;_0xb6c3c2._0xeba67d();}}catch(_0xd7bbbc){}_0xb6c3c2._0xa81f51();//_0xfeba59_0xfca97f._0xa5f5c6();if(_0xb6c3c2._0x541692._0x9a1b6b)_0xfca97f._0x1a884d();//_0x6cb001_0x93cb40();//_0x379f7c _0x58b587_0x528ab4(document._0xc1ab00(_0xec97875d(314)),_0xec97875d(315),55);_0x528ab4(document._0xc1ab00(_0xec97875d(316)),_0xec97875d(317),70);//_0x0d7f19 _0x9e699e _0xfed23a_0x1f2a9c();//_0x3ff654 _0x91852e_0xf92cdf();//_0xce8e8c _0x3b35f2_0x59a8a9._0xa5f5c6();//_0x5da9a3 _0xe59c3a _0x3cee7e(_0x405fd9 if _0xd8391b _0x95623c _0x94762c)const _0x02d95b=!!document._0xc1ab00(_0xec97875d(78))&&!!document._0xc1ab00(_0xec97875d(213))&&!!document._0xc1ab00(_0xec97875d(252));const _0xe59c3a=_0xbed4f5._0x69c00d(_0xec97875d(211));if(_0x02d95b){if(_0xe59c3a){try{document._0xc1ab00(_0xec97875d(213))._0x541692=_0xe59c3a;}catch(_0xd7bbbc){}_0xcda2e5(_0xec97875d(318));try{await _0xfb5438();}catch(_0xd7bbbc){}}else{_0xcda2e5(_0xec97875d(319));}}//_0x9e2eed _0xce411d _0x8fbf66_0xf5b02e();//_0xb0b1df/_0x4eb985 _0xba01dcwindow._0x4fbed1(_0xec97875d(320),()=>_0xb7306a(_0xec97875d(321)));window._0x4fbed1(_0xec97875d(322),()=>_0x603545(_0xec97875d(323)));});document._0x4fbed1(_0xec97875d(265),function(){const _0xb1e398=document._0xc1ab00(_0xec97875d(324));const _0xf2839b=document._0xc1ab00(_0xec97875d(325));const _0xeb5e01=document._0xc1ab00(_0xec97875d(326));//_0x5a2bf2 _0x779326ầ_0x471b01 _0x665b5cứ_0xea00ba _0x3cee7e _0x765851 ở _0xc45dbbướ_0x6eab41 _0x0d14a1const _0x100b6d=document._0xc1ab00(_0xec97875d(327));//_0xcad834ỉ _0xa2364aệ_0x471b01 1 _0x589c17ầ_0x471b01 _0x2dd31cỗ_0x6eab41 _0x262653ê_0x471b01 _0x2dd31cở _0xe2dad3const _0x6aabd4=_0x5de05b._0x69c00d(_0xec97875d(328));if(!_0x6aabd4){_0xe9761f(()=>{_0xb1e398._0x5e8c2d._0x7ab6aa(_0xec97875d(23));_0x5de05b._0xb8fce4(_0xec97875d(328),_0xec97875d(38));},500);}_0xf2839b._0x4fbed1(_0xec97875d(94),function(){_0xb1e398._0x5e8c2d._0xb8c59a(_0xec97875d(23));});_0xb1e398._0x4fbed1(_0xec97875d(94),function(_0xd7bbbc){if(_0xd7bbbc._0x553cfe===_0xb1e398){_0xb1e398._0x5e8c2d._0xb8c59a(_0xec97875d(23));}});_0xeb5e01._0x4fbed1(_0xec97875d(94),function(){_0xb1e398._0x5e8c2d._0xb8c59a(_0xec97875d(23));if(_0x100b6d){_0xe9761f(()=>{_0x100b6d._0x60ae3e({_0xea6239:_0xec97875d(329),_0xba3131:_0xec97875d(330)});},200);}else{window._0x6fc0b8({_0x03265d:document._0x1ea15d._0x7534c6,_0xea6239:_0xec97875d(329)});}});});function _0x3b9954(){const _0xaebfa6=document._0xc1ab00(_0xec97875d(331));const _0x6abad6=document._0xc1ab00(_0xec97875d(332));_0xaebfa6._0x0befbe();_0xaebfa6._0x2634dc(0,99999);_0xff4c56._0x6b14a8._0x20270a(_0xaebfa6._0x541692)._0xb77b82(()=>{_0x6abad6._0x660d85=_0xec97875d(333);}).catch(()=>{document._0xe7e02f(_0xec97875d(334));_0x6abad6._0x660d85=_0xec97875d(333);});_0xe9761f(()=>{_0x6abad6._0x660d85="";},2000);}/*=========21)_0xc2e0fb _0x9e3a3f _0x2e13df window(_0xecdce2 _0x4aa0b2)=========*/window._0x8625fd=_0x8625fd;window._0xe73312=_0xe73312;window._0x6f17e2=_0x6f17e2;window._0x6aac5f=_0x6aac5f;window._0xeb3b34=_0xeb3b34;window._0x2bd5d7=_0x2bd5d7;window._0x9658f9=_0x9658f9;window._0xb783fc=_0xb783fc;window._0x1c8d83=_0x1c8d83;window._0x5a80a3=_0x5a80a3;window._0x732eb9=_0x732eb9;window._0x7aa51a=_0x7aa51a;window._0x03730d=_0x03730d;window._0x642b3a=_0x642b3a;window._0xfb5438=_0xfb5438;window._0x79b28e=_0x79b28e;window._0x4b751a=_0x4b751a;window._0x40b469=_0x40b469;window._0x4bb9c9=_0x4bb9c9;window._0x1b3600=_0x1b3600;window._0x5f30df=_0x5f30df;window._0x9d3b9e=_0x9d3b9e;window._0x03150a=_0x03150a;window._0xe0aeba=_0xe0aeba;window._0x5df9c2=_0x5df9c2;window._0x4bc7f9=_0x4bc7f9;window._0x1db91a=_0x1db91a;window._0x134a16=_0x134a16;window._0xcd2f06=_0xcd2f06;
+/* ===========================
+   HH SUPER UI v2 (Deluxe JS)
+   - Many UI effects (sound "tạch", ripple, HUD)
+   - Startup overlay check Device + Server
+   - More pages: Tools, Devices, Settings
+   - Keep full login/key logic with Firebase transaction
+   =========================== */
+
+/* ========= 0) Helpers ========= */
+const $$ = (sel, root=document) => Array.from(root.querySelectorAll(sel));
+const $  = (sel, root=document) => root.querySelector(sel);
+const sleep = (ms) => new Promise(res => setTimeout(res, ms));
+
+/* ========= 1) UI Settings (local) ========= */
+const SETTINGS_KEY = 'hhsuper_settings_v2';
+const DEFAULT_SETTINGS = {
+  accent: 'gold',          // 'gold' | 'aqua'
+  clickSound: true,        // click "tạch"
+  haptic: false,           // vibrate if supported
+  particles: true,         // background stars
+  reduceMotion: false,     // force reduce motion
+
+  // V3: Modern UI tuning
+  glow: 95,                // 0..120 (%)
+  blur: 16,                // 6..24 (px)
+  fontScale: 100,          // 90..110 (%)
+  roundness: 26            // 18..34 (px)
+};
+
+const UISettings = {
+  value: { ...DEFAULT_SETTINGS },
+
+  load(){
+    try{
+      const raw = localStorage.getItem(SETTINGS_KEY);
+      if(!raw) return;
+      const obj = JSON.parse(raw);
+      if(obj && typeof obj === 'object'){
+        this.value = { ...DEFAULT_SETTINGS, ...obj };
+      }
+    }catch(e){}
+  },
+
+  save(){
+    try{ localStorage.setItem(SETTINGS_KEY, JSON.stringify(this.value)); }catch(e){}
+  },
+
+  apply(){
+    const v = this.value;
+
+    // Data attrs
+    document.body.dataset.accent = (v.accent === 'aqua') ? 'aqua' : 'gold';
+    document.body.dataset.particles = v.particles ? '1' : '0';
+    document.body.dataset.reduceMotion = v.reduceMotion ? '1' : '0';
+
+    // CSS vars (V3 modern tuning)
+    const root = document.documentElement;
+
+    const blur = Math.max(6, Math.min(24, Number(v.blur || 16)));
+    const glow = Math.max(0, Math.min(120, Number(v.glow ?? 95)));
+    const fontScale = Math.max(90, Math.min(110, Number(v.fontScale ?? 100)));
+    const roundness = Math.max(18, Math.min(34, Number(v.roundness ?? 26)));
+
+    root.style.setProperty('--blurAmt', blur + 'px');
+    root.style.setProperty('--glowPower', String(glow / 100));
+    root.style.setProperty('--fontScale', String(fontScale / 100));
+
+    // roundness derived
+    root.style.setProperty('--radiusCard', roundness + 'px');
+    root.style.setProperty('--radiusTile', Math.max(18, roundness - 4) + 'px');
+    root.style.setProperty('--radiusBtn', Math.max(14, roundness - 10) + 'px');
+    root.style.setProperty('--radiusInput', Math.max(16, roundness - 8) + 'px');
+  }
+};
+
+/* ========= 2) HUD Toast ========= */
+function hud(type, msg){
+  const hudWrap = document.getElementById('hud');
+  if(!hudWrap) return;
+  const el = document.createElement('div');
+  el.className = 'hud-toast ' + (type || 'info');
+
+  let icon = 'fa-circle-info';
+  if(type === 'ok') icon = 'fa-circle-check';
+  if(type === 'err') icon = 'fa-circle-exclamation';
+  if(type === 'warn') icon = 'fa-triangle-exclamation';
+
+  el.innerHTML = `<i class="fa-solid ${icon}"></i><span>${msg || 'Thông báo'}</span>`;
+  hudWrap.appendChild(el);
+
+  requestAnimationFrame(() => el.classList.add('show'));
+
+  const life = 2300;
+  setTimeout(() => {
+    el.classList.remove('show');
+    setTimeout(() => el.remove(), 280);
+  }, life);
+}
+function toastOk(msg){ hud('ok', msg || 'Thành công'); }
+function toastErr(msg){ hud('err', msg || 'Có lỗi'); }
+function toastInfo(msg){ hud('info', msg || 'Thông tin'); }
+function toastWarn(msg){ hud('warn', msg || 'Cảnh báo'); }
+
+/* ========= 3) Click "tạch" + Ripple + Haptic ========= */
+const ClickFX = {
+  ctx: null,
+  enabled: true,
+  _noiseBuf: null,
+
+  ensureCtx(){
+    if(this.ctx) return this.ctx;
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if(!AC) return null;
+    this.ctx = new AC();
+    return this.ctx;
+  },
+
+  buildNoise(ctx){
+    // 30ms noise buffer
+    const duration = 0.03;
+    const sampleRate = ctx.sampleRate;
+    const buffer = ctx.createBuffer(1, Math.floor(sampleRate * duration), sampleRate);
+    const data = buffer.getChannelData(0);
+    for(let i=0;i<data.length;i++){
+      data[i] = (Math.random()*2 - 1) * 0.75;
+    }
+    this._noiseBuf = buffer;
+  },
+
+  play(){
+    if(!UISettings.value.clickSound) return;
+    const ctx = this.ensureCtx();
+    if(!ctx) return;
+
+    // iOS requires resume on gesture
+    if(ctx.state === 'suspended'){
+      ctx.resume().catch(()=>{});
+    }
+
+    if(!this._noiseBuf) this.buildNoise(ctx);
+
+    const t0 = ctx.currentTime;
+
+    // click "tick": short square wave
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = 'square';
+    osc.frequency.setValueAtTime(1900, t0);
+
+    gain.gain.setValueAtTime(0.0001, t0);
+    gain.gain.exponentialRampToValueAtTime(0.24, t0 + 0.003);
+    gain.gain.exponentialRampToValueAtTime(0.0001, t0 + 0.045);
+
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+
+    osc.start(t0);
+    osc.stop(t0 + 0.05);
+
+    // tiny noise burst to make it "tạch"
+    const noise = ctx.createBufferSource();
+    noise.buffer = this._noiseBuf;
+
+    const nGain = ctx.createGain();
+    const filter = ctx.createBiquadFilter();
+    filter.type = 'highpass';
+    filter.frequency.setValueAtTime(1200, t0);
+
+    nGain.gain.setValueAtTime(0.0001, t0);
+    nGain.gain.exponentialRampToValueAtTime(0.16, t0 + 0.002);
+    nGain.gain.exponentialRampToValueAtTime(0.0001, t0 + 0.03);
+
+    noise.connect(filter);
+    filter.connect(nGain);
+    nGain.connect(ctx.destination);
+
+    noise.start(t0);
+    noise.stop(t0 + 0.035);
+
+    // optional haptic
+    if(UISettings.value.haptic && navigator.vibrate){
+      try{ navigator.vibrate(8); }catch(e){}
+    }
+  },
+
+  ripple(e, target){
+    if(!target) return;
+    const rect = target.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height);
+    const x = (e.clientX - rect.left) - size/2;
+    const y = (e.clientY - rect.top) - size/2;
+
+    const span = document.createElement('span');
+    span.className = 'ripple';
+    span.style.width = span.style.height = size + 'px';
+    span.style.left = x + 'px';
+    span.style.top = y + 'px';
+
+    // Ensure target is positioned
+    const cs = getComputedStyle(target);
+    if(cs.position === 'static'){
+      target.style.position = 'relative';
+    }
+    target.appendChild(span);
+    setTimeout(() => span.remove(), 700);
+  }
+};
+
+// Global click detector
+function isInteractive(el){
+  if(!el) return false;
+  const t = el.closest(
+    'button, a, .menu-item, .chip-btn, .tab-btn, .quick-tile, .hex-btn, .mini-hex, .dpi-btn, .drawer-close, .eye-btn, .preset-btn, .social-link, .carousel-nav, .carousel-dot, label.hex-switch'
+  );
+  if(!t) return false;
+  if(t.disabled) return false;
+  if(t.getAttribute && t.getAttribute('aria-disabled') === 'true') return false;
+  return true;
+}
+
+document.addEventListener('pointerdown', (e) => {
+  const target = e.target && e.target.closest ? e.target.closest(
+    'button, a, .menu-item, .chip-btn, .tab-btn, .quick-tile, .hex-btn, .mini-hex, .dpi-btn, .drawer-close, .eye-btn, .preset-btn, .social-link, .carousel-nav, .carousel-dot'
+  ) : null;
+
+  if(isInteractive(e.target)){
+    ClickFX.play();
+  }
+  if(target){
+    ClickFX.ripple(e, target);
+  }
+}, { passive:true });
+
+/* ========= 4) Particle Background (Canvas Stars) ========= */
+const ParticleFX = {
+  canvas: null,
+  ctx: null,
+  stars: [],
+  running: false,
+  last: 0,
+
+  init(){
+    this.canvas = document.getElementById('fxCanvas');
+    if(!this.canvas) return;
+    this.ctx = this.canvas.getContext('2d', { alpha:true });
+    this.resize();
+    window.addEventListener('resize', () => this.resize());
+  },
+
+  resize(){
+    if(!this.canvas) return;
+    const dpr = Math.min(2, window.devicePixelRatio || 1);
+    this.canvas.width = Math.floor(window.innerWidth * dpr);
+    this.canvas.height = Math.floor(window.innerHeight * dpr);
+    this.canvas.style.width = window.innerWidth + 'px';
+    this.canvas.style.height = window.innerHeight + 'px';
+    this.dpr = dpr;
+
+    this.seed();
+  },
+
+  seed(){
+    if(!this.ctx) return;
+    const w = this.canvas.width;
+    const h = this.canvas.height;
+
+    const count = Math.max(40, Math.floor((w*h) / 65000));
+    this.stars = [];
+    for(let i=0;i<count;i++){
+      this.stars.push({
+        x: Math.random()*w,
+        y: Math.random()*h,
+        r: (Math.random()*1.2 + 0.4) * this.dpr,
+        a: Math.random()*0.55 + 0.18,
+        vx: (Math.random()*0.22 + 0.05) * this.dpr,
+        vy: (Math.random()*0.14 + 0.02) * this.dpr,
+        tw: Math.random()*0.9 + 0.2
+      });
+    }
+  },
+
+  start(){
+    if(!this.ctx) this.init();
+    if(!this.ctx) return;
+    if(this.running) return;
+    this.running = true;
+    this.last = performance.now();
+    requestAnimationFrame((t)=>this.loop(t));
+  },
+
+  stop(){
+    this.running = false;
+    if(this.ctx){
+      this.ctx.clearRect(0,0,this.canvas.width,this.canvas.height);
+    }
+  },
+
+  loop(t){
+    if(!this.running) return;
+    const dt = Math.min(32, t - this.last);
+    this.last = t;
+
+    const ctx = this.ctx;
+    const w = this.canvas.width;
+    const h = this.canvas.height;
+
+    ctx.clearRect(0,0,w,h);
+
+    // subtle drift
+    for(const s of this.stars){
+      s.x += s.vx * (dt/16);
+      s.y += s.vy * (dt/16);
+      if(s.x > w+20) s.x = -20;
+      if(s.y > h+20) s.y = -20;
+
+      const tw = (Math.sin((t/1000)*s.tw + s.x*0.002) + 1) * 0.5; // 0..1
+      const alpha = s.a * (0.55 + 0.45*tw);
+
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, s.r, 0, Math.PI*2);
+      ctx.fillStyle = `rgba(255,255,255,${alpha})`;
+      ctx.fill();
+    }
+
+    requestAnimationFrame((tt)=>this.loop(tt));
+  }
+};
+
+/* ========= 5) App State ========= */
+let CURRENT_KEY = null;
+
+/* ========= 6) Menu Controls ========= */
+function openMenu(){
+  document.getElementById('menuOverlay').classList.add('show');
+  document.getElementById('drawer').classList.add('show');
+}
+function closeMenu(){
+  document.getElementById('menuOverlay').classList.remove('show');
+  document.getElementById('drawer').classList.remove('show');
+}
+
+function showPage(id){
+  $$('.page').forEach(p => p.classList.remove('active'));
+  const el = document.getElementById(id);
+  if(el) el.classList.add('active');
+
+  // Home carousel autoplay
+  try{
+    if(typeof HomeCarousel !== 'undefined' && HomeCarousel.onPageChange){
+      HomeCarousel.onPageChange(id);
+    }
+  }catch(e){}
+}
+
+function menuGo(pageId){
+  closeMenu();
+  showPage(pageId);
+  // page hooks
+  if(pageId === 'page-checkkey' && CURRENT_KEY) loadKeyInfo(CURRENT_KEY);
+  if(pageId === 'page-devices' && CURRENT_KEY) loadDevicesList(CURRENT_KEY);
+  if(pageId === 'page-settings') syncSettingsUI();
+}
+
+function menuActionAbout(){
+  closeMenu();
+  Swal.fire({
+    title: 'Giới thiệu',
+    icon: 'info',
+    html: '<div style="text-align:left;line-height:1.6;font-size:13px;color:#0f172a">' +
+          '<b>HH SUPER</b> - Ứng dụng đăng nhập bằng key (UI Deluxe).<br>' +
+          '• Auto login khi có key đã lưu.<br>' +
+          '• Giới hạn thiết bị bằng transaction.<br>' +
+          '• Overlay check thiết bị + server khi vào app.<br>' +
+          '• Hiệu ứng click “tạch” + ripple + HUD gaming.<br>' +
+          '</div>',
+    confirmButtonText: 'Đóng'
+  });
+}
+
+function menuActionRefresh(){ closeMenu(); refreshKeyInfo(); }
+function menuActionCopyKey(){ closeMenu(); copyCurrentKey(); }
+function menuActionCopyDevice(){ closeMenu(); copyDeviceId(); }
+function menuActionClearSaved(){ closeMenu(); clearSavedKey(); }
+function menuActionLogout(){ closeMenu(); logoutKey(); }
+
+/* ========= 7) Login tabs ========= */
+function switchLoginTab(which){
+  const map = { info:'tab-info', warn:'tab-warn', contact:'tab-contact' };
+  const btnMap = { info:'tabInfoBtn', warn:'tabWarnBtn', contact:'tabContactBtn' };
+
+  Object.values(map).forEach(id => document.getElementById(id).classList.remove('active'));
+  Object.values(btnMap).forEach(id => document.getElementById(id).classList.remove('active'));
+
+  document.getElementById(map[which]).classList.add('active');
+  document.getElementById(btnMap[which]).classList.add('active');
+}
+
+function goContactPage(){
+  window.location.href = 'lienhe.html';
+}
+
+/* ========= 8) Key input helpers ========= */
+function getDeviceId() {
+  let id = localStorage.getItem('hhsuper_device_id');
+  if (!id) {
+    id = (window.crypto && crypto.randomUUID) ? crypto.randomUUID()
+      : ('dev-' + Math.random().toString(36).slice(2) + Date.now().toString(36));
+    localStorage.setItem('hhsuper_device_id', id);
+  }
+  return id;
+}
+
+function formatDateVN(d) {
+  try { return d.toLocaleDateString('vi-VN', { year: 'numeric', month: '2-digit', day: '2-digit' }); }
+  catch(e) { return d.toString(); }
+}
+
+function formatTs(ts){
+  if(!ts) return 'Không';
+  try{ return new Date(ts).toLocaleString('vi-VN'); }catch(e){ return String(ts); }
+}
+
+function showError(msg) {
+  const errMsg = document.getElementById('error-msg');
+  const errText = document.getElementById('error-text');
+  if (errText) errText.textContent = msg;
+  errMsg.classList.add('show');
+}
+function hideError() {
+  const el = document.getElementById('error-msg');
+  if(el) el.classList.remove('show');
+}
+
+function buildDeviceInfo(now) {
+  return {
+    firstSeen: now,
+    lastSeen: now,
+    userAgent: navigator.userAgent || '',
+    platform: navigator.platform || '',
+    language: navigator.language || '',
+    screen: (window.screen ? (screen.width + 'x' + screen.height) : '')
+  };
+}
+
+function sanitizeKeyInput(raw) {
+  const k = (raw || '').trim().toLowerCase();
+  if (!k) return { ok: false, key: '', reason: 'Vui lòng nhập key!' };
+  if (/[.#$\[\]\/]/.test(k)) return { ok: false, key: '', reason: 'Key chứa ký tự không hợp lệ!' };
+  return { ok: true, key: k };
+}
+
+/* ========= 9) Screen transitions ========= */
+function showMainApp() {
+  const loginScreen = document.getElementById('login-screen');
+  const mainApp = document.getElementById('main-app');
+
+  loginScreen.style.opacity = '0';
+  loginScreen.style.visibility = 'hidden';
+
+  setTimeout(() => {
+    loginScreen.style.display = 'none';
+    mainApp.style.display = 'block';
+    showPage('page-home');
+
+    // Startup overlay check
+    runStartupOverlay().catch(()=>{});
+  }, 600);
+}
+
+function showLoginScreen() {
+  const loginScreen = document.getElementById('login-screen');
+  const mainApp = document.getElementById('main-app');
+
+  mainApp.style.display = 'none';
+  loginScreen.style.display = 'flex';
+  loginScreen.style.visibility = 'visible';
+  loginScreen.style.opacity = '1';
+  hideError();
+}
+
+function setHeaderKey(key) {
+  const mk = document.getElementById('menuKey');
+  if(mk) mk.textContent = key ? key : '—';
+}
+function setHeaderDevice() {
+  const md = document.getElementById('menuDevice');
+  if(md) md.textContent = getDeviceId();
+}
+
+/* ========= 9.1) Home Carousel (Auto) ========= */
+const HomeCarousel = {
+  el: null,
+  track: null,
+  slides: [],
+  dots: [],
+  index: 0,
+  timer: null,
+
+  init(){
+    this.el = document.getElementById('homeCarousel');
+    if(!this.el) return;
+
+    this.track = this.el.querySelector('.carousel-track');
+    this.slides = Array.from(this.el.querySelectorAll('.carousel-slide'));
+    this.dots = Array.from(this.el.querySelectorAll('.carousel-dot'));
+
+    const prevBtn = this.el.querySelector('.carousel-nav.prev');
+    const nextBtn = this.el.querySelector('.carousel-nav.next');
+
+    if(prevBtn) prevBtn.addEventListener('click', () => { this.prev(); this.restart(); });
+    if(nextBtn) nextBtn.addEventListener('click', () => { this.next(); this.restart(); });
+
+    this.dots.forEach(d => {
+      d.addEventListener('click', () => {
+        const i = Number(d.dataset.idx || 0);
+        this.go(i);
+        this.restart();
+      });
+    });
+
+    // Pause on hover
+    this.el.addEventListener('pointerenter', () => this.stop());
+    this.el.addEventListener('pointerleave', () => this.start());
+
+    // Swipe (simple)
+    let down = false;
+    let startX = 0;
+    this.el.addEventListener('pointerdown', (e) => {
+      down = true;
+      startX = e.clientX || 0;
+    }, { passive:true });
+
+    window.addEventListener('pointerup', (e) => {
+      if(!down) return;
+      down = false;
+      const endX = e.clientX || 0;
+      const dx = endX - startX;
+      if(Math.abs(dx) > 45){
+        if(dx > 0) this.prev(); else this.next();
+        this.restart();
+      }
+    }, { passive:true });
+
+    // Init state
+    this.go(0, false);
+
+    // Visibility pause
+    document.addEventListener('visibilitychange', () => {
+      if(document.hidden) this.stop();
+      else this.start();
+    });
+
+    // Start if Home is active
+    this.start();
+  },
+
+  isMainVisible(){
+    const main = document.getElementById('main-app');
+    if(!main) return false;
+    try{
+      return getComputedStyle(main).display !== 'none' && main.offsetParent !== null;
+    }catch(e){
+      return true;
+    }
+  },
+
+  isHomeActive(){
+    const home = document.getElementById('page-home');
+    return !!(home && home.classList.contains('active'));
+  },
+
+  go(i, animate=true){
+    if(!this.track || !this.slides.length) return;
+    const n = this.slides.length;
+
+    this.index = (i % n + n) % n;
+
+    if(!animate) this.track.classList.add('no-anim');
+    else this.track.classList.remove('no-anim');
+
+    this.track.style.transform = `translateX(-${this.index * 100}%)`;
+
+    this.slides.forEach((s, idx) => s.classList.toggle('is-active', idx === this.index));
+    this.dots.forEach((d, idx) => d.classList.toggle('active', idx === this.index));
+
+    if(!animate) requestAnimationFrame(() => this.track && this.track.classList.remove('no-anim'));
+  },
+
+  next(){ this.go(this.index + 1); },
+  prev(){ this.go(this.index - 1); },
+
+  start(){
+    if(!this.el) return;
+    if(!this.isMainVisible()) return;
+    if(!this.isHomeActive()) return;
+    if(this.timer) return;
+
+    const interval = (UISettings.value && UISettings.value.reduceMotion) ? 5200 : 3800;
+    this.timer = setInterval(() => this.next(), interval);
+  },
+
+  stop(){
+    if(this.timer){
+      clearInterval(this.timer);
+      this.timer = null;
+    }
+  },
+
+  restart(){
+    this.stop();
+    this.start();
+  },
+
+  onPageChange(pageId){
+    if(pageId === 'page-home') this.start();
+    else this.stop();
+  }
+};
+
+
+/* ========= 10) Firebase ========= */
+const firebaseConfig = {
+  apiKey: "AIzaSyBighk8uEKa3_CspVQoadvcmcROg4heLZQ",
+  authDomain: "huanhavn.firebaseapp.com",
+  databaseURL: "https://huanhavn-default-rtdb.firebaseio.com",
+  projectId: "huanhavn",
+  storageBucket: "huanhavn.firebasestorage.app",
+  messagingSenderId: "485987828879",
+  appId: "1:485987828879:web:ad44d75859cbd2fdd05cfa"
+};
+
+let db = null;
+
+function initFirebase(){
+  try{
+    if(!firebase.apps || !firebase.apps.length){
+      firebase.initializeApp(firebaseConfig);
+    }
+    db = firebase.database();
+  }catch(e){
+    console.error('Firebase init error', e);
+  }
+
+  // anon auth
+  try{
+    firebase.auth().onAuthStateChanged((u) => {
+      if (!u) firebase.auth().signInAnonymously().catch(()=>{});
+    });
+  }catch(e){}
+}
+
+/* ========= 11) Startup overlay (Device + Server check) ========= */
+function showStartupOverlay(){
+  const wrap = document.getElementById('startup-overlay');
+  if(!wrap) return;
+  wrap.classList.add('show');
+}
+function hideStartupOverlay(){
+  const wrap = document.getElementById('startup-overlay');
+  if(!wrap) return;
+  wrap.classList.remove('show');
+}
+
+function setStepStatus(stepId, status, text){
+  const el = document.getElementById(stepId);
+  if(!el) return;
+  const tag = el.querySelector('.tag');
+  if(!tag) return;
+
+  if(status === 'ok'){
+    tag.className = 'tag ok';
+    tag.innerHTML = '<i class="fa-solid fa-check"></i> OK';
+  }else if(status === 'bad'){
+    tag.className = 'tag bad';
+    tag.innerHTML = '<i class="fa-solid fa-xmark"></i> FAIL';
+  }else if(status === 'warn'){
+    tag.className = 'tag warn';
+    tag.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> WARN';
+  }else{
+    tag.className = 'tag';
+    tag.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> ...';
+  }
+
+  const small = el.querySelector('small');
+  if(small && text) small.textContent = text;
+}
+
+function setStartupProgress(pct){
+  const bar = document.getElementById('startupProgress');
+  if(bar) bar.style.width = Math.max(0, Math.min(100, pct)) + '%';
+}
+
+function setStartupMsg(msg, type){
+  const el = document.getElementById('startupMsg');
+  if(!el) return;
+  el.textContent = msg || '';
+  if(type === 'ok') el.style.color = '#bfffe4';
+  else if(type === 'bad') el.style.color = '#ffd0d0';
+  else if(type === 'warn') el.style.color = '#ffe8b3';
+  else el.style.color = 'rgba(234,240,255,0.86)';
+}
+
+async function checkFirebaseConnected(timeoutMs=4500){
+  if(!db) return false;
+  // .info/connected is boolean
+  const ref = db.ref('.info/connected');
+  return await new Promise((resolve) => {
+    let done = false;
+    const timer = setTimeout(() => {
+      if(done) return;
+      done = true;
+      ref.off('value');
+      resolve(false);
+    }, timeoutMs);
+
+    ref.on('value', (snap) => {
+      const ok = !!snap.val();
+      if(ok && !done){
+        done = true;
+        clearTimeout(timer);
+        ref.off('value');
+        resolve(true);
+      }
+    }, () => {
+      if(!done){
+        done = true;
+        clearTimeout(timer);
+        ref.off('value');
+        resolve(false);
+      }
+    });
+  });
+}
+
+async function runStartupOverlay(){
+  const wrap = document.getElementById('startup-overlay');
+  if(!wrap) return;
+
+  // If user disabled motion, keep overlay quick and without scan? (CSS handles)
+  showStartupOverlay();
+
+  // reset UI
+  setStepStatus('step-device', 'loading', 'Đang tạo Device ID...');
+  setStepStatus('step-browser', 'loading', 'Đang kiểm tra trình duyệt...');
+  setStepStatus('step-network', 'loading', 'Đang kiểm tra mạng...');
+  setStepStatus('step-firebase', 'loading', 'Đang bắt tay Firebase...');
+  setStepStatus('step-server', 'loading', 'Đang kiểm tra server...');
+  setStartupProgress(4);
+  setStartupMsg('Đang kiểm tra thiết bị & server...', null);
+
+  // hide actions by default
+  const actions = document.getElementById('startupActions');
+  if(actions) actions.style.display = 'none';
+
+  let okAll = true;
+
+  // Step 1: device
+  try{
+    const id = getDeviceId();
+    setHeaderDevice();
+    setStepStatus('step-device', 'ok', 'Device ID: ' + id.slice(0, 8) + '…');
+  }catch(e){
+    okAll = false;
+    setStepStatus('step-device', 'bad', 'Không tạo được Device ID.');
+  }
+  setStartupProgress(20);
+  await sleep(160);
+
+  // Step 2: browser
+  try{
+    const ua = (navigator.userAgent || 'Unknown').slice(0, 45);
+    const secure = (location.protocol === 'https:' || location.hostname === 'localhost') ? 'Secure' : 'Not secure';
+    setStepStatus('step-browser', 'ok', secure + ' • ' + ua + '…');
+  }catch(e){
+    okAll = false;
+    setStepStatus('step-browser', 'bad', 'Không đọc được thông tin trình duyệt.');
+  }
+  setStartupProgress(36);
+  await sleep(160);
+
+  // Step 3: network
+  try{
+    const online = (navigator.onLine !== false);
+    if(online){
+      setStepStatus('step-network', 'ok', 'Online');
+    }else{
+      okAll = false;
+      setStepStatus('step-network', 'bad', 'Offline (không có mạng)');
+    }
+  }catch(e){
+    setStepStatus('step-network', 'warn', 'Không xác định (browser hạn chế)');
+  }
+  setStartupProgress(52);
+  await sleep(160);
+
+  // Step 4: firebase
+  try{
+    if(!firebase || !db){
+      okAll = false;
+      setStepStatus('step-firebase', 'bad', 'Firebase chưa khởi tạo.');
+    }else{
+      // ensure auth
+      try{
+        if (!firebase.auth().currentUser) {
+          await firebase.auth().signInAnonymously();
+        }
+      }catch(e){}
+
+      const connected = await checkFirebaseConnected(4500);
+      if(connected){
+        setStepStatus('step-firebase', 'ok', 'Kết nối Firebase OK');
+      }else{
+        okAll = false;
+        setStepStatus('step-firebase', 'bad', 'Không kết nối được Firebase.');
+      }
+    }
+  }catch(e){
+    okAll = false;
+    setStepStatus('step-firebase', 'bad', 'Lỗi Firebase.');
+  }
+  setStartupProgress(74);
+  await sleep(160);
+
+  // Step 5: server check (read serverTimeOffset + small read)
+  try{
+    if(!db){
+      okAll = false;
+      setStepStatus('step-server', 'bad', 'DB chưa sẵn sàng.');
+    }else{
+      // Server time offset
+      const offSnap = await db.ref('.info/serverTimeOffset').once('value');
+      const off = Number(offSnap.val() || 0);
+      const offStr = (Math.abs(off) < 120000) ? ('offset ' + Math.round(off/1000) + 's') : ('offset ' + Math.round(off/60000) + 'm');
+
+      // Try a lightweight read (optional node)
+      let extra = '';
+      try{
+        const ping = await db.ref('server/ping').once('value');
+        if(ping.exists()){
+          extra = ' • ping: ' + String(ping.val()).slice(0, 18);
+        }else{
+          extra = ' • ping: n/a';
+        }
+      }catch(e2){
+        extra = ' • ping: blocked';
+      }
+
+      setStepStatus('step-server', 'ok', 'Server OK • ' + offStr + extra);
+    }
+  }catch(e){
+    // not fatal, show warn
+    setStepStatus('step-server', 'warn', 'Không kiểm tra ping (rules chặn).');
+  }
+  setStartupProgress(92);
+  await sleep(180);
+
+  if(okAll){
+    setStartupProgress(100);
+    setStartupMsg('KẾT NỐI THÀNH CÔNG ✓', 'ok');
+    toastOk('Sever check: OK');
+    await sleep(850);
+    hideStartupOverlay();
+  }else{
+    setStartupProgress(100);
+    setStartupMsg('KẾT NỐI THẤT BẠI ✕ (Bạn có thể thử lại)', 'bad');
+    toastErr('Sever check: FAIL');
+    if(actions) actions.style.display = 'flex';
+  }
+}
+
+// Startup overlay buttons
+async function startupRetry(){
+  await runStartupOverlay();
+}
+function startupClose(){
+  hideStartupOverlay();
+}
+function startupLogout(){
+  hideStartupOverlay();
+  logoutKey();
+}
+
+/* ========= 12) Key info page ========= */
+function setKeyInfoLoading() {
+  const pill = document.getElementById('keyStatusPill');
+  if(pill){
+    pill.className = 'status-pill';
+    pill.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Đang tải';
+  }
+
+  const setSk = (id) => {
+    const el = document.getElementById(id);
+    if(el) el.innerHTML = '<span class="skeleton" style="height:14px"></span>';
+  };
+
+  setSk('infoKey');
+  setSk('infoDevice');
+  setSk('infoExpire');
+  setSk('infoDevices');
+  setSk('infoLastLogin');
+  setSk('infoNote');
+}
+
+function statusFromData(data) {
+  const now = Date.now();
+  const active = data && data.active !== false;
+  const exp = Number((data && data.expiresAt) || 0);
+
+  if (!active) return { type:'bad', text:'Khoá', icon:'fa-ban' };
+  if (exp && now > exp) return { type:'bad', text:'Hết hạn', icon:'fa-clock' };
+  if (exp && (exp - now) < (3*24*60*60*1000)) return { type:'warn', text:'Sắp hết', icon:'fa-triangle-exclamation' };
+  return { type:'ok', text:'OK', icon:'fa-check' };
+}
+
+async function loadKeyInfo(key){
+  if(!key || !db) return;
+  setKeyInfoLoading();
+
+  const deviceId = getDeviceId();
+  const keyRef = db.ref('keys/' + key);
+
+  try{
+    const snap = await keyRef.once('value');
+    if(!snap.exists()){
+      throw new Error('Không tìm thấy dữ liệu key.');
+    }
+    const data = snap.val() || {};
+    const st = statusFromData(data);
+
+    const pill = document.getElementById('keyStatusPill');
+    if(pill){
+      pill.className = 'status-pill ' + st.type;
+      pill.innerHTML = `<i class="fa-solid ${st.icon}"></i> ${st.text}`;
+    }
+
+    const expiresAt = Number(data.expiresAt || 0);
+    const maxDevices = Math.max(1, Number(data.maxDevices || 1));
+    const devices = data.devices || {};
+    const usedDevices = Object.keys(devices).length;
+
+    const setText = (id, txt, addMono) => {
+      const el = document.getElementById(id);
+      if(!el) return;
+      el.textContent = txt;
+      if(addMono) el.classList.add('mono');
+    };
+
+    setText('infoKey', key, true);
+    setText('infoDevice', deviceId, true);
+    setText('infoExpire', expiresAt ? (formatDateVN(new Date(expiresAt)) + ' (' + formatTs(expiresAt) + ')') : 'Không');
+    setText('infoDevices', usedDevices + ' / ' + maxDevices);
+    setText('infoLastLogin', data.lastLoginAt ? formatTs(data.lastLoginAt) : 'Chưa có');
+    setText('infoNote', (data.note || '—'));
+
+    // render mini devices table in Check page
+    renderDevicesMini(devices, deviceId);
+
+  }catch(e){
+    const pill = document.getElementById('keyStatusPill');
+    if(pill){
+      pill.className = 'status-pill bad';
+      pill.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> Lỗi';
+    }
+    toastErr(e && e.message ? e.message : 'Không tải được thông tin key.');
+  }
+}
+
+function renderDevicesMini(devicesObj, currentDeviceId){
+  const wrap = document.getElementById('miniDevices');
+  if(!wrap) return;
+  const devices = devicesObj || {};
+  const ids = Object.keys(devices);
+  if(!ids.length){
+    wrap.innerHTML = '<div class="muted">Chưa có thiết bị nào.</div>';
+    return;
+  }
+  ids.sort((a,b)=> (devices[b]?.lastSeen||0) - (devices[a]?.lastSeen||0));
+  const top = ids.slice(0, 4);
+
+  wrap.innerHTML = top.map((id) => {
+    const d = devices[id] || {};
+    const isMe = (id === currentDeviceId);
+    const seen = d.lastSeen ? formatTs(d.lastSeen) : 'Không';
+    return `
+      <div class="device-item" style="margin-bottom:10px">
+        <div>
+          <b>${isMe ? '⭐ ' : ''}${id}</b>
+          <small>Last seen: ${seen}<br>Platform: ${(d.platform||'—')} • Lang: ${(d.language||'—')}</small>
+        </div>
+        <div class="device-actions">
+          <button onclick="copyText('${id}')"><i class="fa-solid fa-copy"></i> Copy</button>
+        </div>
+      </div>
+    `;
+  }).join('') + (ids.length>4 ? `<div class="muted">+${ids.length-4} thiết bị khác (xem tab <b>Thiết bị</b>).</div>` : '');
+}
+
+async function refreshKeyInfo(){
+  if(!CURRENT_KEY) return toastWarn('Chưa có key đang dùng.');
+  await loadKeyInfo(CURRENT_KEY);
+  toastOk('Đã làm mới thông tin key.');
+}
+
+async function copyText(t){
+  try{
+    await navigator.clipboard.writeText(String(t));
+    toastOk('Đã copy.');
+  }catch(e){
+    toastErr('Không copy được (trình duyệt chặn).');
+  }
+}
+
+async function copyCurrentKey(){
+  if(!CURRENT_KEY) return toastWarn('Chưa có key.');
+  await copyText(CURRENT_KEY);
+}
+async function copyDeviceId(){
+  try{
+    const id = getDeviceId();
+    await copyText(id);
+  }catch(e){
+    toastErr('Không copy được (trình duyệt chặn).');
+  }
+}
+
+function clearSavedKey(){
+  localStorage.removeItem('hhsuper_last_key');
+  toastInfo('Đã xoá key đã lưu.');
+  try{ document.getElementById('login-key').value = ''; }catch(e){}
+}
+
+function logoutKey(){
+  localStorage.removeItem('hhsuper_last_key');
+  CURRENT_KEY = null;
+  setHeaderKey('—');
+  toastInfo('Đã đăng xuất key.');
+  showLoginScreen();
+}
+
+/* ========= 13) Devices page (full list + remove) ========= */
+async function loadDevicesList(key){
+  const wrap = document.getElementById('devicesList');
+  const status = document.getElementById('devicesStatus');
+  if(!wrap) return;
+
+  wrap.innerHTML = '<span class="skeleton" style="height:14px"></span>';
+  if(status) status.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Đang tải';
+
+  if(!db || !key){
+    wrap.innerHTML = '<div class="muted">Chưa có dữ liệu.</div>';
+    if(status) status.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> Lỗi';
+    return;
+  }
+
+  try{
+    const snap = await db.ref('keys/' + key + '/devices').once('value');
+    const devices = snap.val() || {};
+    const ids = Object.keys(devices);
+
+    if(status){
+      status.className = 'status-pill ' + (ids.length ? 'ok' : '');
+      status.innerHTML = `<i class="fa-solid fa-microchip"></i> ${ids.length} thiết bị`;
+    }
+
+    if(!ids.length){
+      wrap.innerHTML = '<div class="muted">Chưa có thiết bị nào.</div>';
+      return;
+    }
+
+    const me = getDeviceId();
+    ids.sort((a,b)=> (devices[b]?.lastSeen||0) - (devices[a]?.lastSeen||0));
+
+    wrap.innerHTML = ids.map((id) => {
+      const d = devices[id] || {};
+      const seen = d.lastSeen ? formatTs(d.lastSeen) : 'Không';
+      const isMe = (id === me);
+      return `
+        <div class="device-item">
+          <div style="min-width:0">
+            <b class="mono" style="color: var(--accent-2)">${isMe ? '⭐ ' : ''}${id}</b>
+            <small>
+              Last seen: ${seen}<br>
+              Platform: ${(d.platform||'—')} • Screen: ${(d.screen||'—')}<br>
+              UA: ${(d.userAgent||'—').slice(0, 80)}${(d.userAgent||'').length>80?'…':''}
+            </small>
+          </div>
+          <div class="device-actions">
+            <button onclick="copyText('${id}')"><i class="fa-solid fa-copy"></i> Copy</button>
+            <button class="danger" onclick="removeDevice('${id}')"><i class="fa-solid fa-trash"></i> Xóa</button>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+  }catch(e){
+    wrap.innerHTML = '<div class="muted">Không tải được danh sách thiết bị.</div>';
+    if(status){
+      status.className = 'status-pill bad';
+      status.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> Lỗi';
+    }
+    toastErr(e && e.message ? e.message : 'Lỗi tải thiết bị.');
+  }
+}
+
+async function removeDevice(deviceId){
+  if(!CURRENT_KEY) return toastWarn('Chưa có key.');
+  const me = getDeviceId();
+
+  const confirm = await Swal.fire({
+    title: 'Xóa thiết bị?',
+    icon: 'warning',
+    html: `<div style="text-align:left;line-height:1.6;font-size:13px;color:#0f172a">
+            Thiết bị: <b>${deviceId}</b><br>
+            ${deviceId===me ? '<span style="color:#ef4444"><b>Lưu ý:</b> Đây là thiết bị hiện tại. Xóa xong có thể phải đăng nhập lại!</span>' : ''}
+          </div>`,
+    showCancelButton: true,
+    confirmButtonText: 'Xóa',
+    cancelButtonText: 'Hủy'
+  });
+
+  if(!confirm.isConfirmed) return;
+
+  try{
+    await db.ref('keys/' + CURRENT_KEY + '/devices/' + deviceId).remove();
+    toastOk('Đã xóa thiết bị.');
+    await loadDevicesList(CURRENT_KEY);
+    await loadKeyInfo(CURRENT_KEY);
+  }catch(e){
+    toastErr('Không xóa được (rules chặn hoặc không đủ quyền).');
+  }
+}
+
+async function resetAllDevices(){
+  if(!CURRENT_KEY) return toastWarn('Chưa có key.');
+
+  const confirm = await Swal.fire({
+    title: 'Reset toàn bộ thiết bị?',
+    icon: 'warning',
+    html: '<div style="text-align:left;line-height:1.6;font-size:13px;color:#0f172a">' +
+          'Hành động này sẽ xóa <b>tất cả</b> thiết bị đã ghi nhận trong key.<br>' +
+          'Sau đó bạn cần đăng nhập lại trên các thiết bị.<br>' +
+          '</div>',
+    showCancelButton: true,
+    confirmButtonText: 'Reset',
+    cancelButtonText: 'Hủy'
+  });
+
+  if(!confirm.isConfirmed) return;
+
+  try{
+    await db.ref('keys/' + CURRENT_KEY + '/devices').remove();
+    toastOk('Đã reset thiết bị.');
+    await loadDevicesList(CURRENT_KEY);
+    await loadKeyInfo(CURRENT_KEY);
+  }catch(e){
+    toastErr('Không reset được (rules chặn hoặc không đủ quyền).');
+  }
+}
+
+/* ========= 14) Login logic (Key check + transaction) ========= */
+let _lastLoginTry = 0;
+
+async function pasteFromClipboard(){
+  try{
+    const t = await navigator.clipboard.readText();
+    if(t){
+      document.getElementById('login-key').value = t.trim();
+      toastOk('Đã dán key từ clipboard.');
+    }else{
+      toastWarn('Clipboard trống.');
+    }
+  }catch(e){
+    toastErr('Không đọc được clipboard (trình duyệt chặn).');
+  }
+}
+
+/* Toggle show/hide key */
+function toggleKeyVisibility(){
+  const inp = document.getElementById('login-key');
+  const ic = document.getElementById('eyeIcon');
+  if(!inp) return;
+  if(inp.type === 'password'){
+    inp.type = 'text';
+    if(ic) ic.className = 'fa-solid fa-eye-slash';
+    toastInfo('Đang hiển thị key.');
+  }else{
+    inp.type = 'password';
+    if(ic) ic.className = 'fa-solid fa-eye';
+    toastInfo('Đã ẩn key.');
+  }
+}
+
+async function checkKey() {
+  const keyInput = document.getElementById('login-key');
+  const btn = document.getElementById('login-btn');
+
+  const nowTry = Date.now();
+  if(nowTry - _lastLoginTry < 500) return;
+  _lastLoginTry = nowTry;
+
+  const parsed = sanitizeKeyInput(keyInput.value);
+  if (!parsed.ok) {
+    showError(parsed.reason);
+    toastWarn(parsed.reason);
+    return;
+  }
+  const key = parsed.key;
+
+  const originalText = btn.innerHTML;
+  btn.innerHTML = '<span class="shine"></span><i class="fa-solid fa-spinner fa-spin"></i> Đang kiểm tra...';
+  btn.style.opacity = '0.92';
+  btn.disabled = true;
+
+  try {
+    if (!firebase.auth().currentUser) {
+      await firebase.auth().signInAnonymously();
+    }
+
+    const deviceId = getDeviceId();
+    const keyRef = db.ref('keys/' + key);
+
+    const snap = await keyRef.once('value');
+    if (!snap.exists()) {
+      throw new Error('Key không tồn tại, vui lòng thử lại!');
+    }
+
+    const data = snap.val() || {};
+    if (data.active === false) {
+      throw new Error('Key đã bị khoá!');
+    }
+
+    const now = Date.now();
+    const expiresAt = Number(data.expiresAt || 0);
+    if (expiresAt && now > expiresAt) {
+      throw new Error('Key đã hết hạn ngày ' + formatDateVN(new Date(expiresAt)) + '!');
+    }
+
+    const maxDevices = Math.max(1, Number(data.maxDevices || 1));
+    const devicesRef = keyRef.child('devices');
+    const info = buildDeviceInfo(now);
+
+    // Transaction: reserve device slot
+    const txResult = await devicesRef.transaction((devices) => {
+      devices = devices || {};
+
+      if (devices[deviceId]) {
+        devices[deviceId].lastSeen = now;
+        devices[deviceId].userAgent = info.userAgent;
+        devices[deviceId].platform = info.platform;
+        devices[deviceId].language = info.language;
+        devices[deviceId].screen = info.screen;
+        return devices;
+      }
+
+      const count = Object.keys(devices).length;
+      if (count >= maxDevices) {
+        return;
+      }
+
+      devices[deviceId] = info;
+      return devices;
+    });
+
+    if (!txResult.committed) {
+      throw new Error('Key đã đạt giới hạn ' + maxDevices + ' thiết bị!');
+    }
+
+    await keyRef.update({ lastLoginAt: now });
+
+    hideError();
+    btn.innerHTML = '<span class="shine"></span><i class="fa-solid fa-check"></i> Thành công';
+    btn.style.color = '#bfffe4';
+
+    localStorage.setItem('hhsuper_last_key', key);
+
+    CURRENT_KEY = key;
+    setHeaderKey(key);
+    setHeaderDevice();
+
+    toastOk('Đăng nhập thành công!');
+
+    // Show main
+    setTimeout(() => {
+      showMainApp();
+      loadKeyInfo(key);
+      loadDevicesList(key);
+    }, 450);
+
+  } catch (e) {
+    btn.innerHTML = originalText;
+    btn.style.opacity = '1';
+    btn.disabled = false;
+
+    const msg = (e && e.message) ? e.message : 'Có lỗi xảy ra, vui lòng thử lại!';
+    showError(msg);
+    toastErr(msg);
+
+    keyInput.style.animation = 'shake 0.5s';
+    setTimeout(() => keyInput.style.animation = '', 500);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const keyEl = document.getElementById('login-key');
+  if(keyEl){
+    keyEl.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') checkKey();
+    });
+    keyEl.addEventListener('input', function() { hideError(); });
+  }
+});
+
+/* ========= 15) Sliders + DPI ========= */
+function applySliderRed(slider){
+  const min = Number(slider.min || 0);
+  const max = Number(slider.max || 100);
+  const val = Number(slider.value || 0);
+  const p = ((val - min) / (max - min)) * 100;
+
+  slider.style.background = `linear-gradient(to right, rgba(239,68,68,0.98) ${p}%, rgba(255,255,255,0.10) ${p}%)`;
+
+  const r = 239;
+  const g = Math.max(68, Math.round(96 - (p * 0.45)));
+  const b = Math.max(68, Math.round(68 - (p * 0.10)));
+  slider.style.setProperty('--thumbColor', `rgb(${r},${g},${b})`);
+
+  const valId = slider.id + '-val';
+  const badge = document.getElementById(valId);
+  if(badge) badge.textContent = val + '%';
+}
+
+function bindSliders(){
+  $$('.sensitivity-slider').forEach(slider => {
+    applySliderRed(slider);
+    slider.addEventListener('input', () => applySliderRed(slider));
+  });
+}
+
+function applyDPI() {
+  const dpiInput = document.getElementById('dpi-input').value;
+  const dpiBtn = document.getElementById('dpi-apply');
+
+  if(!dpiInput || dpiInput <= 0) {
+    toastWarn('Vui lòng nhập một mức DPI hợp lệ!');
+    return;
+  }
+
+  const originalText = dpiBtn.innerHTML;
+  dpiBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Đang áp dụng';
+  dpiBtn.disabled = true;
+
+  setTimeout(() => {
+    dpiBtn.innerHTML = '<i class="fa-solid fa-check"></i> Xong';
+    dpiBtn.style.background = 'rgba(16,185,129,0.18)';
+    dpiBtn.style.color = '#bfffe4';
+    toastOk('Đã áp dụng DPI: ' + dpiInput);
+
+    setTimeout(() => {
+      dpiBtn.innerHTML = originalText;
+      dpiBtn.style.background = 'rgba(255,255,255,0.06)';
+      dpiBtn.style.color = 'rgba(234,240,255,0.92)';
+      dpiBtn.disabled = false;
+    }, 1600);
+  }, 800);
+}
+
+/* ========= 16) Tools: Presets + Quick actions ========= */
+function setSliderValue(id, value){
+  const el = document.getElementById(id);
+  if(!el) return;
+  el.value = value;
+  applySliderRed(el);
+}
+
+function applyPreset(name){
+  // Presets are UI-only (no game hack). Values are just demo.
+  const presets = {
+    smooth: { general: 98, reddot: 90, scope: 82, sniper: 62, dpi: 950 },
+    headshot: { general: 100, reddot: 92, scope: 78, sniper: 55, dpi: 850 },
+    sniper: { general: 86, reddot: 75, scope: 70, sniper: 42, dpi: 700 },
+    balanced: { general: 95, reddot: 85, scope: 75, sniper: 50, dpi: 800 }
+  };
+  const p = presets[name];
+  if(!p) return;
+
+  setSliderValue('sens-general', p.general);
+  setSliderValue('sens-reddot', p.reddot);
+  setSliderValue('sens-scope', p.scope);
+  setSliderValue('sens-sniper', p.sniper);
+
+  const dpiInput = document.getElementById('dpi-input');
+  if(dpiInput) dpiInput.value = p.dpi;
+
+  toastOk('Đã áp dụng preset: ' + name.toUpperCase());
+}
+
+/* ========= 17) Settings page ========= */
+function syncSettingsUI(){
+  // Toggles + ranges
+  const s = UISettings.value;
+
+  const tSound = document.getElementById('st-clicksound');
+  const tHaptic = document.getElementById('st-haptic');
+  const tParticles = document.getElementById('st-particles');
+  const tReduce = document.getElementById('st-reducemotion');
+  const tAccent = document.getElementById('st-accent');
+
+  if(tSound) tSound.checked = !!s.clickSound;
+  if(tHaptic) tHaptic.checked = !!s.haptic;
+  if(tParticles) tParticles.checked = !!s.particles;
+  if(tReduce) tReduce.checked = !!s.reduceMotion;
+  if(tAccent) tAccent.value = s.accent;
+
+  const setRange = (rangeEl, val, labelId, fmt) => {
+    if(!rangeEl) return;
+    rangeEl.value = String(val);
+    const lb = document.getElementById(labelId);
+    if(lb) lb.textContent = fmt(val);
+  };
+
+  setRange(document.getElementById('st-glow'), (s.glow ?? 95), 'st-glow-val', v => v + '%');
+  setRange(document.getElementById('st-blur'), (s.blur ?? 16), 'st-blur-val', v => v + 'px');
+  setRange(document.getElementById('st-font'), (s.fontScale ?? 100), 'st-font-val', v => v + '%');
+  setRange(document.getElementById('st-round'), (s.roundness ?? 26), 'st-round-val', v => v + 'px');
+
+  // Preview badges
+  const bDevice = document.getElementById('st-device');
+  const bKey = document.getElementById('st-key');
+  if(bDevice) bDevice.textContent = getDeviceId();
+  if(bKey) bKey.textContent = CURRENT_KEY || '—';
+}
+
+function setSetting(key, value){
+  UISettings.value[key] = value;
+  UISettings.save();
+  UISettings.apply();
+
+  // particles start/stop
+  if(key === 'particles'){
+    if(value) ParticleFX.start();
+    else ParticleFX.stop();
+  }
+
+  toastInfo('Đã cập nhật cài đặt.');
+}
+
+function resetSettings(){
+  UISettings.value = { ...DEFAULT_SETTINGS };
+  UISettings.save();
+  UISettings.apply();
+  if(UISettings.value.particles) ParticleFX.start(); else ParticleFX.stop();
+  syncSettingsUI();
+  toastOk('Đã reset cài đặt.');
+}
+
+/* ========= 18) Misc UI actions (Home tiles) ========= */
+function quickToggle(id){
+  const el = document.getElementById(id);
+  if(!el) return;
+  const on = el.dataset.on !== '1';
+  el.dataset.on = on ? '1' : '0';
+
+  const pill = el.querySelector('.status-pill');
+  if(pill){
+    if(on){
+      pill.className = 'status-pill ok';
+      pill.innerHTML = '<i class="fa-solid fa-check"></i> ON';
+    }else{
+      pill.className = 'status-pill bad';
+      pill.innerHTML = '<i class="fa-solid fa-xmark"></i> OFF';
+    }
+  }
+  toastInfo(on ? 'Đã bật.' : 'Đã tắt.');
+}
+
+/* ========= 19) Typewriter ========= */
+function typeText(el, text, speedMs){
+  if(!el) return;
+  el.textContent = "";
+  let i = 0;
+  const tick = () => {
+    el.textContent = text.slice(0, i);
+    i++;
+    if(i <= text.length) setTimeout(tick, speedMs);
+  };
+  tick();
+}
+
+/* ========= 20) Boot ========= */
+window.addEventListener('load', async function() {
+  // Settings
+  UISettings.load();
+
+  // If user prefers reduced motion, set default reduceMotion unless user already set it.
+  try{
+    const prm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(prm && !localStorage.getItem(SETTINGS_KEY)){
+      UISettings.value.reduceMotion = true;
+      UISettings.value.particles = false;
+      UISettings.save();
+    }
+  }catch(e){}
+
+  UISettings.apply();
+
+  // FX
+  ParticleFX.init();
+  if(UISettings.value.particles) ParticleFX.start();
+
+  // Firebase
+  initFirebase();
+
+  // Header typing
+  typeText(document.getElementById('authorText'), "Hà Văn Huấn", 55);
+  typeText(document.getElementById('loginBrandTyping'), "HH SUPER", 70);
+
+  // Device in menu
+  setHeaderDevice();
+
+  // Bind sliders
+  bindSliders();
+
+  // Home carousel
+  HomeCarousel.init();
+
+  // Load saved key (only if login screen exists)
+  const hasLoginUI = !!document.getElementById('login-screen') && !!document.getElementById('login-key') && !!document.getElementById('login-btn');
+  const saved = localStorage.getItem('hhsuper_last_key');
+
+  if(hasLoginUI){
+    if (saved) {
+      try { document.getElementById('login-key').value = saved; } catch(e) {}
+      toastInfo('Đang tự đăng nhập...');
+      try{ await checkKey(); }catch(e){}
+    } else {
+      toastInfo('Nhập key để đăng nhập.');
+    }
+  }
+
+  // Settings UI initial
+  syncSettingsUI();
+
+  // Online/offline toast
+  window.addEventListener('online', () => toastOk('Mạng đã kết nối.'));
+  window.addEventListener('offline', () => toastWarn('Mất kết nối mạng.'));
+});
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const modal = document.getElementById("keyModal");
+  const closeBtn = document.getElementById("closeKeyModal");
+  const goKeyFree = document.getElementById("goKeyFree");
+  
+  // ID phần chứa key free ở dưới trang
+  const freeSection = document.getElementById("key-free-section");
+  
+  // Chỉ hiện 1 lần mỗi phiên mở app
+  const hasShown = sessionStorage.getItem("key_modal_shown");
+  
+  if (!hasShown) {
+    setTimeout(() => {
+      modal.classList.add("show");
+      sessionStorage.setItem("key_modal_shown", "true");
+    }, 500);
+  }
+  
+  closeBtn.addEventListener("click", function() {
+    modal.classList.remove("show");
+  });
+  
+  modal.addEventListener("click", function(e) {
+    if (e.target === modal) {
+      modal.classList.remove("show");
+    }
+  });
+  
+  goKeyFree.addEventListener("click", function() {
+    modal.classList.remove("show");
+    
+    if (freeSection) {
+      setTimeout(() => {
+        freeSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }, 200);
+    } else {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+      });
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function copyKeyLink() {
+  const input = document.getElementById("keyFreeLink");
+  const status = document.getElementById("copyStatus");
+  
+  input.select();
+  input.setSelectionRange(0, 99999);
+  
+  navigator.clipboard.writeText(input.value).then(() => {
+    status.textContent = "Đã copy link thành công!";
+  }).catch(() => {
+    document.execCommand("copy");
+    status.textContent = "Đã copy link thành công!";
+  });
+  
+  setTimeout(() => {
+    status.textContent = "";
+  }, 2000);
+}
+
+
+
+
+
+
+
+
+/* ========= 21) Expose functions to window (HTML onclick) ========= */
+window.openMenu = openMenu;
+window.closeMenu = closeMenu;
+window.menuGo = menuGo;
+window.menuActionAbout = menuActionAbout;
+window.menuActionRefresh = menuActionRefresh;
+window.menuActionCopyKey = menuActionCopyKey;
+window.menuActionCopyDevice = menuActionCopyDevice;
+window.menuActionClearSaved = menuActionClearSaved;
+window.menuActionLogout = menuActionLogout;
+
+window.switchLoginTab = switchLoginTab;
+window.goContactPage = goContactPage;
+
+window.toggleKeyVisibility = toggleKeyVisibility;
+window.pasteFromClipboard = pasteFromClipboard;
+window.clearSavedKey = clearSavedKey;
+window.checkKey = checkKey;
+
+window.refreshKeyInfo = refreshKeyInfo;
+window.copyCurrentKey = copyCurrentKey;
+window.copyDeviceId = copyDeviceId;
+
+window.applyDPI = applyDPI;
+window.applyPreset = applyPreset;
+
+window.copyText = copyText;
+window.removeDevice = removeDevice;
+window.resetAllDevices = resetAllDevices;
+
+window.startupRetry = startupRetry;
+window.startupClose = startupClose;
+window.startupLogout = startupLogout;
+
+window.setSetting = setSetting;
+window.resetSettings = resetSettings;
+
+window.quickToggle = quickToggle;
+
+
+
+
+
+
+
+
+
