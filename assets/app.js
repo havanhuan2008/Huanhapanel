@@ -1,7 +1,7 @@
 /* ===========================
    HH SUPER UI v2 (Deluxe JS)
    - Many UI effects (sound "tạch", ripple, HUD)
-   - Startup overlay check Device + Server
+   - S overlay check Device + Server
    - More pages: Tools, Devices, Settings
    - Keep full login/key logic with Firebase transaction
    =========================== */
